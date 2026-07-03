@@ -1,0 +1,8 @@
+en,fr,it,de,es,ko,kana
+Would you like to save your adventure so far? Previous data will be overwritten.,,,,,,
+Yes,,,,,,
+No,,,,,,
+\n[1] saved the game.,,,,,,
+This save is corrupted. You cannot play on it.,,,,,,
+"If you wish to restore the previous save, check for a .bak file. This serves as a backup of your previous save.",,,,,,
+Would you like to start a new game?,,,,,,

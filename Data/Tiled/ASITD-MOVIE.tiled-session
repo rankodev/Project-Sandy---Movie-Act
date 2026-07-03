@@ -1,0 +1,59 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Maps/sandy_square_center.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Maps/Sandy Riverbed.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": -116,
+                "y": 2776
+            }
+        },
+        "Maps/sandy_square_center.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 2083.6666666666665,
+                "y": 0.6666666666666572
+            }
+        },
+        "Tilesets/dustlands.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/ekat_cave.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/passages.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/sandy_indoor.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/sandy_outside.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/systemtags.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "last.worldFilePath": "C:/A MAIN PROJECTS/A Star in the Desert MOVIE TIME/Data/Tiled",
+    "loadedWorlds": [
+        "C:/A MAIN PROJECTS/A Star in the Desert MOVIE TIME/Data/Tiled/SITD-MOVIE World.world"
+    ],
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+        "Maps/sandy_square_center.tmx"
+    ],
+    "project": "ASITD-MOVIE.tiled-project",
+    "recentFiles": [
+        "Maps/sandy_square_center.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

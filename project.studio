@@ -1,0 +1,35 @@
+{
+  "title": "A Star in the Desert Da Movie",
+  "studioVersion": "2.10.0",
+  "iconPath": "game.png",
+  "languagesTranslation": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "fr",
+      "name": "French"
+    },
+    {
+      "code": "it",
+      "name": "Italian"
+    },
+    {
+      "code": "de",
+      "name": "German"
+    },
+    {
+      "code": "es",
+      "name": "Spanish"
+    },
+    {
+      "code": "ko",
+      "name": "Korean"
+    },
+    {
+      "code": "kana",
+      "name": "Japanese"
+    }
+  ]
+}
