@@ -12,7 +12,7 @@ module PSMA
   # ```
   class PlayerChoice < GamePlay::BaseCleanUpdate
     # List of available starts
-    STARTERS = %w[bulbasaur cyndaquil treecko snivy froakie rowlet scorbunny quaxly]# zorua espurr rockruff]
+    STARTERS = %w[cyndaquil quaxly scorbunny rowlet snivy espurr hzorua bulbasaur treecko froakie rockruff]
     # List of emotions we want to show
     EMOTIONS = %w[neutral joy]
     # List of Face X position
@@ -48,8 +48,9 @@ module PSMA
 
     def action_a
       log_debug("Selecting: #{STARTERS[@index]}")
-      # TODO: Add a message?
-      $game_variables[111] = @index
+      Audio.se_play("audio/se/pmdSystemConfirm")
+      display_message("Is this your choice?")
+      $game_variables[111] = @index + 1
       # We can also store emotion into another variable, I need ID
       @running = false
       # TODO: Add a go out animation
@@ -83,6 +84,7 @@ module PSMA
     def face_move_rl(sp, i, next_index)
       ya = Yuki::Animation
       next_index %= FACE_X_POSITION.size
+      play_decision_se
       return ya.parallel(
         ya.move(MOVE_DURATION, sp, FACE_X_POSITION[i], FACE_Y_POSITION[i], FACE_X_POSITION[next_index], FACE_Y_POSITION[next_index]),
         ya.scalar(MOVE_DURATION, sp, :zoom=, FACE_ZOOM[i], FACE_ZOOM[next_index]),
