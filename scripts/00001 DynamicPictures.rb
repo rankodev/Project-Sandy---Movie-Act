@@ -1,29 +1,29 @@
 def show_player_portrait(mood: :neutral, number: 50, x: 30, y: 136, zoom_x: 50, zoom_y: 50)
     case $game_variables[111]
-    when 1 # Charmander
-      base = "charmander_"
-    when 2 # Chikorita
-      base = "chikorita_"
-    when 3 # Mudkip
-      base = "mudkip_"
-    when 4 # Turtwig
-      base = "turtwig_"
-    when 5 # Oshawott
-      base = "oshawott_"
-    when 6 # Fennekin
-      base = "fennekin_"
-    when 7 # Popplio
-      base = "popplio_"
-    when 8 # Chespin GROOKEY HAS BEEN ANNIHILATED FROM THE GAME DUE TO NOT HAVING ANY PORTRAITS RAHH
-      base = "chespin_"
-    when 9 # Fuecoco
-      base = "fuecoco_"
-    when 10 # Phanpy
-      base = "phanpy_"
-    when 11 # Riolu
-      base = "riolu_"
-    when 12 # Mincinno
-      base = "minccino_"
+    when 1 # Cyndaquil
+      base = "cyndaquil_"
+    when 2 # Quaxly
+      base = "quaxly_"
+    when 3 # Scorbunny
+      base = "scorbunny_"
+    when 4 # Rowlet
+      base = "rowlet_"
+    when 5 # Snivy
+      base = "snivy_"
+    when 6 # Espurr
+      base = "espurr_"
+    when 7 # Hisuian Zorua
+      base = "hzorua_"
+    when 8 # Bulbasaur GROOKEY HAS BEEN ANNIHILATED FROM THE GAME DUE TO NOT HAVING ANY PORTRAITS RAHH
+      base = "bulbasaur_"
+    when 9 # Treecko
+      base = "treecko_"
+    when 10 # Froakie
+      base = "froakie_"
+    when 11 # Chimchar
+      base = "chimchar_"
+    when 12 # Rockruff
+      base = "rockruff_"
     end
 
     dir = "portraits/"

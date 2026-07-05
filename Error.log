@@ -1,17 +1,39 @@
 ================================Erreur de script================================
 Message :
-undefined method `index' for nil:NilClass
+no implicit conversion of nil into String
 
-Type : NoMethodError
-Script : 4_Systems_001_Title.rb (PSDK)
-Ligne : 159
-Date : 01/07/2026 19:59:19
+Type : TypeError
+Script : 00001 DynamicPictures.rb (user)
+Ligne : 30
+Date : 04/07/2026 22:37:33
 Game Version : 256
 Logiciel : PSDK 26.57
+Script used by eval command : 
+show_player_portrait(mood: :neutral)
+
+
 ===================================Backtraces===================================
-[13] : 4_Systems_001_Title.rb (PSDK) | ligne 159 action_a
-[12] : 4_Systems_001_Title.rb (PSDK) | ligne 63 update_inputs
-[11] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 433 update
+[31] : 00001 DynamicPictures.rb (user) | ligne 30 +
+[30] : 00001 DynamicPictures.rb (user) | ligne 30 show_player_portrait
+[29] : (eval) (RMXP) | ligne 2 eval_X1
+[28] : 1_RMXP_Scripts.rb (PSDK) | ligne 2125 eval_script
+[27] : 1_RMXP_Scripts.rb (PSDK) | ligne 2117 command_355
+[26] : 1_RMXP_Scripts.rb (PSDK) | ligne 1101 execute_command
+[25] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 update
+[24] : 1_RMXP_Scripts.rb (PSDK) | ligne 956 loop
+[23] : 1_RMXP_Scripts.rb (PSDK) | ligne 956 update
+[22] : 1_RMXP_Scripts.rb (PSDK) | ligne 960 update
+[21] : 1_RMXP_Scripts.rb (PSDK) | ligne 956 loop
+[20] : 1_RMXP_Scripts.rb (PSDK) | ligne 956 update
+[19] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9285 update_map_logic
+[18] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 2933 update_map_logic
+[17] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9293 auto_transfert_update
+[16] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 loop
+[15] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 auto_transfert_update
+[14] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
+[13] : 0_Dependencies.rb (PSDK) | ligne 1417 times
+[12] : 0_Dependencies.rb (PSDK) | ligne 1417 run
+[11] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
 [9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 144 main
 [8] : tools/GameLoader/Z_main.rb (PSDK) | ligne 16 <top (required)>
