@@ -3,11 +3,29 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/sandy_square_center.tmx",
+    "activeFile": "Maps/Beach.tmx",
     "expandedProjectPaths": [
+        ".",
+        "Maps"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "Maps/Beach.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 1177,
+                "y": 286
+            }
+        },
+        "Maps/Dustlands-Grandesert.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Maps/Hysminai.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
         "Maps/Sandy Riverbed.tmx": {
             "scale": 0.125,
             "selectedLayer": 0,
@@ -16,6 +34,21 @@
                 "y": 2776
             }
         },
+        "Maps/The Desertica.tsx": {
+            "scaleInDock": 1
+        },
+        "Maps/_35.tsx": {
+            "scaleInDock": 1
+        },
+        "Maps/grassy.tsx": {
+            "scaleInDock": 1
+        },
+        "Maps/passages.tsx": {
+            "scaleInDock": 1
+        },
+        "Maps/prio_w.tsx": {
+            "scaleInDock": 1
+        },
         "Maps/sandy_square_center.tmx": {
             "scale": 1.5,
             "selectedLayer": 2,
@@ -23,6 +56,10 @@
                 "x": 2083.6666666666665,
                 "y": 0.6666666666666572
             }
+        },
+        "Maps/systemtags.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Tilesets/dustlands.tsx": {
             "scaleInDock": 1
@@ -49,10 +86,14 @@
     ],
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "Maps/sandy_square_center.tmx"
+        "Maps/Beach.tmx",
+        "Maps/systemtags.tsx"
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
+        "Maps/systemtags.tsx",
+        "Maps/Beach.tmx",
+        "Maps/Dustlands-Grandesert.tsx",
         "Maps/sandy_square_center.tmx"
     ],
     "tileset.lastUsedFormat": "tsx"
