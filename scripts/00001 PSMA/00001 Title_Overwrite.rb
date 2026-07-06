@@ -110,8 +110,7 @@ module PSMA
 
     # Update inputs (implement any button behavior)
     def update_inputs
-      # To not skip the splash, replace with: return false unless super
-      return true if super
+      return false unless super
 
       return action_a if Mouse.press?(:LEFT)
 
