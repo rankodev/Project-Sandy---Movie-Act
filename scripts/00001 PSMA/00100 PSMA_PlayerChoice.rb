@@ -2,6 +2,7 @@ module PSMA
   # Script adding the Player Choice UI
   # To call this script, you simply add the following in a script command
   # ```ruby
+  # @wait_count = 2
   # $game_temp.player_choice_calling = true
   # ```
   # When the message is done it'll call the scene and the result will be stored in variable 111
@@ -12,7 +13,7 @@ module PSMA
   # ```
   class PlayerChoice < GamePlay::BaseCleanUpdate
     # List of available starts
-    STARTERS = %w[cyndaquil quaxly scorbunny rowlet snivy espurr hzorua bulbasaur treecko froakie rockruff]
+    STARTERS = %w[cyndaquil quaxly scorbunny rowlet snivy espurr hzorua bulbasaur treecko froakie chimchar rockruff]
     # List of emotions we want to show
     EMOTIONS = %w[neutral joy]
     # List of Face X position
@@ -49,7 +50,11 @@ module PSMA
     def action_a
       log_debug("Selecting: #{STARTERS[@index]}")
       Audio.se_play("audio/se/pmdSystemConfirm")
-      display_message("Is this your choice?")
+      @message_window.stay_visible = false
+      # Note: instead we can do "The Pokémon \\c[2]#{STARTERS[@index].capitalize}\\c[0]?"
+      # This would prevent having to perform more logic on event side
+      c = display_message_and_wait("Is this your choice?", 1, 'Yes', 'No')
+      return init_message if c == 1
       $game_variables[111] = @index + 1
       # We can also store emotion into another variable, I need ID
       @running = false
@@ -59,7 +64,7 @@ module PSMA
     # Action triggered when pressing LEFT or RIGHT
     # @param direction [Integer] direction of the press -1 for left, 1 for right
     def action_lr(direction)
-      load_face(@faces[0], @index + direction * 3)
+      load_face(@faces[direction == -1 ? 0 : -1], @index + direction * 3)
       @index = (@index + direction) % STARTERS.size
       base = base_rotation_animation(direction)
       @animation = Yuki::Animation.parallel(base, *@faces.map.with_index { |sp, i| face_move_rl(sp, i, i - direction) })
@@ -95,7 +100,8 @@ module PSMA
     # Update all the animations
     def update_graphics
       @animation&.update
-      @emotion_animation&.update if !@animation || @animation.done?
+      @emotion_animation&.update
+      @__last_scene.spriteset.update if @__last_scene.is_a?(Scene_Map) && !Graphics::FPSBalancer.global.skipping?
     end
 
     # Create all the sprite / animation for that scene
@@ -105,6 +111,7 @@ module PSMA
       create_faces
       create_enter_animation
       create_emotion_animation
+      init_message
     end
 
     def create_background
@@ -144,7 +151,9 @@ module PSMA
     # Note: If this is bad, we can simply remove that.
     def create_emotion_animation
       ya = Yuki::Animation
-      @emotion_animation = ya.timed_loop_animation(2, [ya.wait(1.8), ya.send_command_to(self, :rotate_emotion)])
+      signal = ya.wait_signal { !@animation || @animation.done? }
+      signal.play(ya.send_command_to(self, :rotate_emotion))
+      @emotion_animation = ya.timed_loop_animation(2, [ya.wait(1.5), signal])
       @emotion_animation.start
     end
 
@@ -162,6 +171,13 @@ module PSMA
       starter = STARTERS[index % STARTERS.size]
       return sp.load("portraits/#{starter}_#{emotion}", :picture)
     end
+
+    # Show the initial message
+    def init_message
+      @message_window.stay_visible = true
+      @message_window.auto_skip = true
+      $game_temp.message_text = 'Select your appearance'
+    end
   end
 end
 
@@ -177,6 +193,6 @@ class Scene_Map
 
   def call_player_choice
     $game_temp.player_choice_calling = false
-    call_scene(PSMA::PlayerChoice)
+    call_scene(PSMA::PlayerChoice, fade_in_params: [:transition, 0], fade_out_params: [:transition, 0])
   end
 end
