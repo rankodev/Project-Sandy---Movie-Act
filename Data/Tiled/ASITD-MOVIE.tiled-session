@@ -10,12 +10,20 @@
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "Maps/003 Hub.tmx": {
+            "scale": 0.28574218749999997,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1023.6500341763499,
+                "y": 1025.3998632946002
+            }
+        },
         "Maps/Beach.tmx": {
             "scale": 0.5,
             "selectedLayer": 8,
             "viewCenter": {
                 "x": 1897,
-                "y": 1624
+                "y": 588
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -66,6 +74,30 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "Tilesets/TECH-Assets.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Buildings.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Hub.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Misc..tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Mounts.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Nature.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-borders.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH_Lab.tsx": {
+            "scaleInDock": 1
+        },
         "Tilesets/dustlands.tsx": {
             "scaleInDock": 1
         },
@@ -99,6 +131,7 @@
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
+        "Maps/003 Hub.tmx",
         "Maps/Hysminai.tsx",
         "Maps/grassy.tsx",
         "Maps/Dustlands-Grandesert.tsx",
