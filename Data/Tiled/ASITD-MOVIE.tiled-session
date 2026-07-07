@@ -3,10 +3,10 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/Beach.tmx",
+    "activeFile": "Maps/_35.tsx",
     "expandedProjectPaths": [
-        ".",
-        "Maps"
+        "Maps",
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -14,8 +14,8 @@
             "scale": 0.5,
             "selectedLayer": 8,
             "viewCenter": {
-                "x": 1177,
-                "y": 286
+                "x": 1897,
+                "y": 1624
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -24,7 +24,8 @@
         },
         "Maps/Hysminai.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/Sandy Riverbed.tmx": {
             "scale": 0.125,
@@ -35,16 +36,20 @@
             }
         },
         "Maps/The Desertica.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/_35.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/grassy.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/passages.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/prio_w.tsx": {
             "scaleInDock": 1
@@ -87,13 +92,21 @@
     "map.lastUsedFormat": "tmx",
     "openFiles": [
         "Maps/Beach.tmx",
-        "Maps/systemtags.tsx"
+        "Maps/systemtags.tsx",
+        "Maps/The Desertica.tsx",
+        "Maps/passages.tsx",
+        "Maps/_35.tsx"
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
+        "Maps/Hysminai.tsx",
+        "Maps/grassy.tsx",
+        "Maps/Dustlands-Grandesert.tsx",
+        "Maps/_35.tsx",
+        "Maps/passages.tsx",
+        "Maps/The Desertica.tsx",
         "Maps/systemtags.tsx",
         "Maps/Beach.tmx",
-        "Maps/Dustlands-Grandesert.tsx",
         "Maps/sandy_square_center.tmx"
     ],
     "tileset.lastUsedFormat": "tsx"
