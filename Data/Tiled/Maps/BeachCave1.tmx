@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="1">
- <tileset firstgid="1" source="Deep Sea.tsx"/>
- <tileset firstgid="337" source="Coral Tiles.tsx"/>
- <tileset firstgid="553" source="Costal Cave.tsx"/>
- <tileset firstgid="937" source="The Desertica.tsx"/>
- <tileset firstgid="1777" source="passages.tsx"/>
- <tileset firstgid="1921" source="systemtags.tsx"/>
- <tileset firstgid="2049" source="_35.tsx"/>
- <tileset firstgid="2849" source="Dustlands-Grandesert.tsx"/>
- <layer id="1" name="floor" width="50" height="50">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="1">
+ <tileset firstgid="1" source="../Tilesets/Deep Sea.tsx"/>
+ <tileset firstgid="337" source="../Tilesets/Coral Tiles.tsx"/>
+ <tileset firstgid="553" source="../Tilesets/Costal Cave.tsx"/>
+ <tileset firstgid="937" source="../Tilesets/The Desertica.tsx"/>
+ <tileset firstgid="1777" source="../Tilesets/passages.tsx"/>
+ <tileset firstgid="1921" source="../Tilesets/systemtags.tsx"/>
+ <tileset firstgid="2049" source="../Tilesets/_35.tsx"/>
+ <tileset firstgid="2849" source="../Tilesets/Dustlands-Grandesert.tsx"/>
+ <layer id="1" name="floor1" width="50" height="50">
   <data encoding="csv">
 461,461,461,461,461,461,461,461,461,461,461,461,461,461,786,786,786,786,786,586,586,586,586,586,461,461,461,461,586,586,586,586,586,586,586,586,586,586,586,586,586,586,586,586,461,461,461,461,461,461,
 461,461,461,461,461,461,461,461,461,461,461,461,461,461,786,786,786,786,786,586,586,586,461,586,461,461,461,461,586,586,586,586,586,586,586,586,586,586,586,586,586,586,586,461,461,461,461,461,461,461,
@@ -62,7 +62,7 @@
 461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461,461
 </data>
  </layer>
- <layer id="6" name="grass" width="50" height="50">
+ <layer id="6" name="grass1" width="50" height="50">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -116,7 +116,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="7" name="rock" width="50" height="50">
+ <layer id="7" name="rock1" width="50" height="50">
   <data encoding="csv">
 690,690,690,690,690,690,690,690,690,690,690,691,462,462,462,0,0,0,0,665,0,452,450,460,0,0,0,0,689,690,690,690,690,690,690,690,690,690,690,690,690,690,690,691,0,0,0,0,0,0,
 690,690,690,690,690,690,690,690,690,690,690,691,462,462,462,0,0,0,0,665,703,460,452,450,0,0,0,681,693,690,690,690,690,690,690,690,690,690,690,690,690,690,690,691,0,0,0,0,0,0,
@@ -170,7 +170,7 @@
 690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690,690
 </data>
  </layer>
- <layer id="8" name="decoration" width="50" height="50">
+ <layer id="8" name="decoration1" width="50" height="50">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,463,464,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

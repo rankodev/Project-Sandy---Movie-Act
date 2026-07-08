@@ -4,8 +4,9 @@
     "children": [
       1,
       2,
-      22,
-      3
+      3,
+      4,
+      5
     ],
     "hasChildren": true,
     "isExpanded": true,
@@ -46,14 +47,25 @@
       "parentId": 0
     }
   },
-  "22": {
-    "id": 22,
+  "4": {
+    "id": 4,
     "children": [],
     "hasChildren": false,
     "isExpanded": false,
     "data": {
       "klass": "MapInfoMap",
-      "mapDbSymbol": "map022",
+      "mapDbSymbol": "map004",
+      "parentId": 0
+    }
+  },
+  "5": {
+    "id": 5,
+    "children": [],
+    "hasChildren": false,
+    "isExpanded": false,
+    "data": {
+      "klass": "MapInfoMap",
+      "mapDbSymbol": "map005",
       "parentId": 0
     }
   }
