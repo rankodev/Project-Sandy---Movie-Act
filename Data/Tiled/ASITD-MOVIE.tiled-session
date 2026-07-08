@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/_35.tsx",
+    "activeFile": "Maps/Beach.tmx",
     "expandedProjectPaths": [
         "Maps",
         "."
@@ -20,10 +20,10 @@
         },
         "Maps/Beach.tmx": {
             "scale": 0.5,
-            "selectedLayer": 8,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 1897,
-                "y": 588
+                "x": 211,
+                "y": 760
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -121,25 +121,23 @@
     "loadedWorlds": [
         "C:/A MAIN PROJECTS/A Star in the Desert MOVIE TIME/Data/Tiled/SITD-MOVIE World.world"
     ],
+    "map.height": 50,
     "map.lastUsedFormat": "tmx",
+    "map.width": 50,
     "openFiles": [
-        "Maps/Beach.tmx",
-        "Maps/systemtags.tsx",
-        "Maps/The Desertica.tsx",
-        "Maps/passages.tsx",
-        "Maps/_35.tsx"
+        "Maps/Beach.tmx"
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
+        "Maps/passages.tsx",
+        "Maps/Beach.tmx",
         "Maps/003 Hub.tmx",
         "Maps/Hysminai.tsx",
         "Maps/grassy.tsx",
         "Maps/Dustlands-Grandesert.tsx",
         "Maps/_35.tsx",
-        "Maps/passages.tsx",
         "Maps/The Desertica.tsx",
         "Maps/systemtags.tsx",
-        "Maps/Beach.tmx",
         "Maps/sandy_square_center.tmx"
     ],
     "tileset.lastUsedFormat": "tsx"
