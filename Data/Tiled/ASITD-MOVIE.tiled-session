@@ -5,17 +5,25 @@
     },
     "activeFile": "Maps/Beach.tmx",
     "expandedProjectPaths": [
-        ".",
-        "Maps"
+        "Maps",
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "Maps/003 Hub.tmx": {
+            "scale": 0.28574218749999997,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1023.6500341763499,
+                "y": 1025.3998632946002
+            }
+        },
         "Maps/Beach.tmx": {
             "scale": 0.5,
-            "selectedLayer": 8,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 1177,
-                "y": 286
+                "x": 211,
+                "y": 760
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -24,7 +32,8 @@
         },
         "Maps/Hysminai.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/Sandy Riverbed.tmx": {
             "scale": 0.125,
@@ -35,16 +44,20 @@
             }
         },
         "Maps/The Desertica.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/_35.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/grassy.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/passages.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/prio_w.tsx": {
             "scaleInDock": 1
@@ -60,6 +73,30 @@
         "Maps/systemtags.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "Tilesets/TECH-Assets.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Buildings.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Hub.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Misc..tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Mounts.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-Nature.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH-borders.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/TECH_Lab.tsx": {
+            "scaleInDock": 1
         },
         "Tilesets/dustlands.tsx": {
             "scaleInDock": 1
@@ -84,16 +121,23 @@
     "loadedWorlds": [
         "C:/A MAIN PROJECTS/A Star in the Desert MOVIE TIME/Data/Tiled/SITD-MOVIE World.world"
     ],
+    "map.height": 50,
     "map.lastUsedFormat": "tmx",
+    "map.width": 50,
     "openFiles": [
-        "Maps/Beach.tmx",
-        "Maps/systemtags.tsx"
+        "Maps/Beach.tmx"
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
-        "Maps/systemtags.tsx",
+        "Maps/passages.tsx",
         "Maps/Beach.tmx",
+        "Maps/003 Hub.tmx",
+        "Maps/Hysminai.tsx",
+        "Maps/grassy.tsx",
         "Maps/Dustlands-Grandesert.tsx",
+        "Maps/_35.tsx",
+        "Maps/The Desertica.tsx",
+        "Maps/systemtags.tsx",
         "Maps/sandy_square_center.tmx"
     ],
     "tileset.lastUsedFormat": "tsx"
