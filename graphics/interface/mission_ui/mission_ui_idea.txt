@@ -1,0 +1,25 @@
+mission board idea specifics:
+
+1st page is what boots up upon triggering. it has icons next to a brief mission title, from the Pokémon that is requesting the mission:
+
+- The MAIN story quest the player should take at the top, if there is one (basically from the boss of the tavern). it has the sheriff star next to it. there isn't always one ready but if it is, it's always at the top
+
+- Scroll bar on the left side to view more missions to take. new missions should go at the top always as they are introduced/unlocked, can scroll down if able
+
+- the right side as the mission rank. this is just to let the player know how much effort it takes to finish a mission.
+
+- A Red Highlighter of some sort to show whats being selected
+
+2nd page is Mission Overview. It's what loads once you click on one of the missions.Forgive me as I use the same text multiple times
+
+- The Top is the Mission Title
+
+- The 2nd from the top is the Mission Location. This is where the player must go to advance it
+
+- The 3rd lines of text, is the description. It should scroll as well if there is more to be said. The icon of the requester is on the left
+
+- Bottom is loot. You can just copy the way the Quest system does it for Rewards.
+
+- A Big Accept Button is on the left. I'd like a confirm menu once, and then after hitting yes, the button goes behind the board as an animation. The animation is too slow on the mock-up, I'd like it faster but Aseprite doesn't allow me lol.
+
+Complete Missions should just show up in the quest menu I think. In a sense, this is just a fancier Quest System to fit the game's story a bit better.
