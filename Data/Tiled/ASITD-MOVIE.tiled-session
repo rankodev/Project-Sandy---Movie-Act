@@ -10,6 +10,33 @@
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/sandy_square_center.tmx": {
+            "scale": 2,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 452.75,
+                "y": 563
+            }
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/dustlands.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/ekat_cave.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/passages.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/systemtags.tsx": {
+            "scaleInDock": 1
+        },
         "Maps/003 Hub.tmx": {
             "scale": 0.28574218749999997,
             "selectedLayer": 0,
@@ -18,12 +45,20 @@
                 "y": 1025.3998632946002
             }
         },
-        "Maps/Beach.tmx": {
-            "scale": 0.25,
-            "selectedLayer": 11,
+        "Maps/Beach 2.tmx": {
+            "scale": 0.22859374999999998,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 2694,
-                "y": 920
+                "x": 960.2187286397814,
+                "y": 1281.7498291182503
+            }
+        },
+        "Maps/Beach.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1788.6666666666665,
+                "y": 503.99999999999994
             }
         },
         "Maps/BeachCave1.tmx": {
@@ -47,7 +82,7 @@
             "selectedLayer": 6,
             "viewCenter": {
                 "x": 883.3333333333334,
-                "y": 751.9999999999999
+                "y": 575.9999999999999
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -67,16 +102,19 @@
                 "y": 2776
             }
         },
+        "Maps/The Desertica - 2.tsx": {
+            "scaleInDock": 1
+        },
         "Maps/The Desertica.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "Maps/Town.tmx": {
-            "scale": 0.5343749999999999,
-            "selectedLayer": 0,
+            "scale": 0.5,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 800,
-                "y": 799.0643274853803
+                "x": 895,
+                "y": 902
             }
         },
         "Maps/_35.tsx": {
@@ -103,6 +141,10 @@
             }
         },
         "Maps/systemtags.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tilesets/!TilesetCave.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
@@ -155,7 +197,8 @@
             "scaleInDock": 1
         },
         "Tilesets/ekat_cave.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Tilesets/grassy.tsx": {
             "scaleInDock": 1
@@ -173,6 +216,8 @@
             "scaleInDock": 1
         }
     },
+    "last.externalTilesetPath": "D:/ProjectFolder/1-Projects/2-Jam/SITD/Project-Sandy---Movie-Act/Data/Tiled/Tilesets",
+    "last.imagePath": "D:/ProjectFolder/1-Projects/2-Jam/SITD/Project-Sandy---Movie-Act/Data/Tiled/Assets",
     "last.worldFilePath": "C:/A MAIN PROJECTS/A Star in the Desert MOVIE TIME/Data/Tiled",
     "loadedWorlds": [
         "C:/A MAIN PROJECTS/A Star in the Desert MOVIE TIME/Data/Tiled/SITD-MOVIE World.world"
@@ -185,18 +230,19 @@
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/sandy_square_center.tmx",
+        "Tilesets/!TilesetCave.tsx",
+        "Tilesets/ekat_cave.tsx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/ekat_cave.tsx",
+        "Maps/Beach 2.tmx",
         "Maps/Town.tmx",
         "Maps/BeachCave3.tmx",
         "Maps/BeachCave2.tmx",
         "Maps/BeachCave1.tmx",
         "Maps/Beach.tmx",
         "Maps/passages.tsx",
-        "Maps/003 Hub.tmx",
-        "Maps/Hysminai.tsx",
-        "Maps/grassy.tsx",
-        "Maps/Dustlands-Grandesert.tsx",
-        "Maps/_35.tsx",
-        "Maps/The Desertica.tsx"
+        "Maps/003 Hub.tmx"
     ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx"
 }
