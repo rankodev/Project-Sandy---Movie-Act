@@ -19,11 +19,35 @@
             }
         },
         "Maps/Beach.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 2,
+            "scale": 0.25,
+            "selectedLayer": 11,
             "viewCenter": {
-                "x": 211,
-                "y": 760
+                "x": 2694,
+                "y": 920
+            }
+        },
+        "Maps/BeachCave1.tmx": {
+            "scale": 0.5343749999999999,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 800,
+                "y": 799.0643274853803
+            }
+        },
+        "Maps/BeachCave2.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 1018,
+                "y": 705.3333333333333
+            }
+        },
+        "Maps/BeachCave3.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 883.3333333333334,
+                "y": 751.9999999999999
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -46,6 +70,14 @@
         "Maps/The Desertica.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "Maps/Town.tmx": {
+            "scale": 0.5343749999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 800,
+                "y": 799.0643274853803
+            }
         },
         "Maps/_35.tsx": {
             "scaleInDock": 1,
@@ -74,6 +106,21 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "Tilesets/Coral Tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/Costal Cave.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/Deep Sea.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/Dustlands-Grandesert.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/Hysminai.tsx": {
+            "scaleInDock": 1
+        },
         "Tilesets/TECH-Assets.tsx": {
             "scaleInDock": 1
         },
@@ -98,10 +145,19 @@
         "Tilesets/TECH_Lab.tsx": {
             "scaleInDock": 1
         },
+        "Tilesets/The Desertica.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/_35.tsx": {
+            "scaleInDock": 1
+        },
         "Tilesets/dustlands.tsx": {
             "scaleInDock": 1
         },
         "Tilesets/ekat_cave.tsx": {
+            "scaleInDock": 1
+        },
+        "Tilesets/grassy.tsx": {
             "scaleInDock": 1
         },
         "Tilesets/passages.tsx": {
@@ -129,16 +185,18 @@
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
-        "Maps/passages.tsx",
+        "Maps/Town.tmx",
+        "Maps/BeachCave3.tmx",
+        "Maps/BeachCave2.tmx",
+        "Maps/BeachCave1.tmx",
         "Maps/Beach.tmx",
+        "Maps/passages.tsx",
         "Maps/003 Hub.tmx",
         "Maps/Hysminai.tsx",
         "Maps/grassy.tsx",
         "Maps/Dustlands-Grandesert.tsx",
         "Maps/_35.tsx",
-        "Maps/The Desertica.tsx",
-        "Maps/systemtags.tsx",
-        "Maps/sandy_square_center.tmx"
+        "Maps/The Desertica.tsx"
     ],
     "tileset.lastUsedFormat": "tsx"
 }
