@@ -2,11 +2,9 @@
   "klass": "Zone",
   "id": 4,
   "dbSymbol": "zone_4",
-  "maps": [
-    3
-  ],
+  "maps": [],
   "worldmaps": [],
-  "panelId": 3,
+  "panelId": 0,
   "warp": {
     "x": null,
     "y": null
