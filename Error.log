@@ -1,28 +1,33 @@
 ================================Erreur de script================================
 Message :
-undefined method `button_texts=' for nil:NilClass
+undefined local variable or method `add_snivy' for #<Interpreter:0x1123fda0>
 
-Type : NoMethodError
-Script : 00001 PSMA/00100 PSMA_PlayerChoice.rb (user)
-Ligne : 53
-Date : 05/07/2026 18:13:36
+Type : NameError
+Script : (eval) (RMXP)
+Ligne : 2
+Date : 18/07/2026 03:24:14
 Game Version : 256
 Logiciel : PSDK 26.57
+Script used by eval command : 
+add_snivy
+
+
 ===================================Backtraces===================================
-[24] : 00001 PSMA/00100 PSMA_PlayerChoice.rb (user) | ligne 53 action_a
-[23] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 452 automatic_input_update
-[22] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 450 each
-[21] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 450 automatic_input_update
-[20] : 00001 PSMA/00100 PSMA_PlayerChoice.rb (user) | ligne 46 update_inputs
-[19] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 433 update
-[18] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
-[17] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 144 main
-[16] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 175 call_scene
-[15] : 00001 PSMA/00100 PSMA_PlayerChoice.rb (user) | ligne 180 call_player_choice
-[14] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9376 update_scene_calling
-[13] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9374 each
-[12] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9374 update_scene_calling
-[11] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9150 update
+[25] : (eval) (RMXP) | ligne 2 eval_X4
+[24] : 1_RMXP_Scripts.rb (PSDK) | ligne 2125 eval_script
+[23] : 1_RMXP_Scripts.rb (PSDK) | ligne 2117 command_355
+[22] : 1_RMXP_Scripts.rb (PSDK) | ligne 1101 execute_command
+[21] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 update
+[20] : 1_RMXP_Scripts.rb (PSDK) | ligne 956 loop
+[19] : 1_RMXP_Scripts.rb (PSDK) | ligne 956 update
+[18] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9285 update_map_logic
+[17] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 2933 update_map_logic
+[16] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9293 auto_transfert_update
+[15] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 loop
+[14] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 auto_transfert_update
+[13] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
+[12] : 0_Dependencies.rb (PSDK) | ligne 1416 run
+[11] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
 [9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 144 main
 [8] : tools/GameLoader/Z_main.rb (PSDK) | ligne 16 <top (required)>
