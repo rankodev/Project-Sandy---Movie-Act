@@ -16,6 +16,10 @@
 # Sub menu:
 #  -> Message remains
 #  -> Shows the quest info (see txt file)
+
+# $game_switches[189] = true
+# $game_switches[190] = true
+# $scene.call_scene(PSMA::MissionUI)
 module PSMA
   # Mission UI scene
   class MissionUI < GamePlay::BaseCleanUpdate
@@ -27,6 +31,26 @@ module PSMA
     def initialize
       super()
       @missions = load_missions
+    end
+
+    def create_graphics
+      super
+      create_list_composition
+      #create_mission_composition
+      # create_entry_animation
+    end
+
+    def create_list_composition
+      @list_composition = ListComposition.new(@viewport, @missions)
+    end
+
+    def create_mission_composition
+      @mission_composition = MissionComposition.new(@viewport)
+    end
+
+    def update_graphics
+      @list_composition.update
+      #@mission_composition.update
     end
 
     # Mission object in the Mission UI (provides interface to data needed for UI)
@@ -69,6 +93,13 @@ module PSMA
       # @return [String]
       def description
         return @quest.description
+      end
+
+      # Check if the mission is taken
+      def taken?
+        quests = PFM.game_state.quests
+        quest_id = @quest.id
+        return quests.finished?(quest_id) || !!quests.active_quest(quest_id)
       end
 
       private
@@ -124,5 +155,101 @@ module PSMA
     # 4. Mission Details (+ description scrollbar => composition2 + viewport for scrolling)
     # 5. Confirmation when accepting mission
     # (see player choice for locked message)
+
+    class ListComposition < UI::SpriteStack
+      # @param viewport [Viewport]
+      # @param missions [Array<Mission>]
+      def initialize(viewport, missions)
+        super(viewport)
+        @missions = missions
+        @index = 0
+        create_graphics
+      end
+
+      private
+
+      def create_graphics
+        create_background
+        create_mission_list
+        create_scroll_bar
+        create_selector
+      end
+
+      def create_background
+        add_background('mission_ui/mission_board')
+      end
+
+      def create_mission_list
+        @mission_list = 5.times.map do |i|
+          MissionListElement.new(@viewport, i).tap { |e| e.data = @missions[i] }
+        end
+      end
+
+      def create_scroll_bar
+        @scrollbar = add_sprite(75, 80, 'mission_ui/scrollbar')
+      end
+
+      def create_selector
+        @selector = add_sprite(0, 0, 'mission_ui/highlighter')
+        coordinates = @mission_list[0].stack[0]
+        @selector.x = coordinates.x
+        @selector.y = coordinates.y
+      end
+    end
+
+    class MissionListElement < UI::SpriteStack
+      BASE_Y = 80 # TODO: Fixme
+      DELTA_Y = 60 # TODO: Fixme
+      BASE_X = 80 # TODO: Fixme
+
+      # @param viewport [Viewport]
+      # @param index [Integer]
+      def initialize(viewport, index)
+        super(viewport, BASE_X, BASE_Y + index * DELTA_Y)
+        create_graphics
+      end
+
+      # @param mission [Mission]
+      def data=(mission)
+        self.visible = !!mission
+        return unless mission
+
+        @name.text = mission.name
+        @rank.sx = mission.rank
+        @taken.visible = mission.taken?
+        if mission.icon
+          @icon.visible = true
+          @icon.load("mission_ui/#{mission.icon}", :interface)
+        else
+          @icon.visible = false
+        end
+      end
+
+      private
+
+      def create_graphics
+        create_icon
+        create_name
+        create_taken
+        create_rank
+      end
+
+      def create_icon
+        @icon = add_sprite(0, 16, NO_INITIAL_IMAGE, ox: 16, oy: 32)
+      end
+
+      def create_name
+        @name = add_text(32, 0, 0, 16, nil.to_s, color: 10)
+      end
+
+      def create_taken
+        @taken = add_sprite(120, 0, 'mission_ui/taken')
+      end
+
+      def create_rank
+        # @type [SpriteSheet]
+        @rank = add_sprite(160, 0, 'mission_ui/ranks', 1, 6, type: SpriteSheet)
+      end
+    end
   end
 end
