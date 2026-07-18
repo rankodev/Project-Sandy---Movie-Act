@@ -90,6 +90,323 @@ $data[0][:exclamation] = {
   },
   leave: $data[0][2][:leave]
 }
+$data[0][:ranko_dot] = {
+  enter: {
+    max_counter: 120,
+    data: [
+      { file: 'emotionDot', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: -1, oy_offset: 16 },
+      nil, {oy_offset: 16, add_z: 64},
+      nil, {oy_offset: 24},
+      nil, {oy_offset: 20},
+      *([nil] * 12), { rect: [64, 0, 64, 48] },
+      *([nil] * 12), { rect: [64, 0, 64, 48] },
+      *([nil] * 15), { rect: [128, 0, 64, 48] },
+      *([nil] * 15), { rect: [128, 0, 64, 48] },
+      *([nil] * 15), { rect: [192, 0, 64, 48] },
+      *([nil] * 15), { rect: [192, 0, 64, 48] },
+      *([nil] * 15), { rect: [192, 0, 64, 48] },
+      *([nil] * 15), { rect: [192, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_water] = {
+  enter: {
+    max_counter: 120,
+    data: [
+      { file: 'emotionSigh', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: 1 },
+      *([nil] * 7), { rect: [64, 0, 64, 48] },
+      *([nil] * 7), { rect: [128, 0, 64, 48] },
+      *([nil] * 7), { rect: [192, 0, 64, 48] },
+      *([nil] * 7), { rect: [256, 0, 64, 48] },
+      *([nil] * 7), { rect: [320, 0, 64, 48] },
+      *([nil] * 50), { rect: [384, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_shock] = {
+  enter: {
+    max_counter: 120,
+    data: [
+      { file: 'emotionShock', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: 1 },
+      *([nil] * 2), { rect: [64, 0, 64, 48] },
+      *([nil] * 2), { rect: [128, 0, 64, 48] },
+      *([nil] * 2), { rect: [192, 0, 64, 48] },
+      *([nil] * 2), { rect: [256, 0, 64, 48] },
+      *([nil] * 2), { rect: [320, 0, 64, 48] },
+      *([nil] * 2), { rect: [384, 0, 64, 48] },
+      *([nil] * 2), { rect: [448, 0, 64, 48] },
+      *([nil] * 2), { rect: [512, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_z] = {
+  enter: {
+    max_counter: 120,
+    data: [
+      { file: 'emotions3', rect: [0, 0, 16, 16], zoom: 1, position: :center_pos, add_z: -1, oy_offset: 16 },
+      nil, {oy_offset: 16, add_z: 64},
+      nil, {oy_offset: 24},
+      nil, {oy_offset: 20},
+      *([nil] * 12), { rect: [0, 16, 16, 16] },
+      *([nil] * 12), { rect: [0, 16, 16, 16] },
+      *([nil] * 15), { rect: [16, 16, 16, 16] },
+      *([nil] * 15), { rect: [16, 16, 16, 16] },
+      *([nil] * 15), { rect: [32, 16, 16, 16] },
+      *([nil] * 15), { rect: [32, 16, 16, 16] },
+      *([nil] * 15), { rect: [32, 16, 16, 16] },
+      *([nil] * 15), { rect: [32, 16, 16, 16] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_exclamation] = {
+  enter: {
+    max_counter: 140,
+    data: [
+      { file: 'emotionExclamation', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: 1, oy_offset: 0 },
+      *([nil] * 1), { rect: [64, 0, 64, 48] },
+      *([nil] * 1), { rect: [128, 0, 64, 48] },
+      *([nil] * 1), { rect: [192, 0, 64, 48] },
+      *([nil] * 40), { rect: [256, 0, 64, 48] },
+      *([nil] * 1), { rect: [320, 0, 64, 48] },
+      *([nil] * 1), { rect: [384, 0, 64, 48] },
+      *([nil] * 1), { rect: [448, 0, 64, 48] },
+      *([nil] * 1), { rect: [512, 0, 64, 48] },
+      *([nil] * 1), { rect: [448, 0, 64, 48] },
+      *([nil] * 1), { rect: [384, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_exclamationFast] = {
+  enter: {
+    max_counter: 15,
+    data: [
+      { file: 'emotions3', rect: [0, 0, 16, 16], zoom: 1, position: :center_pos, add_z: -1, oy_offset: 16 },
+      nil, {oy_offset: 16, add_z: 64},
+      nil, {oy_offset: 24},
+      nil, {oy_offset: 20},
+      *([nil] * 4), { rect: [0, 32, 16, 16] },
+      *([nil] * 4), { rect: [0, 32, 16, 16] },
+      *([nil] * 4), { rect: [0, 32, 16, 16] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_question] = {
+  enter: {
+    max_counter: 140,
+    data: [
+      { file: 'emotionQuestion', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: 1, oy_offset: 0 },
+      *([nil] * 1), { rect: [64, 0, 64, 48] },
+      *([nil] * 1), { rect: [128, 0, 64, 48] },
+      *([nil] * 1), { rect: [192, 0, 64, 48] },
+      *([nil] * 40), { rect: [256, 0, 64, 48] },
+      *([nil] * 1), { rect: [320, 0, 64, 48] },
+      *([nil] * 1), { rect: [384, 0, 64, 48] },
+      *([nil] * 1), { rect: [448, 0, 64, 48] },
+      *([nil] * 1), { rect: [512, 0, 64, 48] },
+      *([nil] * 1), { rect: [448, 0, 64, 48] },
+      *([nil] * 1), { rect: [384, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_notice] = {
+  enter: {
+    max_counter: 90,
+    data: [
+      { file: 'emotionNotice', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: 1, oy_offset: 5 },
+      *([nil] * 30), { rect: [64, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_weaken] = {
+  enter: {
+    max_counter: 90,
+    data: [
+      { file: 'emotionWeaken', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: 1, oy_offset: 5 },
+      *([nil] * 2), { rect: [64, 0, 64, 48] },
+      *([nil] * 2), { rect: [128, 0, 64, 48] },
+      *([nil] * 2), { rect: [192, 0, 64, 48] },
+      *([nil] * 2), { rect: [256, 0, 64, 48] },
+      *([nil] * 2), { rect: [320, 0, 64, 48] },
+      *([nil] * 2), { rect: [384, 0, 64, 48] },
+      *([nil] * 2), { rect: [448, 0, 64, 48] },
+      *([nil] * 2), { rect: [512, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_love] = {
+  enter: {
+    max_counter: 90,
+    data: [
+      { file: 'emotions3', rect: [0, 0, 16, 16], zoom: 1, position: :center_pos, add_z: -1, oy_offset: 16 },
+      nil, {oy_offset: 16, add_z: 64},
+      nil, {oy_offset: 24},
+      nil, {oy_offset: 20},
+      *([nil] * 4), { rect: [48, 32, 16, 16] },
+      *([nil] * 4), { rect: [48, 32, 16, 16] },
+      *([nil] * 4), { rect: [48, 32, 16, 16] },
+      *([nil] * 4), { rect: [48, 32, 16, 16] },
+      *([nil] * 4), { rect: [48, 32, 16, 16] },
+      *([nil] * 4), { rect: [48, 32, 16, 16] },
+      *([nil] * 4), { rect: [48, 32, 16, 16] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_beam] = {
+  enter: {
+    max_counter: 60,
+    data: [
+      { file: 'beam', rect: [0, 0, 32, 160], zoom: 1, position: :center_pos, add_z: 1, oy_offset: 0 },
+      *([nil] * 1), { rect: [32, 0, 32, 160] },
+      *([nil] * 1), { rect: [64, 0, 32, 160] },
+      *([nil] * 1), { rect: [96, 0, 32, 160] },
+      *([nil] * 1), { rect: [128, 0, 32, 160] },
+      *([nil] * 1), { rect: [160, 0, 32, 160] },
+      *([nil] * 30), { rect: [192, 0, 32, 160] },
+      *([nil] * 1), { rect: [224, 0, 32, 160] },
+      *([nil] * 1), { rect: [256, 0, 32, 160] },
+      *([nil] * 1), { rect: [288, 0, 32, 160] },
+      *([nil] * 1), { rect: [320, 0, 32, 160] },
+      *([nil] * 1), { rect: [352, 0, 32, 160] },
+      *([nil] * 1), { rect: [384, 0, 32, 160] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave: $data[0][2][:leave]
+}
+
+$data[0][:ranko_anger] = {
+  enter: {
+    max_counter: 16,
+    data: [
+      { file: 'emotionAnger', rect: [0, 0, 64, 48], zoom: 1, position: :center_pos, add_z: 1 },
+      *([nil] * 1), { rect: [64, 0, 64, 48] },
+      *([nil] * 1), { rect: [128, 0, 64, 48] },
+      *([nil] * 1), { rect: [192, 0, 64, 48] },
+      *([nil] * 1), { rect: [256, 0, 64, 48] },
+      *([nil] * 1), { rect: [320, 0, 64, 48] },
+      *([nil] * 1), { rect: [384, 0, 64, 48] },
+      *([nil] * 1), { rect: [448, 0, 64, 48] },
+      *([nil] * 1), { rect: [512, 0, 64, 48] },
+    ],
+    loop: false
+  },
+  stay: {
+    max_counter: 8,
+    data: [
+      { state: :leave }
+    ],
+    loop: false
+  },
+  leave:$data[0][2][:leave]
+}
+
 # interrogation emotion particle
 # eval(format(emotion_str, name: 'interrogation', y: 32, x: 0, target: 16, se_play: 'audio/particles/exclamation'))
 # All the existing emotions
@@ -374,262 +691,6 @@ $data[0][:water_dust] = {
   },
   stay: EMPTY,
   leave: EMPTY
-}
-
-# Waterfall particle
-$data[0][:waterfall] = {
-  enter: {
-    max_counter: 8,
-    loop: false,
-    data: [
-      { file: 'waterfall_above', rect: [0, 0, 32, 32], zoom: 1, add_z: -32, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 3}, 
-      { file: 'waterfall_above', rect: [32, 0, 32, 32], zoom: 1, add_z: -32, position: :character_pos, oy_offset: -10, opacity: 255 }
-    ]
-  },
-  stay: {
-    max_counter: 12,
-    loop: true,
-    data: [
-      { file: 'waterfall', rect: [0, 0, 32, 64], zoom: 1, add_z: -32, position: :character_pos, oy_offset: -32, opacity: 255 },
-      { wait: 4 }, { rect: [32, 0, 32, 64], zoom: 1, add_z: -32, position: :character_pos, oy_offset: -32, opacity: 255 },
-    ]
-  },
-  leave: {
-    max_counter: 5,
-    loop: false,
-    data: [
-      { file: 'waterfall_above', rect: [0, 0, 32, 32], zoom: 1, add_z: -32, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 3}, 
-      { file: 'waterfall_above', rect: [32, 0, 32, 32], zoom: 1, add_z: -32, position: :character_pos, oy_offset: -10, opacity: 255 }
-    ]
-  }
-}
-
-# Particles Rock Climb
-$data[0][:rock_climb] = {
-  enter: {
-    max_counter: 34,
-    loop: false,
-    data: [
-      { file: 'rock_climb', rect: [0, 0, 64, 64], zoom: 1, add_z: 0, position: :grass_pos, oy_offset: -10, opacity: 255 },
-      { wait: 2 }, { rect: [64, 0, 64, 64] },
-      { wait: 1 }, { rect: [128, 0, 64, 64] },
-      { wait: 1 }, { rect: [192, 0, 64, 64] },
-      { wait: 1 }, { rect: [256, 0, 64, 64] },
-      { wait: 1 }, { rect: [320, 0, 64, 64] },
-      { wait: 1 }, { rect: [384, 0, 64, 64] },
-      { wait: 1 }, { rect: [448, 0, 64, 64] },
-      { wait: 1 }, { rect: [512, 0, 64, 64] },
-      { wait: 1 }, { rect: [576, 0, 64, 64] },
-      { wait: 1 }, { rect: [640, 0, 64, 64] },
-      { wait: 1 }, { rect: [704, 0, 64, 64] },
-      { wait: 1 }, { rect: [768, 0, 64, 64] },
-      { wait: 1 }, { rect: [832, 0, 64, 64] },
-      { wait: 1 }, { rect: [896, 0, 64, 64] },
-      { wait: 1 }, { rect: [960, 0, 64, 64] },
-      { wait: 1 }, { rect: [1024, 0, 64, 64] },
-      { wait: 1 }, { rect: [1088, 0, 64, 64] }
-    ]
-  },
-  stay: EMPTY,
-  leave: EMPTY
-}
-
-# Whirlpool particle when going to the left
-$data[0][:whirlpool_l] = {
-  enter: {
-    max_counter: 1,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_l', rect: [0, 0, 56, 38], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 }
-    ]
-  },
-  stay: {
-    max_counter: 13,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_l', rect: [0, 0, 56, 38], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 1}, { rect: [56, 0, 56, 38] },
-      {wait: 1}, { rect: [112, 0, 56, 38] },
-      {wait: 1}, { rect: [168, 0, 56, 38] },
-      {wait: 1}, { rect: [224, 0, 56, 38] },
-      {wait: 1}, { rect: [280, 0, 56, 38] },
-      {wait: 1}, { rect: [336, 0, 56, 38] },
-      {wait: 1}, { rect: [392, 0, 56, 38] },
-      {wait: 1}, { rect: [448, 0, 56, 38] },
-      {wait: 1}, { rect: [504, 0, 56, 38] },
-      {wait: 1}, { rect: [560, 0, 56, 38] },
-      {wait: 1}, { rect: [616, 0, 56, 38] },
-      {wait: 1}, { rect: [672, 0, 56, 38] },
-    ]
-  },
-  leave: {
-    max_counter: 13,
-    loop: false,
-    data: [
-      { file: 'Whirlpool_l', rect: [0, 0, 56, 38], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 1}, { rect: [56, 0, 56, 38], opacity: 220 },
-      {wait: 1}, { rect: [112, 0, 56, 38], opacity: 200 },
-      {wait: 1}, { rect: [168, 0, 56, 38], opacity: 180 },
-      {wait: 1}, { rect: [224, 0, 56, 38], opacity: 160 },
-      {wait: 1}, { rect: [280, 0, 56, 38], opacity: 140 },
-      {wait: 1}, { rect: [336, 0, 56, 38], opacity: 120 },
-      {wait: 1}, { rect: [392, 0, 56, 38], opacity: 100 },
-      {wait: 1}, { rect: [448, 0, 56, 38], opacity: 80 },
-      {wait: 1}, { rect: [504, 0, 56, 38], opacity: 60 },
-      {wait: 1}, { rect: [560, 0, 56, 38], opacity: 40 },
-      {wait: 1}, { rect: [616, 0, 56, 38], opacity: 20 },
-      {wait: 1}, { rect: [672, 0, 56, 38], opacity: 0 }
-    ]
-  },
-}
-
-# Whirlpool particle when going to the right
-$data[0][:whirlpool_r] = {
-  enter: {
-    max_counter: 1,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_r', rect: [0, 0, 56, 38], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 }
-    ]
-  },
-  stay: {
-    max_counter: 13,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_r', rect: [0, 0, 56, 38], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 1}, { rect: [56, 0, 56, 38] },
-      {wait: 1}, { rect: [112, 0, 56, 38] },
-      {wait: 1}, { rect: [168, 0, 56, 38] },
-      {wait: 1}, { rect: [224, 0, 56, 38] },
-      {wait: 1}, { rect: [280, 0, 56, 38] },
-      {wait: 1}, { rect: [336, 0, 56, 38] },
-      {wait: 1}, { rect: [392, 0, 56, 38] },
-      {wait: 1}, { rect: [448, 0, 56, 38] },
-      {wait: 1}, { rect: [504, 0, 56, 38] },
-      {wait: 1}, { rect: [560, 0, 56, 38] },
-      {wait: 1}, { rect: [616, 0, 56, 38] },
-      {wait: 1}, { rect: [672, 0, 56, 38] },
-    ]
-  },
-  leave: {
-    max_counter: 13,
-    loop: false,
-    data: [
-      { file: 'Whirlpool_r', rect: [0, 0, 56, 38], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 1}, { rect: [56, 0, 56, 38], opacity: 220 },
-      {wait: 1}, { rect: [112, 0, 56, 38], opacity: 200 },
-      {wait: 1}, { rect: [168, 0, 56, 38], opacity: 180 },
-      {wait: 1}, { rect: [224, 0, 56, 38], opacity: 160 },
-      {wait: 1}, { rect: [280, 0, 56, 38], opacity: 140 },
-      {wait: 1}, { rect: [336, 0, 56, 38], opacity: 120 },
-      {wait: 1}, { rect: [392, 0, 56, 38], opacity: 100 },
-      {wait: 1}, { rect: [448, 0, 56, 38], opacity: 80 },
-      {wait: 1}, { rect: [504, 0, 56, 38], opacity: 60 },
-      {wait: 1}, { rect: [560, 0, 56, 38], opacity: 40 },
-      {wait: 1}, { rect: [616, 0, 56, 38], opacity: 20 },
-      {wait: 1}, { rect: [672, 0, 56, 38], opacity: 0 }
-    ]
-  },
-}
-
-# Whirlpool particle when going down
-$data[0][:whirlpool_d] = {
-  enter: {
-    max_counter: 1,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_d', rect: [0, 0, 46, 46], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 }
-    ]
-  },
-  stay: {
-    max_counter: 13,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_d', rect: [0, 0, 46, 46], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 1}, { rect: [46, 0, 46, 46] },
-      {wait: 1}, { rect: [92, 0, 46, 46] },
-      {wait: 1}, { rect: [138, 0, 46, 46] },
-      {wait: 1}, { rect: [184, 0, 46, 46] },
-      {wait: 1}, { rect: [230, 0, 46, 46] },
-      {wait: 1}, { rect: [276, 0, 46, 46] },
-      {wait: 1}, { rect: [322, 0, 46, 46] },
-      {wait: 1}, { rect: [368, 0, 46, 46] },
-      {wait: 1}, { rect: [414, 0, 46, 46] },
-      {wait: 1}, { rect: [460, 0, 46, 46] },
-      {wait: 1}, { rect: [506, 0, 46, 46] },
-      {wait: 1}, { rect: [552, 0, 46, 46] }
-    ]
-  },
-  leave: {
-    max_counter: 13,
-    loop: false,
-    data: [
-      { file: 'Whirlpool_d', rect: [0, 0, 46, 46], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -10, opacity: 255 },
-      {wait: 1}, { rect: [46, 0, 46, 46], opacity: 220 },
-      {wait: 1}, { rect: [92, 0, 46, 46], opacity: 200 },
-      {wait: 1}, { rect: [138, 0, 46, 46], opacity: 180 },
-      {wait: 1}, { rect: [184, 0, 46, 46], opacity: 160 },
-      {wait: 1}, { rect: [230, 0, 46, 46], opacity: 140 },
-      {wait: 1}, { rect: [276, 0, 46, 46], opacity: 120 },
-      {wait: 1}, { rect: [322, 0, 46, 46], opacity: 100 },
-      {wait: 1}, { rect: [368, 0, 46, 46], opacity: 80 },
-      {wait: 1}, { rect: [414, 0, 46, 46], opacity: 60 },
-      {wait: 1}, { rect: [460, 0, 46, 46], opacity: 40 },
-      {wait: 1}, { rect: [506, 0, 46, 46], opacity: 20 },
-      {wait: 1}, { rect: [552, 0, 46, 46], opacity: 0 }
-    ]
-  },
-}
-
-# Whirlpool particle when going up
-$data[0][:whirlpool_u] = {
-  enter: {
-    max_counter: 1,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_u', rect: [0, 0, 89, 83], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -37, opacity: 255 }
-    ]
-  },
-  stay: {
-    max_counter: 13,
-    loop: true,
-    data: [
-      { file: 'Whirlpool_u', rect: [0, 0, 89, 83], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -37, opacity: 255 },
-      {wait: 1}, { rect: [89, 0, 89, 83] },
-      {wait: 1}, { rect: [178, 0, 89, 83] },
-      {wait: 1}, { rect: [267, 0, 89, 83] },
-      {wait: 1}, { rect: [356, 0, 89, 83] },
-      {wait: 1}, { rect: [445, 0, 89, 83] },
-      {wait: 1}, { rect: [534, 0, 89, 83] },
-      {wait: 1}, { rect: [623, 0, 89, 83] },
-      {wait: 1}, { rect: [712, 0, 89, 83] },
-      {wait: 1}, { rect: [801, 0, 89, 83] },
-      {wait: 1}, { rect: [890, 0, 89, 83] },
-      {wait: 1}, { rect: [979, 0, 89, 83] },
-      {wait: 1}, { rect: [1068, 0, 89, 83] }
-    ]
-  },
-  leave: {
-    max_counter: 13,
-    loop: false,
-    data: [
-      { file: 'Whirlpool_u', rect: [0, 0, 89, 83], zoom: 1, add_z: -1, position: :character_pos, oy_offset: -37, opacity: 255 },
-      {wait: 1}, { rect: [89, 0, 89, 83], opacity: 220 },
-      {wait: 1}, { rect: [178, 0, 89, 83], opacity: 200 },
-      {wait: 1}, { rect: [267, 0, 89, 83], opacity: 180 },
-      {wait: 1}, { rect: [356, 0, 89, 83], opacity: 160 },
-      {wait: 1}, { rect: [445, 0, 89, 83], opacity: 140 },
-      {wait: 1}, { rect: [534, 0, 89, 83], opacity: 120 },
-      {wait: 1}, { rect: [623, 0, 89, 83], opacity: 100 },
-      {wait: 1}, { rect: [712, 0, 89, 83], opacity: 80 },
-      {wait: 1}, { rect: [801, 0, 89, 83], opacity: 60 },
-      {wait: 1}, { rect: [890, 0, 89, 83], opacity: 40 },
-      {wait: 1}, { rect: [979, 0, 89, 83], opacity: 20 },
-      {wait: 1}, { rect: [1068, 0, 89, 83], opacity: 0 }
-    ]
-  },
 }
 
 # Save the particle data

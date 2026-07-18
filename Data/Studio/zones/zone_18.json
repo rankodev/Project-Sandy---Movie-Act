@@ -1,12 +1,13 @@
 {
   "klass": "Zone",
-  "id": 8,
-  "dbSymbol": "zone_8",
+  "id": 18,
+  "dbSymbol": "zone_18",
   "maps": [
-    9
+    3,
+    6
   ],
   "worldmaps": [],
-  "panelId": 3,
+  "panelId": 0,
   "warp": {
     "x": null,
     "y": null
@@ -15,10 +16,8 @@
     "x": null,
     "y": null
   },
-  "isFlyAllowed": false,
+  "isFlyAllowed": true,
   "isWarpDisallowed": false,
   "forcedWeather": null,
-  "wildGroups": [
-    "group_18"
-  ]
+  "wildGroups": []
 }

@@ -14,8 +14,8 @@
     "pitch": 100
   },
   "tiledFilename": "Beach",
-  "mtime": 1783995064158,
-  "sha1": "33ebf36b38642adf3f1f2d3c34cfe073154f828b",
+  "mtime": 1784398314489,
+  "sha1": "c1f8b975cb3ff058aa4c2cd1f5dc6b6b6b820f30",
   "tileMetadata": {
     "width": 100,
     "height": 40,
@@ -1426,7 +1426,7 @@
       ],
       [
         {
-          "priority": 2
+          "priority": 1
         },
         {
           "globalId": 2183,
