@@ -3,13 +3,54 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/Beach.tmx",
+    "activeFile": "Maps/TownInside.tmx",
     "expandedProjectPaths": [
         "Maps",
-        "."
+        ".",
+        "Tilesets"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_22_project_sandy.tmx": {
+            "scale": 1.729296875,
+            "selectedLayer": -1,
+            "viewCenter": {
+                "x": 320.0722837135758,
+                "y": 239.98192907160606
+            }
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_24_treasure_town.tmx": {
+            "scale": 0.785845588235294,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 544,
+                "y": 543.3637426900586
+            }
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_31_treasure_town_indoor.tmx": {
+            "scale": 0.5764322916666667,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 898.6311271741586,
+                "y": 640.1445674271516
+            }
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_32_saloon_indoor.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 766,
+                "y": 760
+            }
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_37_crafting_house_indoor.tmx": {
+            "scale": 1.0826041666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 480.32329452516115,
+                "y": 319.5997305878957
+            }
+        },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/sandy_square_center.tmx": {
             "scale": 2,
             "selectedLayer": 4,
@@ -25,17 +66,28 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/opening_cutscene.tsx": {
+            "scaleInDock": 1
+        },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/passages.tsx": {
             "scaleInDock": 1
         },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/systemtags.tsx": {
             "scaleInDock": 1
+        },
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/terrain_tag.tsx": {
+            "scaleInDock": 1
+        },
+        "Maps/!TilesetInsideMain.tsx": {
+            "scaleInEditor": 1
         },
         "Maps/003 Hub.tmx": {
             "scale": 0.28574218749999997,
@@ -44,6 +96,9 @@
                 "x": 1023.6500341763499,
                 "y": 1025.3998632946002
             }
+        },
+        "Maps/A Link to the Past.tsx": {
+            "scaleInEditor": 1
         },
         "Maps/Beach 2.tmx": {
             "scale": 0.22859374999999998,
@@ -55,34 +110,34 @@
         },
         "Maps/Beach.tmx": {
             "scale": 0.75,
-            "selectedLayer": 0,
+            "selectedLayer": 4,
             "viewCenter": {
-                "x": 1788.6666666666665,
-                "y": 503.99999999999994
+                "x": 2590.6666666666665,
+                "y": 463.99999999999994
             }
         },
         "Maps/BeachCave1.tmx": {
             "scale": 0.5343749999999999,
-            "selectedLayer": 6,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 800,
-                "y": 799.0643274853803
+                "x": 1181.7543859649127,
+                "y": 960.0000000000001
             }
         },
         "Maps/BeachCave2.tmx": {
             "scale": 0.75,
-            "selectedLayer": 5,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 1018,
-                "y": 705.3333333333333
+                "x": 864.6666666666665,
+                "y": 719.9999999999999
             }
         },
         "Maps/BeachCave3.tmx": {
             "scale": 0.75,
-            "selectedLayer": 6,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 883.3333333333334,
-                "y": 575.9999999999999
+                "x": 656.6666666666665,
+                "y": 799.9999999999999
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -110,11 +165,38 @@
             "scaleInEditor": 1
         },
         "Maps/Town.tmx": {
-            "scale": 0.5,
+            "scale": 1.5,
             "selectedLayer": 7,
             "viewCenter": {
-                "x": 895,
-                "y": 902
+                "x": 1012,
+                "y": 690.6666666666666
+            }
+        },
+        "Maps/TownBazaar.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 262.66666666666663,
+                "y": 209.33333333333337
+            }
+        },
+        "Maps/TownInside.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 336.66666666666663,
+                "y": 289.33333333333337
+            }
+        },
+        "Maps/TownTavern.tmx": {
+            "expandedGroupLayers": [
+                15
+            ],
+            "scale": 0.5,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 258,
+                "y": 868
             }
         },
         "Maps/_35.tsx": {
@@ -226,22 +308,29 @@
     "map.lastUsedFormat": "tmx",
     "map.width": 50,
     "openFiles": [
-        "Maps/Beach.tmx"
+        "Maps/BeachCave1.tmx",
+        "Maps/BeachCave2.tmx",
+        "Maps/BeachCave3.tmx",
+        "Maps/Beach.tmx",
+        "Maps/Town.tmx",
+        "Maps/TownTavern.tmx",
+        "Maps/TownBazaar.tmx",
+        "Maps/TownInside.tmx"
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
-        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/sandy_square_center.tmx",
-        "Tilesets/!TilesetCave.tsx",
-        "Tilesets/ekat_cave.tsx",
-        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/ekat_cave.tsx",
-        "Maps/Beach 2.tmx",
-        "Maps/Town.tmx",
-        "Maps/BeachCave3.tmx",
-        "Maps/BeachCave2.tmx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_37_crafting_house_indoor.tmx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_32_saloon_indoor.tmx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_31_treasure_town_indoor.tmx",
+        "Maps/A Link to the Past.tsx",
+        "Maps/!TilesetInsideMain.tsx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_22_project_sandy.tmx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_24_treasure_town.tmx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx",
         "Maps/BeachCave1.tmx",
-        "Maps/Beach.tmx",
-        "Maps/passages.tsx",
-        "Maps/003 Hub.tmx"
+        "Maps/BeachCave2.tmx",
+        "Maps/BeachCave3.tmx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx"
