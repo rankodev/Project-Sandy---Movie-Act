@@ -72,13 +72,50 @@
   },
   "6": {
     "id": 6,
+    "children": [
+      7,
+      8,
+      9
+    ],
+    "hasChildren": true,
+    "isExpanded": true,
+    "data": {
+      "klass": "MapInfoMap",
+      "mapDbSymbol": "map006",
+      "parentId": 0
+    }
+  },
+  "7": {
+    "id": 7,
     "children": [],
     "hasChildren": false,
     "isExpanded": false,
     "data": {
       "klass": "MapInfoMap",
-      "mapDbSymbol": "map006",
-      "parentId": 0
+      "mapDbSymbol": "map008",
+      "parentId": 6
+    }
+  },
+  "8": {
+    "id": 8,
+    "children": [],
+    "hasChildren": false,
+    "isExpanded": false,
+    "data": {
+      "klass": "MapInfoMap",
+      "mapDbSymbol": "map009",
+      "parentId": 6
+    }
+  },
+  "9": {
+    "id": 9,
+    "children": [],
+    "hasChildren": false,
+    "isExpanded": false,
+    "data": {
+      "klass": "MapInfoMap",
+      "mapDbSymbol": "map010",
+      "parentId": 6
     }
   }
 }

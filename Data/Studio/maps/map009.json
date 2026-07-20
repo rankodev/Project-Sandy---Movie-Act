@@ -1,0 +1,1629 @@
+{
+  "klass": "Map",
+  "id": 9,
+  "dbSymbol": "map009",
+  "stepsAverage": 30,
+  "bgm": {
+    "name": "",
+    "volume": 100,
+    "pitch": 100
+  },
+  "bgs": {
+    "name": "",
+    "volume": 100,
+    "pitch": 100
+  },
+  "mtime": 1784579213520,
+  "sha1": "4c39079d0615308922f3f32dc0aa854beef7c35b",
+  "tiledFilename": "TownBazaar",
+  "tileMetadata": {
+    "width": 13,
+    "height": 13,
+    "tilesets": [
+      {
+        "firstGlobalId": 1,
+        "source": "../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx"
+      },
+      {
+        "firstGlobalId": 3465,
+        "source": "!TilesetInsideMain.tsx"
+      },
+      {
+        "firstGlobalId": 6929,
+        "source": "../Tilesets/passages.tsx"
+      },
+      {
+        "firstGlobalId": 7073,
+        "source": "../Tilesets/systemtags.tsx"
+      }
+    ],
+    "tileByTileId": [
+      [
+        {
+          "globalId": 521,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 521,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5418,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5419,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6823,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6824,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5419,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5490,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5491,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5492,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5420,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5426,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5427,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 3717,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5427,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6831,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5497,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6832,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5498,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6534,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5499,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6535,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5500,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6536,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5501,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6839,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5427,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6840,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5428,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5735,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 3725,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5725,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5725,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6542,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6543,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6544,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6847,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6848,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5736,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5426,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5732,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 3729,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5582,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 3730,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5583,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 3731,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5584,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5716,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5734,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5436,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3745,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5574,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3746,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5575,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3747,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5576,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5444,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5727,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5725,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6800,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3725,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5732,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6134,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5716,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6135,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6085,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6136,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5557,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3731,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5734,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6800,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6142,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6143,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "priority": 1
+        },
+        {
+          "globalId": 6093,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6144,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3737,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5565,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3739,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5428,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 6150,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 6151,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 6152,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5573,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 3747,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5743,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 3717,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 5741,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5741,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 622,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 623,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 624,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 0
+        }
+      ],
+      [
+        {
+          "globalId": 5744,
+          "transformId": 0
+        }
+      ],
+      [
+        {
+          "globalId": 521,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 630,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 631,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ],
+      [
+        {
+          "globalId": 632,
+          "transformId": 0
+        },
+        {
+          "systemTag": 384
+        },
+        {
+          "passage": 15
+        }
+      ]
+    ],
+    "layerData": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [
+        3
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        12,
+        16,
+        17
+      ],
+      [
+        12,
+        18,
+        19
+      ],
+      [
+        12,
+        20,
+        21
+      ],
+      [
+        12,
+        22,
+        23
+      ],
+      [
+        12,
+        24,
+        25
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        31
+      ],
+      [
+        31
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        32,
+        34
+      ],
+      [
+        32,
+        35
+      ],
+      [
+        32,
+        36
+      ],
+      [
+        32,
+        37
+      ],
+      [
+        38,
+        30
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1,
+        39
+      ],
+      [
+        40
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        43,
+        44
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        47
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        43,
+        44
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        48
+      ],
+      [
+        49
+      ],
+      [
+        3
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        39
+      ],
+      [
+        40
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        47
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        54,
+        55
+      ],
+      [
+        48
+      ],
+      [
+        56
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        1,
+        39
+      ],
+      [
+        40
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        57
+      ],
+      [
+        58,
+        59
+      ],
+      [
+        38,
+        60
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        61,
+        62
+      ],
+      [
+        63,
+        64,
+        65
+      ],
+      [
+        63,
+        66
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        41,
+        67
+      ],
+      [
+        68
+      ],
+      [
+        69,
+        70
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        61,
+        71
+      ],
+      [
+        63,
+        72,
+        73
+      ],
+      [
+        63,
+        74
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        75,
+        76
+      ],
+      [
+        77
+      ],
+      [
+        48
+      ],
+      [
+        1,
+        78
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        61,
+        79
+      ],
+      [
+        63,
+        80
+      ],
+      [
+        63,
+        81
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        47
+      ],
+      [
+        50,
+        82
+      ],
+      [
+        83
+      ],
+      [
+        48
+      ],
+      [
+        1,
+        78
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        84,
+        85
+      ],
+      [
+        86
+      ],
+      [
+        86
+      ],
+      [
+        87,
+        88
+      ],
+      [
+        87,
+        89
+      ],
+      [
+        87,
+        90
+      ],
+      [
+        86
+      ],
+      [
+        86
+      ],
+      [
+        86
+      ],
+      [
+        86
+      ],
+      [
+        91,
+        85
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        92
+      ],
+      [
+        92
+      ],
+      [
+        1,
+        93
+      ],
+      [
+        1,
+        94
+      ],
+      [
+        1,
+        95
+      ],
+      [
+        92
+      ],
+      [
+        92
+      ],
+      [
+        92
+      ],
+      [
+        92
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  }
+}
