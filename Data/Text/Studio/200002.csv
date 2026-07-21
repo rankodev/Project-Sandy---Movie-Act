@@ -2,23 +2,24 @@ en,fr,it,es,de,ko,kana
 ---,---,---,---,---,---,---
 Opening Cutscene,Opening Cutscene,Opening Cutscene,Opening Cutscene,Opening Cutscene,Opening Cutscene,Opening Cutscene
 Start,Start,Start,Start,Start,Start,Start
-Beach,Hub,Hub,Hub,Hub,Hub,Hub
-Beach Cave  1,Elevator (env),Elevator (env),Elevator (env),Elevator (env),Elevator (env),Elevator (env)
-Beach Cave 2,River,River,River,River,River,River
+Beach Bay,Hub,Hub,Hub,Hub,Hub,Hub
+Coastal Cave  1,Elevator (env),Elevator (env),Elevator (env),Elevator (env),Elevator (env),Elevator (env)
+Coastal Cave 2,River,River,River,River,River,River
 Dustbone Town,Beach,Beach,Beach,Beach,Beach,Beach
 Cave,Cave,Cave,Cave,Cave,Cave,Cave
 Dustbone Saloon,Marsh,Marsh,Marsh,Marsh,Marsh,Marsh
 Dustbone Bazaar,Tundra,Tundra,Tundra,Tundra,Tundra,Tundra
 Dustbone Town,Cycling Road,Cycling Road,Cycling Road,Cycling Road,Cycling Road,Cycling Road
-Beach Cave 3,Rocket HQ,Rocket HQ,Rocket HQ,Rocket HQ,Rocket HQ,Rocket HQ
-Elevator (sys),Elevator (sys),Elevator (sys),Elevator (sys),Elevator (sys),Elevator (sys),Elevator (sys)
-Laboratory,Laboratory,Laboratory,Laboratory,Laboratory,Laboratory,Laboratory
-Library,Library,Library,Library,Library,Library,Library
-Studio,Studio,Studio,Studio,Studio,Studio,Studio
-Game Corner,Game Corner,Game Corner,Game Corner,Game Corner,Game Corner,Game Corner
-Battle Arena,Battle Arena,Battle Arena,Battle Arena,Battle Arena,Battle Arena,Battle Arena
-Wifi,Wifi,Wifi,Wifi,Wifi,Wifi,Wifi
-Exterior,Exterior,Exterior,Exterior,Exterior,Exterior,Exterior
-Route,Route,Route,Route,Route,Route,Route
-Basement,Basement,Basement,Basement,Basement,Basement,Basement
-Beach,beach,beach,beach,beach,beach,beach
+Coastal Cave 3,Rocket HQ,Rocket HQ,Rocket HQ,Rocket HQ,Rocket HQ,Rocket HQ
+Dustbone Highway,Elevator (sys),Elevator (sys),Elevator (sys),Elevator (sys),Elevator (sys),Elevator (sys)
+Sandy Slopes 1,Laboratory,Laboratory,Laboratory,Laboratory,Laboratory,Laboratory
+Sandy Slopes 2,Library,Library,Library,Library,Library,Library
+Fungus Forest 1,Studio,Studio,Studio,Studio,Studio,Studio
+Fungus Forest 2,Game Corner,Game Corner,Game Corner,Game Corner,Game Corner,Game Corner
+Fungus Forest 3,Battle Arena,Battle Arena,Battle Arena,Battle Arena,Battle Arena,Battle Arena
+Dry Desert 1,Wifi,Wifi,Wifi,Wifi,Wifi,Wifi
+Dry Desert 2,Exterior,Exterior,Exterior,Exterior,Exterior,Exterior
+Dry Desert 3 ,Route,Route,Route,Route,Route,Route
+Final Dungeon 1,Basement,Basement,Basement,Basement,Basement,Basement
+Final Dungeon 2,beach,beach,beach,beach,beach,beach
+Final Dungeon 3,Final Dungeon 3,Final Dungeon 3,Final Dungeon 3,Final Dungeon 3,Final Dungeon 3,Final Dungeon 3
