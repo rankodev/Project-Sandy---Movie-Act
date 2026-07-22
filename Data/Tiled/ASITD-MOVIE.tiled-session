@@ -3,10 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/SandCave1.tmx",
+    "activeFile": "Maps/MushroomCanyon1.tmx",
     "expandedProjectPaths": [
-        ".",
-        "Maps"
+        "Maps",
+        "Tilesets",
+        "."
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -59,7 +60,8 @@
             }
         },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/dustlands.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/ekat_cave.tsx": {
             "scaleInDock": 1,
@@ -146,7 +148,7 @@
         },
         "Maps/CaveOutside.tmx": {
             "scale": 0.5,
-            "selectedLayer": 2,
+            "selectedLayer": 1,
             "viewCenter": {
                 "x": 959,
                 "y": 718
@@ -156,7 +158,7 @@
             "scale": 0.5343749999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 799.0643274853803,
+                "x": 800.0000000000002,
                 "y": 799.0643274853802
             }
         },
@@ -164,7 +166,7 @@
             "scale": 0.5343749999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 799.0643274853803,
+                "x": 800.0000000000002,
                 "y": 799.0643274853802
             }
         },
@@ -172,8 +174,8 @@
             "scale": 0.5343749999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 800.0000000000001,
-                "y": 799.0643274853803
+                "x": 800.0000000000002,
+                "y": 799.0643274853802
             }
         },
         "Maps/Dustlands-Grandesert.tsx": {
@@ -184,7 +186,8 @@
             "scaleInDock": 1
         },
         "Maps/Haunted Woods.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/Hysminai.tsx": {
             "dynamicWrapping": false,
@@ -192,18 +195,22 @@
             "scaleInEditor": 1
         },
         "Maps/MushroomCanyon1.tmx": {
-            "scale": 0.5343749999999999,
-            "selectedLayer": 0,
+            "scale": 0.5,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 805.6140350877195,
-                "y": 799.0643274853803
+                "x": 755,
+                "y": 654
             }
+        },
+        "Maps/MushroomCanyon1.tmx#The Desertica": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/MushroomCanyon2.tmx": {
             "scale": 0.5343749999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 799.0643274853803,
+                "x": 800.0000000000002,
                 "y": 799.0643274853802
             }
         },
@@ -211,7 +218,7 @@
             "scale": 0.5343749999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 799.0643274853803,
+                "x": 800.0000000000002,
                 "y": 799.0643274853802
             }
         },
@@ -223,16 +230,16 @@
             "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 893,
-                "y": 866
+                "x": 837,
+                "y": 1038
             }
         },
         "Maps/SandCave2.tmx": {
-            "scale": 0.75,
+            "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 966,
-                "y": 941.3333333333333
+                "x": 885,
+                "y": 870
             }
         },
         "Maps/Sandy Riverbed.tmx": {
@@ -320,13 +327,15 @@
             "scaleInDock": 1
         },
         "Tilesets/Costal Cave.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Tilesets/Deep Sea.tsx": {
             "scaleInDock": 1
         },
         "Tilesets/Dustlands-Grandesert.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Tilesets/Hysminai.tsx": {
             "scaleInDock": 1
@@ -356,7 +365,8 @@
             "scaleInDock": 1
         },
         "Tilesets/The Desertica.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Tilesets/_35.tsx": {
             "scaleInDock": 1
@@ -372,7 +382,8 @@
             "scaleInDock": 1
         },
         "Tilesets/passages.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Tilesets/sandy_indoor.tsx": {
             "scaleInDock": 1
@@ -381,7 +392,8 @@
             "scaleInDock": 1
         },
         "Tilesets/systemtags.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         }
     },
     "last.externalTilesetPath": "D:/ProjectFolder/1-Projects/2-Jam/SITD/Project-Sandy---Movie-Act/Data/Tiled/Tilesets",
@@ -394,32 +406,24 @@
     "map.lastUsedFormat": "tmx",
     "map.width": 50,
     "openFiles": [
-        "Maps/Town.tmx",
-        "Maps/CaveOutside.tmx",
         "Maps/SandCave1.tmx",
         "Maps/SandCave2.tmx",
-        "Maps/MushroomCanyon1.tmx",
-        "Maps/MushroomCanyon2.tmx",
-        "Maps/MushroomCanyon3.tmx",
-        "Maps/DryDesert1.tmx",
-        "Maps/DryDesert2.tmx",
-        "Maps/DryDesert3.tmx",
-        "Maps/BeachCave1.tmx"
+        "Maps/MushroomCanyon1.tmx"
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
-        "Maps/CaveOutside.tmx",
-        "Maps/Town.tmx",
-        "Maps/BeachCave2.tmx",
-        "Maps/Beach.tmx",
-        "Maps/Beach 2.tmx",
-        "Maps/BeachCave1.tmx",
-        "Maps/DryDesert3.tmx",
-        "Maps/DryDesert2.tmx",
-        "Maps/DryDesert1.tmx",
-        "Maps/MushroomCanyon3.tmx",
-        "Maps/MushroomCanyon2.tmx",
-        "Maps/MushroomCanyon1.tmx"
+        "Maps/SandCave1.tmx",
+        "Maps/SandCave2.tmx",
+        "Maps/MushroomCanyon1.tmx",
+        "Maps/Haunted Woods.tsx",
+        "Tilesets/passages.tsx",
+        "Tilesets/systemtags.tsx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx",
+        "Tilesets/Dustlands-Grandesert.tsx",
+        "Tilesets/Costal Cave.tsx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/dustlands.tsx",
+        "Tilesets/The Desertica.tsx",
+        "Maps/The Desertica.tsx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx"
