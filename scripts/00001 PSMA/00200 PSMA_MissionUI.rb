@@ -24,8 +24,13 @@ module PSMA
   # Mission UI scene
   class MissionUI < GamePlay::BaseCleanUpdate
     MISSIONS = [
-      { rank: 'E', icon: 'main_quest_icon', location: :zone_16, quest_id: :quest_2, unlock_switch: 189 },
-      { rank: 'A', icon: nil, location: :zone_16, quest_id: :quest_1, unlock_switch: 190 },
+      { rank: 'E', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
+      { rank: 'A', icon: nil, location: :zone_18, quest_id: :quest_1, unlock_switch: 190 },
+      { rank: 'B', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
+      { rank: 'C', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
+      { rank: 'D', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
+      { rank: 'E', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
+      { rank: 'S', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
     ]
 
     def initialize
@@ -38,6 +43,12 @@ module PSMA
       create_list_composition
       #create_mission_composition
       # create_entry_animation
+    end
+
+    def update_inputs
+      @running = false if Input.trigger?(:B)
+      p [Mouse.x, Mouse.y] if Mouse.trigger?(:LEFT)
+      return if @list_composition.update_inputs
     end
 
     def create_list_composition
@@ -166,17 +177,53 @@ module PSMA
         create_graphics
       end
 
+      def update_inputs
+        if Input.repeat?(:DOWN)
+          @index = (@index + 1) % @missions.size
+          update_offsets
+        elsif Input.repeat?(:UP)
+          @index = (@index - 1) % @missions.size
+          update_offsets
+        else
+          return false
+        end
+
+        return true
+      end
+
       private
+
+      def update_offsets
+        start_index = compute_start_index
+        @selector.y = (@index - start_index) * MissionListElement::DELTA_Y + @selector_base_y
+        @scrollbar.y = @scrollbar_base_y + (@index / (@missions.size - 1.0)) * 100 if @missions.size > 1
+        refresh_list(start_index)
+      end
+
+      def compute_start_index
+        return 0 if @index < 2
+        return 0 if @missions.size <= 5
+        return @index - 2 if (@index + 3) <= @missions.size
+        return @missions.size - 5
+      end
+
+      def refresh_list(start_index)
+        @mission_list.each_with_index do |mission, i|
+          mission.data = @missions[i + start_index]
+        end
+      end
 
       def create_graphics
         create_background
+        create_selector
         create_mission_list
         create_scroll_bar
-        create_selector
       end
 
       def create_background
         add_background('mission_ui/mission_board')
+        add_sprite(96, 15, 'mission_ui/mission_label')
+        add_sprite(267, 15, 'mission_ui/rank_label')
       end
 
       def create_mission_list
@@ -186,21 +233,23 @@ module PSMA
       end
 
       def create_scroll_bar
-        @scrollbar = add_sprite(75, 80, 'mission_ui/scrollbar')
+        @scrollbar = add_sprite(87, 42, 'mission_ui/scrollbar', ox: 5) # 41 - 173 (30)
+        @scrollbar_base_y = @scrollbar.y
       end
 
       def create_selector
-        @selector = add_sprite(0, 0, 'mission_ui/highlighter')
-        coordinates = @mission_list[0].stack[0]
-        @selector.x = coordinates.x
-        @selector.y = coordinates.y
+        @selector = add_background('mission_ui/highlighter')
+        @selector.x = MissionListElement::BASE_X - 18
+        @selector.y = MissionListElement::BASE_Y - 6
+        @selector_base_y = @selector.y
+        @selector.src_rect.width = 219
       end
     end
 
     class MissionListElement < UI::SpriteStack
-      BASE_Y = 80 # TODO: Fixme
-      DELTA_Y = 60 # TODO: Fixme
-      BASE_X = 80 # TODO: Fixme
+      BASE_Y = 50
+      DELTA_Y = 25
+      BASE_X = 107
 
       # @param viewport [Viewport]
       # @param index [Integer]
@@ -235,20 +284,34 @@ module PSMA
       end
 
       def create_icon
-        @icon = add_sprite(0, 16, NO_INITIAL_IMAGE, ox: 16, oy: 32)
+        @icon = add_sprite(0, 16, NO_INITIAL_IMAGE, ox: 16, oy: 29)
       end
 
       def create_name
-        @name = add_text(32, 0, 0, 16, nil.to_s, color: 10)
+        @name = add_text(16, 0, 0, 16, nil.to_s, color: 10)
       end
 
       def create_taken
-        @taken = add_sprite(120, 0, 'mission_ui/taken')
+        @taken = add_sprite(120, 5, 'mission_ui/taken')
+        @taken.zoom = 0.5
       end
 
       def create_rank
         # @type [SpriteSheet]
-        @rank = add_sprite(160, 0, 'mission_ui/ranks', 1, 6, type: SpriteSheet)
+        @rank = add_sprite(178, 0, 'mission_ui/ranks', 6, 1, type: SpriteSheet)
+      end
+    end
+  end
+end
+
+if ENV['PSDK_BINARY_PATH'] == '/Volumes/mvme/projects/PokemonStudio/psdk-binaries/'
+  class Scene_Map
+    def update
+      @spriteset.update
+      if Input.trigger?(:X)
+        $game_switches[189] = true
+        $game_switches[190] = true
+        $scene.call_scene(PSMA::MissionUI)
       end
     end
   end
