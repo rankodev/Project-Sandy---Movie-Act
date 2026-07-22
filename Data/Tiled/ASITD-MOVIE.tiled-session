@@ -108,32 +108,32 @@
             "scale": 0.22859374999999998,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 960.2187286397814,
+                "x": 960.2187286397816,
                 "y": 1281.7498291182503
             }
         },
         "Maps/Beach.tmx": {
-            "scale": 0.75,
-            "selectedLayer": 4,
+            "scale": 0.33,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 1465.333333333333,
-                "y": 463.99999999999994
+                "x": 2125.7575757575755,
+                "y": 663.6363636363637
             }
         },
         "Maps/BeachCave1.tmx": {
             "scale": 0.5343749999999999,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 1197.6608187134505,
-                "y": 1120.93567251462
+                "x": 937.543859649123,
+                "y": 1034.853801169591
             }
         },
         "Maps/BeachCave2.tmx": {
-            "scale": 0.75,
+            "scale": 0.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 864,
-                "y": 719.9999999999999
+                "x": 777,
+                "y": 710
             }
         },
         "Maps/BeachCave3.tmx": {
@@ -148,7 +148,7 @@
             "scale": 0.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 952,
+                "x": 959,
                 "y": 718
             }
         },
@@ -157,7 +157,7 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 799.0643274853803,
-                "y": 799.0643274853803
+                "y": 799.0643274853802
             }
         },
         "Maps/DryDesert2.tmx": {
@@ -165,14 +165,14 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 799.0643274853803,
-                "y": 799.0643274853803
+                "y": 799.0643274853802
             }
         },
         "Maps/DryDesert3.tmx": {
             "scale": 0.5343749999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 799.0643274853803,
+                "x": 800.0000000000001,
                 "y": 799.0643274853803
             }
         },
@@ -195,7 +195,7 @@
             "scale": 0.5343749999999999,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 799.0643274853803,
+                "x": 805.6140350877195,
                 "y": 799.0643274853803
             }
         },
@@ -204,7 +204,7 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 799.0643274853803,
-                "y": 799.0643274853803
+                "y": 799.0643274853802
             }
         },
         "Maps/MushroomCanyon3.tmx": {
@@ -212,7 +212,7 @@
             "selectedLayer": 0,
             "viewCenter": {
                 "x": 799.0643274853803,
-                "y": 799.0643274853803
+                "y": 799.0643274853802
             }
         },
         "Maps/Pond and Bridge Formatted.tsx": {
@@ -221,18 +221,18 @@
         },
         "Maps/SandCave1.tmx": {
             "scale": 0.5,
-            "selectedLayer": 7,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 946,
-                "y": 870
+                "x": 893,
+                "y": 866
             }
         },
         "Maps/SandCave2.tmx": {
-            "scale": 0.5343749999999999,
-            "selectedLayer": 0,
+            "scale": 0.75,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 799.0643274853803,
-                "y": 799.0643274853803
+                "x": 966,
+                "y": 941.3333333333333
             }
         },
         "Maps/Sandy Riverbed.tmx": {
@@ -251,11 +251,11 @@
             "scaleInEditor": 1
         },
         "Maps/Town.tmx": {
-            "scale": 0.75,
+            "scale": 0.33,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 1218.6666666666665,
-                "y": 266.66666666666663
+                "x": 1204.5454545454545,
+                "y": 981.8181818181818
             }
         },
         "Maps/TownBazaar.tmx": {
@@ -408,18 +408,18 @@
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
-        "Maps/Town.tmx",
         "Maps/CaveOutside.tmx",
+        "Maps/Town.tmx",
+        "Maps/BeachCave2.tmx",
+        "Maps/Beach.tmx",
+        "Maps/Beach 2.tmx",
         "Maps/BeachCave1.tmx",
         "Maps/DryDesert3.tmx",
         "Maps/DryDesert2.tmx",
         "Maps/DryDesert1.tmx",
         "Maps/MushroomCanyon3.tmx",
         "Maps/MushroomCanyon2.tmx",
-        "Maps/MushroomCanyon1.tmx",
-        "Maps/SandCave2.tmx",
-        "Maps/SandCave1.tmx",
-        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx"
+        "Maps/MushroomCanyon1.tmx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx"
