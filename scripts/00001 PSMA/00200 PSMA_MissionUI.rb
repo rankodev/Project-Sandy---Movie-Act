@@ -1,22 +1,3 @@
-# Mission UI allows the game to show a list of quests to take
-# Each mission has rank, optional icon, location, quest and unlock_switch
-#
-# Rank is a value between E and S (E D C B A S)
-# Icon is the filename of the icon in mission ui or nil (eg. 'main_quest_icon')
-# Location is the ID of the the zone where the player should go
-# Quest is the ID of the quest containing mission name, description & loot
-# unlock_switch is the ID of the switch to enable so the mission is available on the board
-
-# TODO: 
-# Main menu:
-#  -> Message locked "(What kind of mission are available today… ?)"
-#  -> Show list of unlocked missions
-#  --> List item shows name, rank and taken status
-#  -> List has a scroll bar on the left showing how far we are in the list
-# Sub menu:
-#  -> Message remains
-#  -> Shows the quest info (see txt file)
-
 # $game_switches[189] = true
 # $game_switches[190] = true
 # $scene.call_scene(PSMA::MissionUI)
@@ -36,19 +17,38 @@ module PSMA
     def initialize
       super()
       @missions = load_missions
+      @mission = nil
     end
 
     def create_graphics
       super
       create_list_composition
-      #create_mission_composition
+      create_mission_composition
       # create_entry_animation
+      # TODO: message
     end
 
     def update_inputs
-      @running = false if Input.trigger?(:B)
-      p [Mouse.x, Mouse.y] if Mouse.trigger?(:LEFT)
-      return if @list_composition.update_inputs
+      if @mission
+        return if @mission_composition.update_inputs
+        if Input.trigger?(:B)
+          @mission = nil
+          @list_composition.visible = true
+          @mission_composition.visible = false
+        elsif Input.trigger?(:A) && !@mission.taken?
+          # TODO: message
+          @mission.accept
+          @mission_composition.data = @mission
+        end
+      else
+        @running = false if Input.trigger?(:B)
+        return if @list_composition.update_inputs
+        if Input.trigger?(:A)
+          @mission = @missions[@list_composition.index]
+          @list_composition.visible = false
+          @mission_composition.data = @mission
+        end
+      end
     end
 
     def create_list_composition
@@ -57,11 +57,12 @@ module PSMA
 
     def create_mission_composition
       @mission_composition = MissionComposition.new(@viewport)
+      @mission_composition.visible = false
     end
 
     def update_graphics
       @list_composition.update
-      #@mission_composition.update
+      @mission_composition.update
     end
 
     # Mission object in the Mission UI (provides interface to data needed for UI)
@@ -111,6 +112,21 @@ module PSMA
         quests = PFM.game_state.quests
         quest_id = @quest.id
         return quests.finished?(quest_id) || !!quests.active_quest(quest_id)
+      end
+
+      # @return [Array<Array<string>>]
+      def loot
+        @quest.earnings.filter_map do |earning|
+          if earning.earning_method_name == :earning_money
+            next ['586', earning.earning_args[0].to_s]
+          elsif earning.earning_method_name == :earning_item
+            next [data_item(earning.earning_args[0]).icon, earning.earning_args[1].to_s]
+          end
+        end
+      end
+
+      def accept
+        $quests.start(@quest.id)
       end
 
       private
@@ -168,6 +184,9 @@ module PSMA
     # (see player choice for locked message)
 
     class ListComposition < UI::SpriteStack
+      # @return [Integer]
+      attr_reader :index
+
       # @param viewport [Viewport]
       # @param missions [Array<Mission>]
       def initialize(viewport, missions)
@@ -189,6 +208,11 @@ module PSMA
         end
 
         return true
+      end
+
+      def visible=(value)
+        super
+        update_offsets if value # resets the @mission_list
       end
 
       private
@@ -230,10 +254,11 @@ module PSMA
         @mission_list = 5.times.map do |i|
           MissionListElement.new(@viewport, i).tap { |e| e.data = @missions[i] }
         end
+        @stack.concat(@mission_list)
       end
 
       def create_scroll_bar
-        @scrollbar = add_sprite(87, 42, 'mission_ui/scrollbar', ox: 5) # 41 - 173 (30)
+        @scrollbar = add_sprite(87, 42, 'mission_ui/scrollbar', ox: 5)
         @scrollbar_base_y = @scrollbar.y
       end
 
@@ -299,6 +324,117 @@ module PSMA
       def create_rank
         # @type [SpriteSheet]
         @rank = add_sprite(178, 0, 'mission_ui/ranks', 6, 1, type: SpriteSheet)
+      end
+    end
+
+    class MissionComposition < UI::SpriteStack
+      DESCRIPTION_LINE_HEIGHT = 15
+
+      def initialize(viewport)
+        super
+        create_graphics
+      end
+
+      # @param mission [Mission]
+      def data=(mission)
+        self.visible = true
+        super
+
+        @accept.visible = !mission.taken?
+        if mission.icon
+          @icon.visible = true
+          @icon.load("mission_ui/#{mission.icon}", :interface)
+        else
+          @icon.visible = false
+        end
+        
+        update_loot(mission)
+        @lines = @description.text.count("\n") - 2
+        @line_index = 0
+        @scrollbar.y = @scrollbar_base_y
+      end
+
+      def update_inputs
+        if Input.repeat?(:DOWN) && @lines > 0
+          @line_index = (@line_index + 1) % @lines
+          update_scroll_bar
+        elsif Input.repeat?(:UP) && @lines > 0
+          @line_index = (@line_index - 1) % @lines
+          update_scroll_bar
+        else
+          return false
+        end
+
+        return true
+      end
+
+      private
+
+      def create_graphics
+        create_background
+        create_title
+        create_location
+        create_icon
+        create_description
+        create_loot
+        create_accept
+        create_scroll_bar
+      end
+
+      def create_background
+        add_background('mission_ui/mission_overview')
+      end
+
+      def create_title
+        add_text(92, 22, 0, 16, :name, type: UI::SymText, color: 10)
+      end
+
+      def create_location
+        add_text(96, 43, 0, 16, :location_name, type: UI::SymText, color: 10)
+      end
+
+      def create_description
+        @descr_vp = Viewport.new(120, 68, 200, DESCRIPTION_LINE_HEIGHT * 4, @viewport.z + 1)
+        @description = UI::SymMultilineText.new(0, @descr_vp, 0, -2, 174, DESCRIPTION_LINE_HEIGHT, :description, 0, nil, 10)
+        @stack << @description
+      end
+
+      def create_icon
+        @icon = add_sprite(106, 64, NO_INITIAL_IMAGE, ox: 16)
+      end
+
+      def create_loot
+        @loot_icon = 6.times.map { |i| add_sprite(90 + i * 32, 142, NO_INITIAL_IMAGE) }
+        with_font(20) do
+          @loot_texts = 6.times.map { |i| add_text(90 + i * 32, 162, 30, 16, nil.to_s, 2, color: 10) }
+        end
+      end
+
+      def create_scroll_bar
+        @scrollbar = add_sprite(88, 42, 'mission_ui/scrollbar', ox: 5)
+        @scrollbar_base_y = @scrollbar.y
+      end
+
+      def update_scroll_bar
+        @descr_vp.oy = DESCRIPTION_LINE_HEIGHT * @line_index
+        @scrollbar.y = @scrollbar_base_y + (@line_index / (@lines - 1.0)) * 100
+      end
+
+      # @param mission [Mission]
+      def update_loot(mission)
+        loot = mission.loot
+        loot.size.upto(5) do |i|
+          @loot_icon[i].visible = false
+          @loot_texts[i].visible = false
+        end
+        loot.each_with_index do |(icon, quantity), i|
+          @loot_icon[i].load(icon, :icon)
+          @loot_texts[i].text = quantity
+        end
+      end
+
+      def create_accept
+        @accept = add_sprite(0, 90, 'mission_ui/accept')
       end
     end
   end
