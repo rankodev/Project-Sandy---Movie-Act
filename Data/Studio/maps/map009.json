@@ -14,15 +14,15 @@
     "pitch": 100
   },
   "tiledFilename": "TownBazaar",
-  "mtime": 1784587654604,
-  "sha1": "4c39079d0615308922f3f32dc0aa854beef7c35b",
+  "mtime": 1784746975928,
+  "sha1": "dbb8d4371f1e1f306e2a476d76744d52db12b6e6",
   "tileMetadata": {
     "width": 13,
     "height": 13,
     "tilesets": [
       {
         "firstGlobalId": 1,
-        "source": "../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx"
+        "source": "../Tilesets/sandy_indoor.tsx"
       },
       {
         "firstGlobalId": 3465,

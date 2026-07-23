@@ -4,8 +4,8 @@
   "dbSymbol": "map004",
   "stepsAverage": 30,
   "bgm": {
-    "name": "",
-    "volume": 100,
+    "name": "dxLapisCave.ogg",
+    "volume": 70,
     "pitch": 100
   },
   "bgs": {

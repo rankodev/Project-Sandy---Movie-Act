@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.10" tiledversion="1.11.0" name="sandy_indoor" tilewidth="32" tileheight="32" tilecount="3464" columns="8">
- <image source="../../../graphics/tilesets/!TilesetInsideMain.png" width="256" height="13856"/>
+ <image source="../Assets/!TilesetInsideMain.png" width="256" height="13856"/>
 </tileset>

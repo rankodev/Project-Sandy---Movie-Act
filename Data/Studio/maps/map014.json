@@ -14,8 +14,8 @@
     "pitch": 100
   },
   "tiledFilename": "SandCave2",
-  "mtime": 1784733915959,
-  "sha1": "69936d35724465e9dffcc8e51026ff4446f91047",
+  "mtime": 1784746752330,
+  "sha1": "1ff79f1d528b713c71f3d6bdde42f1eeb040b99c",
   "tileMetadata": {
     "width": 60,
     "height": 54,
@@ -34,7 +34,7 @@
       },
       {
         "firstGlobalId": 1113,
-        "source": "../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx"
+        "source": "../Tilesets/sandy_outside.tsx"
       },
       {
         "firstGlobalId": 8609,
@@ -42,7 +42,7 @@
       },
       {
         "firstGlobalId": 8993,
-        "source": "../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/dustlands.tsx"
+        "source": "../Tilesets/Dustlands-Grandesert.tsx"
       }
     ],
     "tileByTileId": [

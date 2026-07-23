@@ -14,8 +14,8 @@
     "pitch": 100
   },
   "tiledFilename": "MushroomCanyon1",
-  "mtime": 1784745550673,
-  "sha1": "790135f4aeb675961ca4072d6794de4550ffac50",
+  "mtime": 1784746814392,
+  "sha1": "71ed1efc9aea1a582f5fff7dcb7f8148cf8bd93c",
   "tileMetadata": {
     "width": 50,
     "height": 50,
@@ -38,11 +38,11 @@
       },
       {
         "firstGlobalId": 1681,
-        "source": "../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/dustlands.tsx"
+        "source": "../Tilesets/Dustlands-Grandesert.tsx"
       },
       {
         "firstGlobalId": 2425,
-        "source": "../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx"
+        "source": "../Tilesets/sandy_outside.tsx"
       }
     ],
     "tileByTileId": [
