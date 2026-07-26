@@ -1,17 +1,17 @@
 ================================Erreur de script================================
 Message :
-undefined method `register_no_defeat' for Battle::Logic::BattleEndHandler:Class
+uninitialized constant Battle::Move::Potpourri
 
-Type : NoMethodError
-Script : 00126 PokemonLoot.rb (user)
-Ligne : 10
-Date : 22/07/2026 17:33:03
+Type : NameError
+Script : 00300 Pivot.rb (user)
+Ligne : 29
+Date : 26/07/2026 02:00:00
 Game Version : 256
 Logiciel : PSDK 26.58
 ===================================Backtraces===================================
-[15] : 00126 PokemonLoot.rb (user) | ligne 10 <class:Logic>
-[14] : 00126 PokemonLoot.rb (user) | ligne 3 <module:Battle>
-[13] : 00126 PokemonLoot.rb (user) | ligne 2 <top (required)>
+[15] : 00300 Pivot.rb (user) | ligne 29 <class:Move>
+[14] : 00300 Pivot.rb (user) | ligne 2 <module:Battle>
+[13] : 00300 Pivot.rb (user) | ligne 1 <top (required)>
 [12] : ScriptLoad.rb (PSDK) | ligne 94 require
 [11] : ScriptLoad.rb (PSDK) | ligne 94 load_scripts
 [10] : ScriptLoad.rb (PSDK) | ligne 91 each

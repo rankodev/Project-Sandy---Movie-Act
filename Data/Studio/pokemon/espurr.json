@@ -25,37 +25,8 @@
       "evSpd": 1,
       "evAts": 0,
       "evDfs": 0,
-      "evolutions": [
-        {
-          "dbSymbol": "meowstic",
-          "form": 0,
-          "conditions": [
-            {
-              "type": "minLevel",
-              "value": 25
-            },
-            {
-              "type": "gender",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "dbSymbol": "meowstic",
-          "form": 1,
-          "conditions": [
-            {
-              "type": "minLevel",
-              "value": 25
-            },
-            {
-              "type": "gender",
-              "value": 2
-            }
-          ]
-        }
-      ],
-      "experienceType": 1,
+      "evolutions": [],
+      "experienceType": 3,
       "baseExperience": 71,
       "baseLoyalty": 50,
       "catchRate": 190,
