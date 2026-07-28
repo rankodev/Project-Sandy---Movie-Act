@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="13" height="13" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="1">
- <tileset firstgid="1" source="../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx"/>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="13" height="13" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="1">
+ <tileset firstgid="1" source="../Tilesets/sandy_indoor.tsx"/>
  <tileset firstgid="3465" source="!TilesetInsideMain.tsx"/>
  <tileset firstgid="6929" source="../Tilesets/passages.tsx"/>
  <tileset firstgid="7073" source="../Tilesets/systemtags.tsx"/>

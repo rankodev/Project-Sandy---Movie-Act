@@ -25,18 +25,7 @@
       "evSpd": 0,
       "evAts": 0,
       "evDfs": 0,
-      "evolutions": [
-        {
-          "dbSymbol": "quaxwell",
-          "form": 0,
-          "conditions": [
-            {
-              "type": "minLevel",
-              "value": 16
-            }
-          ]
-        }
-      ],
+      "evolutions": [],
       "experienceType": 3,
       "baseExperience": 62,
       "baseLoyalty": 50,
@@ -75,191 +64,191 @@
         "footprint": "0912",
         "character": "0912",
         "characterShiny": "0912s",
-        "cry": "0912.ogg",
-        "hasFemale": false,
         "egg": "egg",
-        "iconEgg": "egg"
+        "iconEgg": "egg",
+        "cry": "0912.ogg",
+        "hasFemale": false
       },
       "moveSet": [
         {
+          "klass": "LevelLearnableMove",
           "move": "pound",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "klass": "LevelLearnableMove",
           "move": "growl",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "klass": "LevelLearnableMove",
           "move": "water_gun",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "move": "work_up",
           "klass": "LevelLearnableMove",
+          "move": "work_up",
           "level": 7
         },
         {
-          "move": "wing_attack",
           "klass": "LevelLearnableMove",
+          "move": "wing_attack",
           "level": 10
         },
         {
-          "move": "aqua_jet",
           "klass": "LevelLearnableMove",
+          "move": "aqua_jet",
           "level": 13
         },
         {
-          "move": "double_hit",
           "klass": "LevelLearnableMove",
+          "move": "double_hit",
           "level": 17
         },
         {
-          "move": "aqua_cutter",
           "klass": "LevelLearnableMove",
+          "move": "aqua_cutter",
           "level": 21
         },
         {
-          "move": "air_slash",
           "klass": "LevelLearnableMove",
+          "move": "air_slash",
           "level": 24
         },
         {
-          "move": "focus_energy",
           "klass": "LevelLearnableMove",
+          "move": "focus_energy",
           "level": 28
         },
         {
-          "move": "acrobatics",
           "klass": "LevelLearnableMove",
+          "move": "acrobatics",
           "level": 31
         },
         {
-          "move": "liquidation",
           "klass": "LevelLearnableMove",
+          "move": "liquidation",
           "level": 35
         },
         {
-          "move": "take_down",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "take_down"
         },
         {
-          "move": "hydro_pump",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "hydro_pump"
         },
         {
-          "move": "surf",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "surf"
         },
         {
-          "move": "low_kick",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "low_kick"
         },
         {
-          "move": "swift",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "swift"
         },
         {
-          "move": "rest",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "rest"
         },
         {
-          "move": "protect",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "protect"
         },
         {
-          "move": "detect",
-          "klass": "BreedLearnableMove"
+          "klass": "BreedLearnableMove",
+          "move": "detect"
         },
         {
-          "move": "endure",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "endure"
         },
         {
-          "move": "baton_pass",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "baton_pass"
         },
         {
-          "move": "encore",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "encore"
         },
         {
-          "move": "rapid_spin",
-          "klass": "BreedLearnableMove"
+          "klass": "BreedLearnableMove",
+          "move": "rapid_spin"
         },
         {
-          "move": "rain_dance",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "rain_dance"
         },
         {
-          "move": "psych_up",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "psych_up"
         },
         {
-          "move": "whirlpool",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "whirlpool"
         },
         {
-          "move": "facade",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "facade"
         },
         {
-          "move": "helping_hand",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "helping_hand"
         },
         {
-          "move": "air_cutter",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "air_cutter"
         },
         {
-          "move": "aerial_ace",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "aerial_ace"
         },
         {
-          "move": "roost",
-          "klass": "BreedLearnableMove"
+          "klass": "BreedLearnableMove",
+          "move": "roost"
         },
         {
-          "move": "last_resort",
-          "klass": "BreedLearnableMove"
+          "klass": "BreedLearnableMove",
+          "move": "last_resort"
         },
         {
-          "move": "air_slash",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "air_slash"
         },
         {
-          "move": "brave_bird",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "brave_bird"
         },
         {
-          "move": "acrobatics",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "acrobatics"
         },
         {
-          "move": "water_pledge",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "water_pledge"
         },
         {
-          "move": "disarming_voice",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "disarming_voice"
         },
         {
-          "move": "misty_terrain",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "misty_terrain"
         },
         {
-          "move": "liquidation",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "liquidation"
         },
         {
-          "move": "tera_blast",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "tera_blast"
         },
         {
-          "move": "chilling_water",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "chilling_water"
         }
       ]
     }
