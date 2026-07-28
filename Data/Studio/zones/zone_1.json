@@ -1,10 +1,9 @@
 {
   "klass": "Zone",
-  "id": 18,
-  "dbSymbol": "zone_18",
+  "id": 1,
+  "dbSymbol": "zone_1",
   "maps": [
-    3,
-    6
+    24
   ],
   "worldmaps": [],
   "panelId": 0,
