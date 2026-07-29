@@ -13,7 +13,7 @@ module PSMA
   # ```
   class PlayerChoice < GamePlay::BaseCleanUpdate
     # List of available starts
-    STARTERS = %w[cyndaquil quaxly scorbunny rowlet snivy espurr hzorua bulbasaur treecko froakie chimchar rockruff]
+    STARTERS = %w[cyndaquil quaxly scorbunny rowlet snivy espurr hzorua bulbasaur treecko froakie chimchar rockruff scraggy]
     # List of emotions we want to show
     EMOTIONS = %w[neutral joy]
     # List of Face X position

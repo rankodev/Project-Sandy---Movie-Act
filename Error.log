@@ -1,22 +1,23 @@
 ================================Erreur de script================================
 Message :
-undefined local variable or method `show_switch_choice_failure' for #<BattleUI::PlayerChoice:0x14357d18>
+undefined method `+' for nil:NilClass
 
-Type : NameError
-Script : 00016 battleButtons.rb (user)
-Ligne : 57
-Date : 28/07/2026 04:00:36
+Type : NoMethodError
+Script : 00001 ABRA_Scripts/00001 Effects/00000 Hooks/00003 StatusDamageHooks.rb (user)
+Ligne : 12
+Date : 28/07/2026 22:37:57
 Game Version : 256
 Logiciel : PSDK 26.58
 ===================================Backtraces===================================
-[20] : 00016 battleButtons.rb (user) | ligne 57 validate
-[19] : 5_Battle_01_Scene.rb (PSDK) | ligne 2537 update
-[18] : 00016 battleButtons.rb (user) | ligne 108 update
-[17] : 5_Battle_02_Visual.rb (PSDK) | ligne 453 show_player_choice_loop
-[16] : 5_Battle_02_Visual.rb (PSDK) | ligne 451 loop
-[15] : 5_Battle_02_Visual.rb (PSDK) | ligne 451 show_player_choice_loop
-[14] : 5_Battle_02_Visual.rb (PSDK) | ligne 426 show_player_choice
-[13] : 5_Battle_01_Scene.rb (PSDK) | ligne 181 player_action_choice
+[21] : 00001 ABRA_Scripts/00001 Effects/00000 Hooks/00003 StatusDamageHooks.rb (user) | ligne 12 on_end_turn_event
+[20] : 5_Battle_04_Logic.rb (PSDK) | ligne 2337 process_events
+[19] : 5_Battle_04_Logic.rb (PSDK) | ligne 759 each_effects
+[18] : 5_Battle_04_Logic.rb (PSDK) | ligne 765 each_effects
+[17] : 5_Battle_04_Logic.rb (PSDK) | ligne 765 each
+[16] : 5_Battle_04_Logic.rb (PSDK) | ligne 765 each_effects
+[15] : 5_Battle_04_Logic.rb (PSDK) | ligne 2336 process_events
+[14] : 5_Battle_04_Logic.rb (PSDK) | ligne 572 battle_phase_end
+[13] : 5_Battle_01_Scene.rb (PSDK) | ligne 490 update_battle_phase
 [12] : 5_Battle_01_Scene.rb (PSDK) | ligne 77 next_update_process
 [11] : 5_Battle_01_Scene.rb (PSDK) | ligne 69 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process

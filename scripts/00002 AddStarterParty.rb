@@ -35,7 +35,7 @@ class Interpreter
     def add_snivy
         ajouter_pokemon_param(
             id: :snivy, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
-            captured_with: 797, nature: :hardy, moves: [:coil, :giga_drain, :knock_off, :afterburn], stats: [20, 20, 20, 20, 20, 20], 
+            captured_with: 797, nature: :hardy, moves: [:fae_firing, :giga_drain, :knock_off, :afterburn], stats: [20, 20, 20, 20, 20, 20], 
             gender: %w[f m i][gv[495]]
         )
     end
@@ -44,7 +44,7 @@ class Interpreter
         ajouter_pokemon_param(
             id: :espurr, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
             captured_with: 797, nature: :hardy, moves: [:psybeam, :spellflux_frenzy, :fake_out, :sundersound], stats: [20, 20, 20, 20, 20, 20], 
-            gender: %w[f m i][gv[495]]
+            gender: %w[f m i][gv[495]], ability: :own_tempo
         )
     end
 
@@ -93,6 +93,13 @@ class Interpreter
         id: :rockruff, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
         captured_with: 797, nature: :hardy, moves: [:ramping_rush, :rock_slide, :crunch, :helping_hand], stats: [20, 20, 20, 20, 20, 20], 
         gender: %w[f m i][gv[495]]
+      )
+    end
+        def add_scraggy
+      ajouter_pokemon_param(
+        id: :scraggy, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
+        captured_with: 797, nature: :hardy, moves: [:fling, :pivot, :zen_headbutt, :fake_out], stats: [20, 20, 20, 20, 20, 20], 
+        gender: %w[f m i][gv[495]], ability: :suspicious_pouch
       )
     end
   end

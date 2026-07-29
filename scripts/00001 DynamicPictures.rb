@@ -24,8 +24,9 @@ def show_player_portrait(mood: :neutral, number: 50, x: 30, y: 136, zoom_x: 50, 
       base = "chimchar_"
     when 12 # Rockruff
       base = "rockruff_"
+    when 13 # Scraggy
+      base = "scraggy_"
     end
-
     dir = "portraits/"
     filename = dir + base + mood.to_s
     $game_screen.pictures[number].show(filename, 0, x, y, zoom_x, zoom_y, 255, 0)

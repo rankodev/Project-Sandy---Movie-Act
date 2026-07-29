@@ -6,21 +6,21 @@ module Battle
         dragon_dance quiver_dance swords_dance nasty_plot
         calm_mind bulk_up agility tail_wind
         stealth_rock spikes toxic will_o_wisp
-        reflect light_screen haze thunder_wave
+        reflect light_screen haze thunder_wave fortify great_daze vexation
       ]
 
       SPECIAL_MOVES = %i[
         flamethrower ice_beam thunderbolt psychic
         surf shadow_ball energy_ball focus_blast
         dazzling_gleam dark_pulse dragon_pulse aura_sphere
-        sludge_bomb flash_cannon earth_power hyper_voice
+        sludge_bomb flash_cannon earth_power hyper_voice sundersound
       ]
 
       PHYSICAL_MOVES = %i[
         earthquake close_combat outrage iron_head
         stone_edge crunch waterfall leaf_blade
         play_rough poison_jab thunder_punch fire_punch
-        ice_punch extreme_speed drain_punch zen_headbutt
+        ice_punch extreme_speed drain_punch zen_headbutt pandaemonium
       ]
 
       # Function that deals the effect to the pokemon
