@@ -1,25 +1,35 @@
 ================================Erreur de script================================
 Message :
-undefined method `+' for nil:NilClass
+(eval):6: syntax error, unexpected ',', expecting `end'
+..._hash(id: :wiglett, level: 30), 
+...                              ^
 
-Type : NoMethodError
-Script : 00001 ABRA_Scripts/00001 Effects/00000 Hooks/00003 StatusDamageHooks.rb (user)
-Ligne : 12
-Date : 28/07/2026 22:37:57
+
+Type : SyntaxError
+Script : tools/GameLoader/z_eval_killer.rb (PSDK)
+Ligne : 30
+Date : 29/07/2026 20:24:43
 Game Version : 256
 Logiciel : PSDK 26.58
 ===================================Backtraces===================================
-[21] : 00001 ABRA_Scripts/00001 Effects/00000 Hooks/00003 StatusDamageHooks.rb (user) | ligne 12 on_end_turn_event
-[20] : 5_Battle_04_Logic.rb (PSDK) | ligne 2337 process_events
-[19] : 5_Battle_04_Logic.rb (PSDK) | ligne 759 each_effects
-[18] : 5_Battle_04_Logic.rb (PSDK) | ligne 765 each_effects
-[17] : 5_Battle_04_Logic.rb (PSDK) | ligne 765 each
-[16] : 5_Battle_04_Logic.rb (PSDK) | ligne 765 each_effects
-[15] : 5_Battle_04_Logic.rb (PSDK) | ligne 2336 process_events
-[14] : 5_Battle_04_Logic.rb (PSDK) | ligne 572 battle_phase_end
-[13] : 5_Battle_01_Scene.rb (PSDK) | ligne 490 update_battle_phase
-[12] : 5_Battle_01_Scene.rb (PSDK) | ligne 77 next_update_process
-[11] : 5_Battle_01_Scene.rb (PSDK) | ligne 69 update
+[28] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 30 class_eval
+[27] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 30 build_method
+[26] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 23 resolve_method_symbol
+[25] : 1_RMXP_Scripts.rb (PSDK) | ligne 2145 eval_script
+[24] : 1_RMXP_Scripts.rb (PSDK) | ligne 2137 command_355
+[23] : 1_RMXP_Scripts.rb (PSDK) | ligne 1121 execute_command
+[22] : 1_RMXP_Scripts.rb (PSDK) | ligne 996 update
+[21] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 loop
+[20] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 update
+[19] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9285 update_map_logic
+[18] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 2933 update_map_logic
+[17] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9293 auto_transfert_update
+[16] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 loop
+[15] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 auto_transfert_update
+[14] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
+[13] : 0_Dependencies.rb (PSDK) | ligne 1441 times
+[12] : 0_Dependencies.rb (PSDK) | ligne 1441 run
+[11] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
 [9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 144 main
 [8] : tools/GameLoader/Z_main.rb (PSDK) | ligne 16 <top (required)>

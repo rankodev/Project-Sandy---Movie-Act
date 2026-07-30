@@ -1,5 +1,13 @@
 module Battle
     module Effects
+      class CoverfireCenterOfAttention < CenterOfAttention
+        def target_redirection(user, targets, move)
+          return if targets.include?(user)
+
+          super
+        end
+      end
+
       class CoverfireShield < PokemonTiedEffectBase
         # Create a new CoverfireShield effect
         # @param logic [Battle::Logic]
@@ -49,7 +57,7 @@ module Battle
       # @param user [PFM::PokemonBattler] user of the move
       # @param actual_targets [Array<PFM::PokemonBattler>] targets that will be affected by the move
       def deal_effect(user, actual_targets)
-        user.effects.add(Effects::CenterOfAttention.new(logic, user, 1, self))
+        user.effects.add(Effects::CoverfireCenterOfAttention.new(logic, user, 1, self))
         user.effects.add(Effects::CoverfireShield.new(logic, user))
         scene.display_message_and_wait(parse_text_with_pokemon(19, 670, user))
       end

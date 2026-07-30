@@ -3,17 +3,28 @@ module Battle
     class Ability
       class SuspiciousPouch < Ability
         SPECIAL_ITEMS = %i[
-            flame_orb toxic_orb hard_stone light_ball iron_ball kings_rock lagging_tail quick_claw sticky_barb white_herb bread
-      ]
+            flame_orb toxic_orb light_ball iron_ball lagging_tail kings_rock flame_orb toxic_orb light_ball iron_ball lagging_tail
+          ]
+
+        def target_has_no_item?
+          symbol = @target.item_db_symbol
+          symbol == :__undef__ || symbol.nil?
+        end
+
         def on_end_turn_event(logic, scene, battlers)
-          picked_item = SPECIAL_ITEMS.sample
           return unless battlers.include?(@target)
           return if @target.dead?
-          return unless @target.item_db_symbol == :__undef__
-          return unless bchance?(0.5)
+          return unless target_has_no_item?
+
+          SPECIAL_ITEMS.shuffle.each do |picked_item|
+            logic.item_change_handler.change_item(picked_item, true, @target)
+            break unless target_has_no_item?
+          end
+
+          return if target_has_no_item?
+
           scene.visual.show_ability(@target)
-          logic.item_change_handler.change_item(picked_item, true, @target)
-          scene.display_message_and_wait(parse_text_with_pokemon(19, 475, @target, PFM::Text::ITEM2[1] => @target.item_name))
+          scene.display_message_and_wait(parse_text_with_pokemon(6969, 11, @target, PFM::Text::ITEM2[1] => @target.item_name))
         end
       end
       register(:suspicious_pouch, SuspiciousPouch)
@@ -22,36 +33,25 @@ module Battle
 end
 
 module Battle
-  module SuspiciousPouchItemImmunity
-    # Special Items don't affect Scraggy
-    def suspicious_pouch_blocks_held_item_effects?
-      return false unless has_ability?(:suspicious_pouch)
+  module Effects
+    class Item
+      module SuspiciousPouchOrbImmunity
+        def on_end_turn_event(logic, scene, battlers)
+          if @target&.bank == 0 && @target.has_ability?(:suspicious_pouch)
+            return
+          end
 
-      Battle::Effects::Ability::SuspiciousPouch::SPECIAL_ITEMS.include?(item_db_symbol)
-    end
+          super
+        end
+      end
 
-    def hold_item?(*items)
-      return false if suspicious_pouch_blocks_held_item_effects?
+      class FlameOrb
+        prepend SuspiciousPouchOrbImmunity
+      end
 
-      super
-    end
-
-    def can_use_item?(*args)
-      return false if suspicious_pouch_blocks_held_item_effects?
-
-      return super if defined?(super)
-      true
-    end
-
-    def can_use_held_item?(*args)
-      return false if suspicious_pouch_blocks_held_item_effects?
-
-      return super if defined?(super)
-      true
+      class ToxicOrb
+        prepend SuspiciousPouchOrbImmunity
+      end
     end
   end
-end
-
-class PFM::PokemonBattler
-  prepend Battle::SuspiciousPouchItemImmunity
 end

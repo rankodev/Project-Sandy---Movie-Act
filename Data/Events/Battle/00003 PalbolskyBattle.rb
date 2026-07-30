@@ -5,50 +5,6 @@
 # In this example, we will setup light screen & reflect on AI side with infinite amount of turns
 Battle::Scene.register_event(:logic_init) do |scene|
 
-  class Battle::Effects::CrowdCheering < Battle::Effects::PositionTiedEffectBase
-    # Create a new Pokemon tied effect
-    # @param logic [Battle::Logic] logic used to get all the handler in order to allow the effect to work
-    # @param bank [Integer] bank where the effect is tied
-    # @param position [Integer] position where the effect is tied
-    # @param turn_count [Integer] number of turn for the confusion (not including current turn)
-    def initialize(logic, bank, position, turn_count = Float::INFINITY)
-      super(logic, bank, position)
-      self.counter = turn_count
-    end
-
-    # Give the atk modifier over given to the Pokemon with this effect
-    # @return [Float, Integer] multiplier
-    def atk_modifier
-      return 2
-    end
-
-    # Give the dfe modifier over given to the Pokemon with this effect
-    # @return [Float, Integer] multiplier
-    def dfe_modifier
-      return 2
-    end
-
-    # Give the speed modifier over given to the Pokemon with this effect
-    # @return [Float, Integer] multiplier
-    def spd_modifier
-      return 2
-    end
-
-    # Give the ats modifier over given to the Pokemon with this effect
-    # @return [Float, Integer] multiplier
-    def ats_modifier
-      return 2
-    end
-
-    # Give the dfs modifier over given to the Pokemon with this effect
-    # @return [Float, Integer] multiplier
-    def dfs_modifier
-      return 2
-    end
-  end
-
-  scene.logic.bank_effects[0].add(Battle::Effects::CrowdCheering.new(scene.logic, 0, 0, Float::INFINITY))
-
   # Here we will define utility function on the visual because we call something that does not exist quite often
   # It's highly recommanded that you make a script that add this function to Battle::Scene instead of doing it here
   # We can't just add this to PSDK by default because all games are different!
