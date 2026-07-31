@@ -97,80 +97,76 @@ module UI
       @background_top = add_background(background_top_filename).set_z(-10)
     end
 
+    def background_index
+      return 10 if $scene.is_a?(GamePlay::Load)
+      return $game_variables[496] if $game_variables
+
+      return 0
+    end
+
     def create_background_animation
       ya = Yuki::Animation
-      # Failsafe check to see if a save file exists first
-      if $game_variables == nil
+      background_index = self.background_index
+      case background_index
+      when 0 # Default
         duration = 6.6
-      # Otherwise, continue as normal
+      # Facilities
+      when 1 # Vespiquen
+        duration = 13.2
+      when 2..3 # Kecleon (Green / Pink)
+        duration = 13.2
+      when 4 # Smeargle
+        duration = 13.2
+      when 5 # RESERVED
+        duration = 13.2
+      when 6 # RESERVED
+        duration = 13.2
+      when 7 # RESERVED
+        duration = 13.2
+
+      # System
+      when 10 # Saving
+        duration = 13.2
+      when 11 # Options
+        duration = 6.6
+      when 12 # Party
+        duration = 13.2
+      when 13 # Controls
+        duration = 6.6
+      
+      # Failsafe
       else
-        case $game_variables[496]
-          when 0 # Default
-            duration = 6.6
-
-          # Facilities
-          when 1 # Vespiquen
-            duration = 13.2
-          when 2..3 # Kecleon (Green / Pink)
-            duration = 13.2
-          when 4 # Smeargle
-            duration = 13.2
-          when 5 # RESERVED
-            duration = 13.2
-          when 6 # RESERVED
-            duration = 13.2
-          when 7 # RESERVED
-            duration = 13.2
-
-          # System
-          when 10 # Saving
-            duration = 13.2
-          when 11 # Options
-            duration = 6.6
-          when 12 # Party
-            duration = 13.2
-          when 13 # Controls
-            duration = 6.6
-          
-          # Failsafe
-          else
-            duration = 6.6
-        end
+        duration = 6.6
       end
       
       @background_animation = ya.timed_loop_animation(duration)
 
       # Failsafe check to see if a save file exists first
-      if $game_variables == nil
+      case background_index
+      when 0 # Default
         @background_animation.play_before(ya.shift(duration, @background, 160, 0, 0, 0))
-      # Otherwise, continue as normal
-      else
-        case $game_variables[496]
-          when 0 # Default
-            @background_animation.play_before(ya.shift(duration, @background, 160, 0, 0, 0))
 
-          # Facilities
-          when 1 # Vespiquen
-            @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
-          when 2 # Kecleon (Green)
-            @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
-          when 3 # Kecleon (Pink)
-            @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
-          
-          # System
-          when 10 # Saving
-            @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
-          when 11 # Options
-            @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
-          when 13 # Controls
-            @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
-          
-          # Failsafe
-          else # the actual default
-            @background_animation.play_before(ya.shift(duration, @background, 160, 0, 0, 0))
-        end
+      # Facilities
+      when 1 # Vespiquen
+        @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
+      when 2 # Kecleon (Green)
+        @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
+      when 3 # Kecleon (Pink)
+        @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
+      
+      # System
+      when 10 # Saving
+        @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
+      when 11 # Options
+        @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
+      when 13 # Controls
+        @background_animation.play_before(ya.shift(duration, @background, 320, 0, 0, 0))
+      
+      # Failsafe
+      else # the actual default
+        @background_animation.play_before(ya.shift(duration, @background, 160, 0, 0, 0))
       end
-
+  
       @on_update_background_animation = proc do
         @background_animation.start
         @on_update_background_animation = nil
@@ -184,101 +180,83 @@ module UI
     # Return the name of the background
     # @return [String]
     def background_filename
-      # Failsafe check to see if a save file exists first
-      if $game_variables == nil
-        base =  'team/Fond'
-      # Otherwise, continue as normal
+      case background_index
+      when 0 # Default
+        return 'team/Fond'
+      
+      # Facilities
+      when 1 # Vespiquen
+        return 'team/craft2'
+      when 2 # Kecleon (Green)
+        return 'shop/backdrop/shop-green2'
+      when 3 # Kecleon (Pink)
+        return 'shop/backdrop/shop-pink2'
+
+      # System
+      when 10 # Saving
+        return 'load/backdrop/save2'
+      when 11 # Options
+        return 'options/backdrop/options2'
+      when 13 # Controls
+        return 'options/backdrop/options2'
+      
+      # Failsafe
       else
-        case $game_variables[496]
-          when 0 # Default
-            base =  'team/Fond'
-          
-          # Facilities
-          when 1 # Vespiquen
-            base = 'team/craft2'
-          when 2 # Kecleon (Green)
-            base = 'shop/backdrop/shop-green2'
-          when 3 # Kecleon (Pink)
-            base = 'shop/backdrop/shop-pink2'
-    
-          # System
-          when 10 # Saving
-            base = 'load/backdrop/save2'
-          when 11 # Options
-            base = 'options/backdrop/options2'
-          when 13 # Controls
-            base = 'options/backdrop/options2'
-          
-          # Failsafe
-          else
-            base =  'team/Fond'
-          end
-        end
+        return 'team/Fond'
+      end
     end
 
     def background_bottom_filename
-      # Failsafe check to see if a save file exists first
-      if $game_variables == nil
-        base =  'team/background_top'
-      # Otherwise, continue as normal
+      case background_index
+      when 0 # Default
+        return 'team/background_bottom'
+
+      # Facilities
+      when 1 # Vespiquen
+        return 'team/craft1'
+      when 2 # Kecleon (Green)
+        return 'shop/backdrop/shop-green1'
+      when 3 # Kecleon (Pink)
+        return 'shop/backdrop/shop-pink1'
+
+      # System
+      when 10 # Saving
+        return 'load/backdrop/save1'
+      when 11 # Options
+        return 'options/backdrop/options1'
+      when 13 # Controls
+        return 'options/backdrop/options1'
+
+      # Failsafe
       else
-        case $game_variables[496]
-          when 0 # Default
-            base =  'team/background_bottom'
-
-          # Facilities
-          when 1 # Vespiquen
-            base = 'team/craft1'
-          when 2 # Kecleon (Green)
-            base = 'shop/backdrop/shop-green1'
-          when 3 # Kecleon (Pink)
-            base = 'shop/backdrop/shop-pink1'
-
-          # System
-          when 10 # Saving
-            base = 'load/backdrop/save1'
-          when 11 # Options
-            base = 'options/backdrop/options1'
-          when 13 # Controls
-            base = 'options/backdrop/options1'
-
-          # Failsafe
-          else
-            base =  'team/background_bottom'
-        end
+        return  'team/background_bottom'
       end
     end
 
     def background_top_filename
-      # Failsafe check to see if a save file exists first
-      if $game_variables == nil
-        base =  'team/background_top'
-      # Otherwise, continue as normal
+      case background_index
+      when 0 # Default
+        return 'team/background_top'
+
+      # Facilities
+      when 1 # Vespiquen
+        return 'team/craft3'
+      when 2 # Kecleon (Green)
+        return 'shop/backdrop/shop-green3'
+      when 3 # Kecleon (Pink)
+        return 'shop/backdrop/shop-pink3'
+      
+      # System
+      when 10 # Saving
+        return 'load/backdrop/save3'
+      when 11 # Options
+        return 'options/backdrop/options3-options'
+      when 13 # Controls
+        return 'options/backdrop/options3-controls'
+
+      # Failsafe
       else
-        case $game_variables[496]
-          when 0 # Default
-            base = 'team/background_top'
-
-          # Facilities
-          when 1 # Vespiquen
-            base = 'team/craft3'
-          when 2 # Kecleon (Green)
-            base = 'shop/backdrop/shop-green3'
-          when 3 # Kecleon (Pink)
-            base = 'shop/backdrop/shop-pink3'
-          
-          # System
-          when 10 # Saving
-            base = 'load/backdrop/save3'
-          when 11 # Options
-            base = 'options/backdrop/options3-options'
-          when 13 # Controls
-            base = 'options/backdrop/options3-controls'
-
-          # Failsafe
-          else
-            base = 'team/background_top'
-        end
+        return 'team/background_top'
       end
     end
 
