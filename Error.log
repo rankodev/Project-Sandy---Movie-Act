@@ -1,35 +1,24 @@
 ================================Erreur de script================================
 Message :
-(eval):6: syntax error, unexpected ',', expecting `end'
-..._hash(id: :wiglett, level: 30), 
-...                              ^
+undefined method `dead?' for nil:NilClass
 
-
-Type : SyntaxError
-Script : tools/GameLoader/z_eval_killer.rb (PSDK)
-Ligne : 30
-Date : 29/07/2026 20:24:43
+Type : NoMethodError
+Script : 5_Battle_01_Scene.rb (PSDK)
+Ligne : 1313
+Date : 01/08/2026 09:46:58
 Game Version : 256
 Logiciel : PSDK 26.58
 ===================================Backtraces===================================
-[28] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 30 class_eval
-[27] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 30 build_method
-[26] : tools/GameLoader/z_eval_killer.rb (PSDK) | ligne 23 resolve_method_symbol
-[25] : 1_RMXP_Scripts.rb (PSDK) | ligne 2145 eval_script
-[24] : 1_RMXP_Scripts.rb (PSDK) | ligne 2137 command_355
-[23] : 1_RMXP_Scripts.rb (PSDK) | ligne 1121 execute_command
-[22] : 1_RMXP_Scripts.rb (PSDK) | ligne 996 update
-[21] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 loop
-[20] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 update
-[19] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9285 update_map_logic
-[18] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 2933 update_map_logic
-[17] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9293 auto_transfert_update
-[16] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 loop
-[15] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 auto_transfert_update
-[14] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
-[13] : 0_Dependencies.rb (PSDK) | ligne 1441 times
-[12] : 0_Dependencies.rb (PSDK) | ligne 1441 run
-[11] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
+[20] : 5_Battle_01_Scene.rb (PSDK) | ligne 1313 choose_target
+[19] : 5_Battle_01_Scene.rb (PSDK) | ligne 3356 validate
+[18] : 5_Battle_01_Scene.rb (PSDK) | ligne 3316 update
+[17] : 5_Battle_02_Visual.rb (PSDK) | ligne 550 show_target_choice_loop
+[16] : 5_Battle_02_Visual.rb (PSDK) | ligne 548 loop
+[15] : 5_Battle_02_Visual.rb (PSDK) | ligne 548 show_target_choice_loop
+[14] : 5_Battle_02_Visual.rb (PSDK) | ligne 503 show_target_choice
+[13] : 5_Battle_01_Scene.rb (PSDK) | ligne 237 target_choice
+[12] : 5_Battle_01_Scene.rb (PSDK) | ligne 77 next_update_process
+[11] : 5_Battle_01_Scene.rb (PSDK) | ligne 69 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
 [9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 144 main
 [8] : tools/GameLoader/Z_main.rb (PSDK) | ligne 16 <top (required)>

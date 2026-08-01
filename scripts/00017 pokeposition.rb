@@ -25,5 +25,19 @@ module BattleUI
       
       return 70, 0
     end
+    def base_position_v3
+      return 249, 88 if enemy? && $game_switches[902] # Raid Boss
+      return 223, 84 if enemy?
+
+      return 52, 187
+    end
+
+    # Get the offset position of the Pokemon in 3v3+
+    # @return [Array(Integer, Integer)]
+    def offset_position_v3
+      return 45, 6 if enemy?
+      
+      return 60, 0
+    end
   end
 end

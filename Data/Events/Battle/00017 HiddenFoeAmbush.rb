@@ -1,5 +1,22 @@
 Battle::Scene.register_event(:logic_init) do |scene|
     # Method that call all the switch event for the Pokemon that entered the battle in the begining
+    pokemon1 = scene.logic.battler(1, 0)
+    pokemon2 = scene.logic.battler(1, 1)
+    def pokemon1.level_pokemon_number
+      "???".to_s.to_pokemon_number
+    end
+  
+    def pokemon2.level_pokemon_number
+      "???".to_s.to_pokemon_number
+    end
+  
+    def pokemon1.given_name
+      return "???"
+    end
+  
+    def pokemon2.given_name
+      return "???"
+    end
     def scene.show_enter_event
       @logic.all_alive_battlers.sort_by(&:spd).reverse.each do |battler|
         @logic.switch_handler.execute_switch_events(battler, battler)

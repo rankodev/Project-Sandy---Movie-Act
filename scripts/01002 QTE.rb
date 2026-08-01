@@ -154,7 +154,8 @@ module QTE
 end
 
 # RMXP event Script commands execute in Interpreter context.
-# This alias lets "QTE.run(...)" resolve there without requiring "::QTE".
-class Interpreter
-	QTE = ::QTE unless const_defined?(:QTE)
-end
+# Disabled to avoid conflicts with other Interpreter/event-script patches.
+# Use ::QTE.run(...) in event Script commands instead.
+# class Interpreter
+# 	QTE = ::QTE unless const_defined?(:QTE)
+# end
