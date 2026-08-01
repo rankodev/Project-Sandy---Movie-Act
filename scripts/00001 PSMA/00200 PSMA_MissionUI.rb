@@ -24,8 +24,9 @@ module PSMA
       super
       create_list_composition
       create_mission_composition
+      create_speaker
       # create_entry_animation
-      # TODO: message
+      init_message
     end
 
     def update_inputs
@@ -36,9 +37,7 @@ module PSMA
           @list_composition.visible = true
           @mission_composition.visible = false
         elsif Input.trigger?(:A) && !@mission.taken?
-          # TODO: message
-          @mission.accept
-          @mission_composition.data = @mission
+          action_a
         end
       else
         @running = false if Input.trigger?(:B)
@@ -60,9 +59,32 @@ module PSMA
       @mission_composition.visible = false
     end
 
+    def create_speaker
+      @speaker = Sprite.new(@viewport)
+      @speaker.load('portraits/minccino_neutral', :picture)
+      @speaker.set_position(30, 136)
+      @speaker.zoom = 0.5
+    end
+
     def update_graphics
       @list_composition.update
       @mission_composition.update
+    end
+
+    # Show the initial message
+    def init_message
+      @message_window.stay_visible = true
+      @message_window.auto_skip = true
+      $game_temp.message_text = '(What kind of missions are available today…?)'
+    end
+
+    def action_a
+      message_window.stay_visible = false
+      c = display_message_and_wait("Accept this mission?", 1, 'Yes', 'No')
+      return init_message if c == 1
+
+      @mission.accept
+      @mission_composition.data = @mission
     end
 
     # Mission object in the Mission UI (provides interface to data needed for UI)

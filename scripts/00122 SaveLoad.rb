@@ -61,9 +61,11 @@ module UI
         real_visual_index = @visual_index == -1 && target_visual_index == 3 ? -2 : target_visual_index
         real_visual_index = @visual_index == 3 && real_visual_index == -1 ? 4 : real_visual_index
         @cursor.visible = false
-        @animation = Yuki::Animation.move_discreet(0.1, self, *coordinates(@visual_index), *coordinates(real_visual_index))
-        @animation.play_before(Yuki::Animation.send_command_to(self, :set_position, *coordinates(target_visual_index)))
-        @animation.play_before(Yuki::Animation.send_command_to(self, :animate_cursor)) if target_visual_index == 0
+        @animation = Yuki::Animation.player(
+          Yuki::Animation.move_discreet(0.1, self, *coordinates(@visual_index), *coordinates(real_visual_index)),
+          Yuki::Animation.send_command_to(self, :set_position, *coordinates(target_visual_index)),
+          *(target_visual_index == 0 ? [Yuki::Animation.send_command_to(self, :animate_cursor)] : nil)
+        )
         @animation.start
         @visual_index = target_visual_index
       end
@@ -71,12 +73,16 @@ module UI
       # Animate the cursor when moving
       def animate_cursor
         @cursor.visible = true
-        @animation = Yuki::Animation::TimedLoopAnimation.new(1)
-        @animation.play_before(Yuki::Animation.wait(1))
-        parallel = Yuki::Animation.send_command_to(@cursor, :sy=, 0)
-        parallel.play_before(Yuki::Animation.wait(0.5))
-        parallel.play_before(Yuki::Animation.send_command_to(@cursor, :sy=, 1))
-        @animation.parallel_add(parallel)
+        @animation = Yuki::Animation::TimedLoopAnimation.new(1,
+          [Yuki::Animation.wait(1)],
+          [[
+            Yuki::Animation.player(
+              Yuki::Animation.send_command_to(@cursor, :sy=, 0),
+              Yuki::Animation.wait(0.5),
+              Yuki::Animation.send_command_to(@cursor, :sy=, 1)
+            )
+          ]]
+        )
         @animation.start
       end
   
