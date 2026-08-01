@@ -39,10 +39,10 @@ module BattleUI
     end
     
     def base_position_v3
-        return 0, 20 if enemy? && $game_switches[498] #2v1
+        return 0, 20 if enemy? && $game_switches[498] #3v1
         return 0, 15 if enemy?
 
-        return 220, 110
+        return 190, 110
     end    
 
     # Second Pokemon in 2v2 HP Bar
@@ -61,13 +61,14 @@ module BattleUI
 
     #Custom HP Bar Coordinates Enemy -> Player
     def hp_background_coordinates
-      return enemy? ? [36, 15] : [32, 15]
+      return [36, 15] if enemy?
+      return [32, 15]
     end
 
     def hp_bar_coordinates
       return [x + 49, y + 16] if enemy?
 
-      return $game_switches[902] ? [x + 42, y + 1] : [x + 45, y + 16]
+      return [x + 45, y + 16]
     end
 
     def create_name
@@ -85,7 +86,7 @@ module BattleUI
     end
 
     def create_level
-      enemy? ? (add_text(104, -4, 0, 16, :level_pokemon_number, 0, 1, color: 37, type: SymText)) : (add_text($game_switches[902] ? 73 : 100, -4, 4, 16, :level_pokemon_number, 0, 1, color: 37, type: SymText))
+      enemy? ? (add_text(104, -4, 0, 16, :level_pokemon_number, 0, 1, color: 37, type: SymText)) : (add_text(100, -4, 4, 16, :level_pokemon_number, 0, 1, color: 37, type: SymText))
     end
 
     def create_status
