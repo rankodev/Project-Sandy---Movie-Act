@@ -1,23 +1,10 @@
 module QTE
-	DEFAULT_TIMEOUT_FRAMES = 120 # 2 seconds at 60 FPS
+	DEFAULT_TIMEOUT_FRAMES = 90 # 1.5 seconds at 60 FPS, if the speed up with F3 oh well
 	DEFAULT_PICTURE_ID = 50
 	DEFAULT_X = 320
 	DEFAULT_Y = 240
-	DEFAULT_ORIGIN = 1 # centered
+	DEFAULT_ORIGIN = 1
 
-	# Runs a simple "press one key before timeout" QTE.
-	#
-	# @param switch_id [Integer] game switch to activate on success
-	# @param key [Symbol, Integer] Input key (recommended symbols: :A, :LEFT, :RIGHT)
-	# @param keys [Array<Symbol, Integer>] list of valid keys (if provided, key is ignored)
-	# @param picture_name [String, nil] kept for compatibility (ignored)
-	# @param timeout_frames [Integer] number of frames to wait (120 = 2 seconds)
-	# @param picture_id [Integer] picture slot used during QTE
-	# @param success_se [RPG::AudioFile, nil] optional SE to play on success
-	# @param x [Integer] picture X position
-	# @param y [Integer] picture Y position
-	# @param origin [Integer] 0 = top-left, 1 = centered
-	# @return [Boolean] true if key was pressed in time, false otherwise
 	def self.run(switch_id:, key: nil, keys: nil, picture_name: nil, timeout_frames: DEFAULT_TIMEOUT_FRAMES,
 							 picture_id: DEFAULT_PICTURE_ID, x: DEFAULT_X, y: DEFAULT_Y, origin: DEFAULT_ORIGIN,
 							 success_se: nil)
@@ -68,7 +55,6 @@ module QTE
 	end
 
 	def self.refresh_input_state
-		# PSDK versions do not always expose Input.update.
 		return Input.update if Input.respond_to?(:update)
 		return Input.update_state if Input.respond_to?(:update_state)
 		return Input.refresh if Input.respond_to?(:refresh)
@@ -99,9 +85,6 @@ module QTE
 	R_KEY = :R
 	LEFT_OR_A_KEYS = [LEFT_KEY, A_KEY].freeze
 
-	# Convenience helper that accepts letters and directional aliases.
-	# Example: QTE.run_letter(switch_id: 10, letter: :A, picture_name: 'qte_a')
-	# Example: QTE.run_letter(switch_id: 10, letter: :"<-", picture_name: 'qte_left')
 	LETTER_TO_KEY = {
 		A: A_KEY,
 		B: B_KEY,
@@ -136,8 +119,6 @@ module QTE
 		)
 	end
 
-	# Convenience helper for "Left OR A (WASD)" style prompts.
-	# If your controls map WASD A to left movement, this will work as expected.
 	def self.run_left_or_a(switch_id:, picture_name: nil, timeout_frames: DEFAULT_TIMEOUT_FRAMES,
 										picture_id: DEFAULT_PICTURE_ID, x: DEFAULT_X, y: DEFAULT_Y, origin: DEFAULT_ORIGIN)
 		run(
@@ -152,10 +133,3 @@ module QTE
 		)
 	end
 end
-
-# RMXP event Script commands execute in Interpreter context.
-# Disabled to avoid conflicts with other Interpreter/event-script patches.
-# Use ::QTE.run(...) in event Script commands instead.
-# class Interpreter
-# 	QTE = ::QTE unless const_defined?(:QTE)
-# end

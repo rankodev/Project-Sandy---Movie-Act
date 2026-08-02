@@ -10,7 +10,7 @@
   "isLimited": true,
   "isHoldable": true,
   "isAllowingMega": false,
-  "flingPower": 10,
-  "klass": "Item",
-  "isBerry": false
+  "flingPower": 80,
+  "isBerry": false,
+  "klass": "Item"
 }

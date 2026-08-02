@@ -26,7 +26,7 @@ module BattleUI
       return 70, 0
     end
     def base_position_v3
-      return 249, 88 if enemy? && $game_switches[902] # Raid Boss
+      return 242, 88 if enemy? && $game_switches[902] # Raid Boss
       return 223, 84 if enemy?
 
       return 25, 187

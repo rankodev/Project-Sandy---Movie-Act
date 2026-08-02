@@ -15,3 +15,6 @@ Battle::Scene.register_event(:battle_begin) do |scene|
   scene.show_wild_event_message("The enemy was caught off guard and is unable to attack!")
 end
 
+Battle::Scene.register_event(:AI_force_action) do |scene, ai, index|
+  next []
+end

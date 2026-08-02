@@ -38,7 +38,10 @@ module BattleUI
       def create_sub_choice
         @sub_choice = add_sprite(0, 0, NO_INITIAL_IMAGE, @scene, self, type: SubChoice)
       end
-  
+
+      def show_switch_choice_failure(play_buzzer: true, show_hide: true)
+      end
+      
       # Validate the player choice
       def validate
         bounce_button

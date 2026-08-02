@@ -1,18 +1,18 @@
 ================================Erreur de script================================
 Message :
-undefined method `bank' for nil:NilClass
+undefined method `from_party?' for nil:NilClass
 
 Type : NoMethodError
 Script : 5_Battle_05_Actions.rb (PSDK)
-Ligne : 469
-Date : 01/08/2026 11:00:36
+Ligne : 102
+Date : 01/08/2026 15:47:50
 Game Version : 256
 Logiciel : PSDK 26.58
 ===================================Backtraces===================================
-[16] : 5_Battle_05_Actions.rb (PSDK) | ligne 469 execute
-[15] : 5_Battle_04_Logic.rb (PSDK) | ligne 597 battle_phase_3v3_automatic_shifting
-[14] : 5_Battle_04_Logic.rb (PSDK) | ligne 587 battle_phase_end
-[13] : 5_Battle_01_Scene.rb (PSDK) | ligne 490 update_battle_phase
+[16] : 5_Battle_05_Actions.rb (PSDK) | ligne 102 execute
+[15] : (eval) (RMXP) | ligne 31 <main>
+[14] : 5_Battle_01_Scene.rb (PSDK) | ligne 554 call_event
+[13] : (eval) (RMXP) | ligne 17 show_enter_event
 [12] : 5_Battle_01_Scene.rb (PSDK) | ligne 77 next_update_process
 [11] : 5_Battle_01_Scene.rb (PSDK) | ligne 69 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process

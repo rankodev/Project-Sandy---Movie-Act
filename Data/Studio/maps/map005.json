@@ -14,8 +14,8 @@
     "pitch": 100
   },
   "tiledFilename": "BeachCave2",
-  "mtime": 1785390148732,
-  "sha1": "a4deb352f9afa1dfcc792f2242c43c8e3d89d599",
+  "mtime": 1785624465753,
+  "sha1": "27bdcc5984aca48c8e684873415eb3694cbe38a3",
   "tileMetadata": {
     "width": 54,
     "height": 45,
@@ -45,7 +45,7 @@
         "source": "../Tilesets/systemtags.tsx"
       },
       {
-        "firstGlobalId": 2487,
+        "firstGlobalId": 2417,
         "source": "../Tilesets/Pond and Bridge Formatted.tsx"
       }
     ],
@@ -538,7 +538,7 @@
       ],
       [
         {
-          "globalId": 2539,
+          "globalId": 2469,
           "transformId": 0
         },
         {
@@ -643,7 +643,7 @@
       ],
       [
         {
-          "globalId": 2556,
+          "globalId": 2486,
           "transformId": 0
         },
         {
@@ -940,7 +940,7 @@
       ],
       [
         {
-          "globalId": 2539,
+          "globalId": 2469,
           "transformId": 0
         },
         {
@@ -955,11 +955,15 @@
           "priority": 1
         },
         {
-          "globalId": 2539,
+          "globalId": 2469,
           "transformId": 0
         }
       ],
       [
+        {
+          "globalId": 34,
+          "transformId": 0
+        },
         {
           "globalId": 209,
           "transformId": 0
@@ -1018,7 +1022,7 @@
       ],
       [
         {
-          "globalId": 2556,
+          "globalId": 2486,
           "transformId": 0
         },
         {
@@ -5074,9 +5078,9 @@
         41
       ],
       [
-        0,
         96,
-        54
+        54,
+        95
       ],
       [
         86
