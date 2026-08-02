@@ -101,23 +101,6 @@ module Battle
             end
             # Function that create the sprite movement animation
             # @return [Yuki::AnimationMixin]
-            def create_sprite_move_animation
-              # TODO: somehow duplicate with RBYTrainer figure out the issue
-              ya = Yuki::Animation
-              enemy_move_animations = @enemy_sprites.map { |sp| ya.move(0.8, sp, sp.x, sp.y, sp.x + DISPLACEMENT_X, sp.y) }
-              actor_move_animations = @actor_sprites.map { |sp| ya.move(0.8, sp, sp.x, sp.y, sp.x - DISPLACEMENT_X, sp.y) }
-              color = [0, 0, 0, 0]
-              enemy_discover_animations = @enemy_sprites.select(&:shader)
-              enemy_discover_animations.map! { |sp| ya.send_command_to(sp.shader, :set_float_uniform, 'color', color) }
-              cries_animations = @enemy_sprites.select { |sp| sp.respond_to?(:cry) }
-              cries_animations.map! { |sp| ya.player(ya.send_command_to(sp, :cry), ya.send_command_to(sp, :shiny_animation)) }
-
-              return ya.player(
-                ya.parallel(ya.wait(0.8), *enemy_move_animations, *actor_move_animations),
-                ya.player(*enemy_discover_animations),
-                ya.player(*cries_animations)
-              )
-            end
             cries = @enemy_sprites.select { |sp| sp.respond_to?(:cry) }
             cries.each { |sp| animation.play_before(ya.send_command_to(sp, :cry)) }
             return animation
