@@ -55,4 +55,5 @@ Battle::Scene.register_event(:battle_begin) do |scene|
     scene.visual.wait_for_animation
     scene.next_update = :battle_end
     scene.show_wild_event_message("The enemy left the battle!")
+    scene.visual.wait_for_animation
 end

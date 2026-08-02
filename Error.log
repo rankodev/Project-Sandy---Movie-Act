@@ -1,18 +1,17 @@
 ================================Erreur de script================================
 Message :
-undefined method `from_party?' for nil:NilClass
+undefined local variable or method `animation' for main:Object
 
-Type : NoMethodError
-Script : 5_Battle_05_Actions.rb (PSDK)
-Ligne : 102
-Date : 01/08/2026 15:47:50
+Type : NameError
+Script : (eval) (RMXP)
+Ligne : 58
+Date : 01/08/2026 22:25:21
 Game Version : 256
 Logiciel : PSDK 26.58
 ===================================Backtraces===================================
-[16] : 5_Battle_05_Actions.rb (PSDK) | ligne 102 execute
-[15] : (eval) (RMXP) | ligne 31 <main>
+[15] : (eval) (RMXP) | ligne 58 <main>
 [14] : 5_Battle_01_Scene.rb (PSDK) | ligne 554 call_event
-[13] : (eval) (RMXP) | ligne 17 show_enter_event
+[13] : (eval) (RMXP) | ligne 24 show_enter_event
 [12] : 5_Battle_01_Scene.rb (PSDK) | ligne 77 next_update_process
 [11] : 5_Battle_01_Scene.rb (PSDK) | ligne 69 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
