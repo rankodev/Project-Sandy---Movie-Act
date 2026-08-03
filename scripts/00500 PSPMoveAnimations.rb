@@ -1,4 +1,4 @@
-class Scene_Battle
+
   module PSP
     begin
       MOVE_TO_ID_ANIMATION_TARGET = {
@@ -459,4 +459,3 @@ class Scene_Battle
       save_data(MOVE_TO_ID_ANIMATION_USER,"Data/PSP_MTAU.dat")
     end
   end
-end
