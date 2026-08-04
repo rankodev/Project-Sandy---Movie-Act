@@ -14,8 +14,8 @@
     "pitch": 100
   },
   "tiledFilename": "CaveOutside",
-  "mtime": 1784746284447,
-  "sha1": "61c428e2e9785069132d96c17163d65240857d20",
+  "mtime": 1785768885420,
+  "sha1": "b30c9bfa04762d6d4903af4fae5a040ef5177ab7",
   "tileMetadata": {
     "width": 60,
     "height": 38,
@@ -47,6 +47,10 @@
       {
         "firstGlobalId": 6913,
         "source": "../Tilesets/_35.tsx"
+      },
+      {
+        "firstGlobalId": 7713,
+        "source": "../Tilesets/sandy_indoor.tsx"
       }
     ],
     "tileByTileId": [
@@ -844,7 +848,7 @@
       ],
       [
         {
-          "globalId": 6071,
+          "globalId": 10335,
           "transformId": 0
         },
         {
@@ -853,7 +857,7 @@
       ],
       [
         {
-          "globalId": 6072,
+          "globalId": 10336,
           "transformId": 0
         },
         {
@@ -967,7 +971,7 @@
       ],
       [
         {
-          "globalId": 6070,
+          "globalId": 10334,
           "transformId": 0
         },
         {
@@ -1084,7 +1088,7 @@
       ],
       [
         {
-          "globalId": 6064,
+          "globalId": 10328,
           "transformId": 0
         },
         {
@@ -1171,7 +1175,7 @@
       ],
       [
         {
-          "globalId": 6078,
+          "globalId": 10342,
           "transformId": 0
         },
         {
@@ -1180,7 +1184,7 @@
       ],
       [
         {
-          "globalId": 6063,
+          "globalId": 10327,
           "transformId": 0
         },
         {
@@ -1342,7 +1346,7 @@
       ],
       [
         {
-          "globalId": 6073,
+          "globalId": 10337,
           "transformId": 0
         },
         {
@@ -1351,7 +1355,7 @@
       ],
       [
         {
-          "globalId": 6074,
+          "globalId": 10338,
           "transformId": 0
         },
         {
@@ -1360,7 +1364,7 @@
       ],
       [
         {
-          "globalId": 6062,
+          "globalId": 10326,
           "transformId": 0
         },
         {
@@ -1513,7 +1517,7 @@
       ],
       [
         {
-          "globalId": 6081,
+          "globalId": 10345,
           "transformId": 0
         },
         {
@@ -1522,7 +1526,7 @@
       ],
       [
         {
-          "globalId": 6082,
+          "globalId": 10346,
           "transformId": 0
         },
         {
@@ -2338,7 +2342,7 @@
       ],
       [
         {
-          "globalId": 6073,
+          "globalId": 10337,
           "transformId": 0
         },
         {
@@ -2347,7 +2351,7 @@
       ],
       [
         {
-          "globalId": 6074,
+          "globalId": 10338,
           "transformId": 0
         },
         {
@@ -2395,7 +2399,7 @@
       ],
       [
         {
-          "globalId": 6079,
+          "globalId": 10343,
           "transformId": 0
         },
         {
@@ -2404,7 +2408,7 @@
       ],
       [
         {
-          "globalId": 6080,
+          "globalId": 10344,
           "transformId": 0
         },
         {
@@ -2482,7 +2486,7 @@
       ],
       [
         {
-          "globalId": 6075,
+          "globalId": 10339,
           "transformId": 0
         },
         {
@@ -2491,7 +2495,7 @@
       ],
       [
         {
-          "globalId": 6076,
+          "globalId": 10340,
           "transformId": 0
         },
         {
@@ -2509,7 +2513,7 @@
       ],
       [
         {
-          "globalId": 6083,
+          "globalId": 10347,
           "transformId": 0
         },
         {
@@ -2518,7 +2522,7 @@
       ],
       [
         {
-          "globalId": 6084,
+          "globalId": 10348,
           "transformId": 0
         },
         {
