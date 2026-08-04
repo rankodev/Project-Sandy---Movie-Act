@@ -3,11 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Maps/MushroomCanyon1.tmx",
+    "activeFile": "Tilesets/sandy_indoor.tsx",
     "expandedProjectPaths": [
         "Tilesets",
-        "Maps",
-        "."
+        ".",
+        "Maps"
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
@@ -74,6 +74,7 @@
             "scaleInDock": 1
         },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx": {
+            "dynamicWrapping": true,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
@@ -147,11 +148,11 @@
             }
         },
         "Maps/CaveOutside.tmx": {
-            "scale": 0.5,
-            "selectedLayer": 1,
+            "scale": 0.75,
+            "selectedLayer": 2,
             "viewCenter": {
-                "x": 959,
-                "y": 718
+                "x": 864.6666666666666,
+                "y": 452
             }
         },
         "Maps/DryDesert1.tmx": {
@@ -195,11 +196,11 @@
             "scaleInEditor": 1
         },
         "Maps/MushroomCanyon1.tmx": {
-            "scale": 0.75,
+            "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 774,
-                "y": 661.3333333333333
+                "x": 813,
+                "y": 1202
             }
         },
         "Maps/MushroomCanyon1.tmx#The Desertica": {
@@ -207,11 +208,11 @@
             "scaleInEditor": 1
         },
         "Maps/MushroomCanyon2.tmx": {
-            "scale": 0.5343749999999999,
-            "selectedLayer": 0,
+            "scale": 1,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 800.0000000000002,
-                "y": 799.0643274853802
+                "x": 835.5,
+                "y": 750
             }
         },
         "Maps/MushroomCanyon3.tmx": {
@@ -230,13 +231,13 @@
             "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 837,
-                "y": 1038
+                "x": 961,
+                "y": 863
             }
         },
         "Maps/SandCave2.tmx": {
             "scale": 0.5,
-            "selectedLayer": 6,
+            "selectedLayer": 0,
             "viewCenter": {
                 "x": 885,
                 "y": 870
@@ -382,11 +383,14 @@
             "scaleInDock": 1
         },
         "Tilesets/passages.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "Tilesets/sandy_indoor.tsx": {
-            "scaleInDock": 1
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Tilesets/sandy_outside.tsx": {
             "scaleInDock": 1
@@ -408,22 +412,25 @@
     "openFiles": [
         "Maps/SandCave1.tmx",
         "Maps/SandCave2.tmx",
-        "Maps/MushroomCanyon1.tmx"
+        "Maps/MushroomCanyon1.tmx",
+        "Maps/MushroomCanyon2.tmx",
+        "Maps/CaveOutside.tmx",
+        "Tilesets/sandy_indoor.tsx"
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
+        "Tilesets/sandy_indoor.tsx",
         "Maps/SandCave1.tmx",
         "Maps/SandCave2.tmx",
         "Maps/MushroomCanyon1.tmx",
+        "Maps/MushroomCanyon2.tmx",
+        "Maps/CaveOutside.tmx",
+        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx",
         "Maps/Haunted Woods.tsx",
         "Tilesets/passages.tsx",
         "Tilesets/systemtags.tsx",
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx",
-        "Tilesets/Dustlands-Grandesert.tsx",
-        "Tilesets/Costal Cave.tsx",
-        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/dustlands.tsx",
-        "Tilesets/The Desertica.tsx",
-        "Maps/The Desertica.tsx"
+        "Tilesets/Dustlands-Grandesert.tsx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx"
