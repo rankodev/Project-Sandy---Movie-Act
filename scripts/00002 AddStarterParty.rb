@@ -11,7 +11,7 @@ class Interpreter
     def add_quaxly
         ajouter_pokemon_param(
             id: :quaxly, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
-            captured_with: 797, nature: :hardy, moves: [:air_slash, :rapid_spin, :aqua_cutter, :last_resort], stats: [20, 20, 20, 20, 20, 20], 
+            captured_with: 797, nature: :hardy, moves: [:pivot, :rapid_spin, :aqua_cutter, :last_resort], stats: [20, 20, 20, 20, 20, 20], 
             gender: %w[f m i][gv[495]]
         )
     end
@@ -83,7 +83,7 @@ class Interpreter
     def add_chimchar
         ajouter_pokemon_param(
             id: :chimchar, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
-            captured_with: 797, nature: :hardy, moves: [:cannonball, :fire_pledge, :low_sweep, :helping_hand], stats: [20, 20, 20, 20, 20, 20], 
+            captured_with: 797, nature: :hardy, moves: [:cannonball, :fire_pledge, :low_sweep, :pivot], stats: [20, 20, 20, 20, 20, 20], 
             gender: %w[f m i][gv[495]]
         )
     end

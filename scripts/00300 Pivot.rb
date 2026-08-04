@@ -1,31 +1,38 @@
 module Battle
     class Move
         class Pivot < Move
-            # Tell if the move is a move that switch the user if that hit
-            def self_user_switch?
-                return true
-            end
-            # Function that tests if the user is able to use the move
-            # @param user [PFM::PokemonBattler] user of the move
-            # @param targets [Array<PFM::PokemonBattler>] expected targets
-            # @note Thing that prevents the move from being used should be defined by :move_prevention_user Hook
-            # @return [Boolean] if the procedure can continue
-            def move_usable_by_user(user, targets)
-                return false unless super
-                return show_usage_failure(user) && false unless @logic.switch_handler.can_switch?(user, self)
-                return true
-            end
-            # Function that deals the effect to the pokemon
-            # @param user [PFM::PokemonBattler] user of the move
-            # @param actual_targets [Array<PFM::PokemonBattler>] targets that will be affected by the move
-            def deal_effect(user, actual_targets)
-                super
-                actual_targets.each do |target|
-                target.effects.add(Battle::Effects::Pivot.new(logic, target))
-                logic.request_switch(target, nil)
-                end
-            end
+      def move_usable_by_user(user, targets)
+        return false unless super
+        allies = @logic.allies_of(user)
+        if allies.empty?
+          show_usage_failure(user)
+          return false
         end
-        Move.register(:s_pivot, Pivot)
+
+        chosen_ally = targets&.first
+        if chosen_ally && !allies.include?(chosen_ally)
+          show_usage_failure(user)
+          return false
+        end
+        return true
+      end
+      def no_choice_skill?
+        return false
+      end
+      def battler_targets(pokemon, logic)
+        return logic.allies_of(pokemon)
+      end
+      def deal_effect(user, actual_targets)
+        ally = actual_targets.first || @logic.allies_of(user).first
+        @logic.switch_battlers(user, ally)
+        scene.visual.show_switch_form_animation(ally)
+        scene.visual.show_switch_form_animation(user)
+        scene.display_message_and_wait(parse_text_with_pokemon(19, 1143, user, PFM::Text::PKNICK[1] => ally.given_name))
+        @logic.stat_change_handler.stat_change_with_process(:spd, 1, user, user, self)
+        @logic.stat_change_handler.stat_change_with_process(:spd, 1, ally, user, self)
+        @logic.all_alive_battlers.each { |pokemon| scene.visual.refresh_info_bar(pokemon) }
+      end
+    end
+    Move.register(:s_pivot, Pivot)
     end
 end

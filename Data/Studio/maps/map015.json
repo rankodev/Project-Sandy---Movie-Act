@@ -14,15 +14,15 @@
     "pitch": 100
   },
   "tiledFilename": "MushroomCanyon1",
-  "mtime": 1785592037323,
-  "sha1": "e454a51a8a67641cb882617b6e8675aaa3c4f123",
+  "mtime": 1785860862036,
+  "sha1": "80be78926f2089c798c25305e563210a8f69f6a0",
   "tileMetadata": {
     "width": 50,
     "height": 60,
     "tilesets": [
       {
         "firstGlobalId": 1,
-        "source": "Haunted Woods.tsx"
+        "source": "../Tilesets/Haunted Woods.tsx"
       },
       {
         "firstGlobalId": 569,

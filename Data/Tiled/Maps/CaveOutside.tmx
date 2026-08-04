@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="60" height="38" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="60" height="38" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="1">
  <tileset firstgid="1" source="../Tilesets/systemtags.tsx"/>
  <tileset firstgid="129" source="../Tilesets/passages.tsx"/>
  <tileset firstgid="273" source="../Tilesets/!TilesetCave.tsx"/>
  <tileset firstgid="1865" source="../Tilesets/The Desertica.tsx"/>
  <tileset firstgid="2705" source="../Tilesets/Dustlands-Grandesert.tsx"/>
- <tileset firstgid="3449" source="../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx"/>
+ <tileset firstgid="3449" source="../Tilesets/sandy_indoor.tsx"/>
  <tileset firstgid="6913" source="../Tilesets/_35.tsx"/>
  <layer id="1" name="floor1" width="60" height="38">
   <data encoding="csv">

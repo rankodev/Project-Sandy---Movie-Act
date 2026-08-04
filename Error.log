@@ -1,20 +1,38 @@
 ================================Erreur de script================================
 Message :
-undefined method `bank' for nil:NilClass
+undefined local variable or method `init_message' for #<PSMA::MissionUI:0x10d3e260>
 
-Type : NoMethodError
-Script : 5_Battle_05_Actions.rb (PSDK)
-Ligne : 469
-Date : 03/08/2026 17:05:30
+Type : NameError
+Script : 00001 PSMA/00200 PSMA_MissionUI.rb (user)
+Ligne : 29
+Date : 04/08/2026 15:18:02
 Game Version : 256
 Logiciel : PSDK 26.58
+Script used by eval command : 
+$scene.call_scene(PSMA::MissionUI)
+
+
 ===================================Backtraces===================================
-[16] : 5_Battle_05_Actions.rb (PSDK) | ligne 469 execute
-[15] : 5_Battle_04_Logic.rb (PSDK) | ligne 597 battle_phase_3v3_automatic_shifting
-[14] : 5_Battle_04_Logic.rb (PSDK) | ligne 587 battle_phase_end
-[13] : 5_Battle_01_Scene.rb (PSDK) | ligne 490 update_battle_phase
-[12] : 5_Battle_01_Scene.rb (PSDK) | ligne 77 next_update_process
-[11] : 5_Battle_01_Scene.rb (PSDK) | ligne 69 update
+[30] : 00001 PSMA/00200 PSMA_MissionUI.rb (user) | ligne 29 create_graphics
+[29] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 228 main_begin
+[28] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 143 main
+[27] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 175 call_scene
+[26] : (eval) (RMXP) | ligne 2 eval_X1
+[25] : 1_RMXP_Scripts.rb (PSDK) | ligne 2145 eval_script
+[24] : 1_RMXP_Scripts.rb (PSDK) | ligne 2137 command_355
+[23] : 1_RMXP_Scripts.rb (PSDK) | ligne 1121 execute_command
+[22] : 1_RMXP_Scripts.rb (PSDK) | ligne 996 update
+[21] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 loop
+[20] : 1_RMXP_Scripts.rb (PSDK) | ligne 976 update
+[19] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9285 update_map_logic
+[18] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 2933 update_map_logic
+[17] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9293 auto_transfert_update
+[16] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 loop
+[15] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9292 auto_transfert_update
+[14] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
+[13] : 0_Dependencies.rb (PSDK) | ligne 1441 times
+[12] : 0_Dependencies.rb (PSDK) | ligne 1441 run
+[11] : 4_Systems_003_Map_Engine.rb (PSDK) | ligne 9145 update
 [10] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 236 main_process
 [9] : 4_Systems_000_General_2_GamePlay__Base.rb (PSDK) | ligne 144 main
 [8] : tools/GameLoader/Z_main.rb (PSDK) | ligne 16 <top (required)>

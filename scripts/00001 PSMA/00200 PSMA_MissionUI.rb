@@ -24,9 +24,9 @@ module PSMA
       super
       create_list_composition
       create_mission_composition
-      create_speaker
+      # create_speaker
       # create_entry_animation
-      init_message
+      # init_message
     end
 
     def update_inputs
@@ -59,12 +59,12 @@ module PSMA
       @mission_composition.visible = false
     end
 
-    def create_speaker
-      @speaker = Sprite.new(@viewport)
-      @speaker.load('portraits/minccino_neutral', :picture)
-      @speaker.set_position(30, 136)
-      @speaker.zoom = 0.5
-    end
+   # def create_speaker
+      #@speaker = Sprite.new(@viewport)
+      #@speaker.load('portraits/minccino_neutral', :picture)
+      #@speaker.set_position(30, 136)
+      #@speaker.zoom = 0.5
+    #end
 
     def update_graphics
       @list_composition.update
@@ -72,11 +72,11 @@ module PSMA
     end
 
     # Show the initial message
-    def init_message
-      @message_window.stay_visible = true
-      @message_window.auto_skip = true
-      $game_temp.message_text = '(What kind of missions are available today…?)'
-    end
+    #def init_message
+    #  @message_window.stay_visible = true
+    #  @message_window.auto_skip = true
+    #  $game_temp.message_text = '(What kind of missions are available today…?)'
+   # end
 
     def action_a
       message_window.stay_visible = false
