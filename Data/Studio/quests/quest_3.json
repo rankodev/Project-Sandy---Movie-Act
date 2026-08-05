@@ -1,0 +1,19 @@
+{
+  "klass": "Quest",
+  "id": 3,
+  "dbSymbol": "quest_3",
+  "isPrimary": false,
+  "resolution": "default",
+  "objectives": [
+    {
+      "objectiveMethodName": "objective_obtain_item",
+      "objectiveMethodArgs": [
+        "master_ball",
+        1
+      ],
+      "textFormatMethodName": "text_obtain_item",
+      "hiddenByDefault": true
+    }
+  ],
+  "earnings": []
+}

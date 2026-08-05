@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "spore",
+  "klass": "TechItem",
+  "id": 933,
+  "dbSymbol": "sleep_seed",
+  "icon": "SleepSeed",
+  "price": 500,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

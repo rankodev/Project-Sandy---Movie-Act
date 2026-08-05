@@ -113,13 +113,13 @@ Oval Stones,Pierres Ovales,Pietreovali,Ovale Steine,Piedras Ovales,동글동글�
 Odd Keystones,Clés de Voûte,Roccianime,Spiritkerne,Piedras Espíritu,쐐기돌,かなめいし
 Griseous Orbs,Orbes Platinés,Grigiosfere,Platinum-Orbs,Griseosferas,백금옥,はっきんだま
 Tea,Thés,Tè,Tees,Tés,차,おちゃ
-???,,???,???,(?),???,？？？
+Bountiful Boxes,,???,???,(?),???,？？？
 Autographs,Dédicaces de Bob,Autografi,Autogramme,Autógrafos,마티스의사인,マチスのサイン
 Douse Drives,Modules Aqua,Idromoduli,Aquamodule,HidroROM,아쿠아카세트,アクアカセット
 Shock Drives,Modules Choc,Voltmoduli,Blitzmodule,FulgoROM,번개카세트,イナズマカセット
 Burn Drives,Modules Pyro,Piromoduli,Flammenmodule,PiroROM,블레이즈카세트,ブレイズカセット
 Chill Drives,Modules Cryo,Gelomoduli,Gefriermodule,CrioROM,프리즈카세트,フリーズカセット
-???,,???,???,(?),???,？？？
+Fortify Seeds,,???,???,(?),???,？？？
 Pokémon Box Links,Boîtes Pokémon,Box Pokémon,Pokémon-Boxen,Cajas de Pokémon,포켓몬 박스,ポケモンボックス
 Medicine Pockets,Trousses de Soins,Tasche rimedi,Medizintaschen,Botiquines,회복포켓,かいふくポケット
 TM Cases,Boîtes CT,Porta MT,TM-Boxen,Estuches de MT,기술머신케이스,わざマシンケース
@@ -128,11 +128,11 @@ Power-Up Pockets,Poches à Renforts,Tasche potenziam.,Stärkungstaschen,Bolsillo
 Clothing Trunks,Malles à Costumes,Valigie vestiti,Klamottenkoffer,Maletas,옷갈아입기트렁크,おきがえトランク
 Catching Pockets,Poches de Capture,Tasche cattura,Fangtaschen,Bolsillos Captura,포획포켓,ほかくポケット
 Battle Pockets,Poches de Combat,Tasche lotta,Kampftaschen,Bolsillos Combate,배틀포켓,バトルポケット
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
+Pecha Scarves,,???,???,(?),???,？？？
+Hunter's Badges,,???,???,(?),???,？？？
+Fairy Feathers,,???,???,(?),???,？？？
+Chestnuts,,???,???,(?),???,？？？
+Power Headbands,,???,???,(?),???,？？？
 Sweet Hearts,Chococœurs,Dolcicuori,Herzkonfekte,Corazones Dulces,하트스위트,ハートスイーツ
 Adamant Orbs,Orbes Adamants,Adamasfere,Adamant-Orbs,Diamansferas,금강옥,こんごうだま
 Lustrous Orbs,Orbes Perlés,Splendisfere,Weiß-Orbs,Lustresferas,백옥,しらたま
@@ -425,8 +425,8 @@ HM03s,CS03,MN03,VM03,MO03,비전머신03,ひでんマシン０３
 HM04s,CS04,MN04,VM04,MO04,비전머신04,ひでんマシン０４
 HM05s,CS05,MN05,VM05,MO05,비전머신05,ひでんマシン０５
 HM06s,CS06,MN06,VM06,MO06,비전머신06,ひでんマシン０６
-???,???,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
+Special Bows,???,???,???,(?),???,？？？
+Zinc Bands,,???,???,(?),???,？？？
 Explorer Kits,Explorakits,Esplorokit,Erkundungs-Sets,Kits Explorador,탐험세트,たんけんセット
 Loot Sacks,Sacs Butin,Bottinosacche,Beutesäcke,Sacas Botín,보물주머니,たからぶくろ
 Rule Books,Livres Règles,Libri Regole,Regelbücher,Reglamentos,룰북,ルールブック
@@ -621,7 +621,7 @@ TM93s,CT93,MT93,TM93,MT93,기술머신93,わざマシン９３
 TM94s,CT94,MT94,TM94,MT94,기술머신94,わざマシン９４
 TM95s,CT95,MT95,TM95,MT95,기술머신95,わざマシン９５
 Xtransceivers,Vokits,Interpoké,Viso-Caster,Videomisores,라이브캐스터,ライブキャスター
-???,,???,???,(?),???,ゴッドストーン
+Gold Bows,,???,???,(?),???,ゴッドストーン
 Gram 1s,Courriers 1,Missive 1,Briefpost 1,Envíos 1,배달물1,はいたつぶつ１
 Gram 2s,Courriers 2,Missive 2,Briefpost 2,Envíos 2,배달물2,はいたつぶつ２
 Gram 3s,Courriers 3,Missive 3,Briefpost 3,Envíos 3,배달물3,はいたつぶつ３
@@ -836,10 +836,10 @@ Eevium Zs,Évolizélites,Eevium Z,Evolium Z,Eeveestales Z,이브이Z,イーブ�
 Mewnium Zs,Mewzélites,Mewnium Z,Mewnium Z,Mewstales Z,뮤Z,ミュウＺ
 Pikashunium Zs,Pikachazélites,Ashpikacium Z,Ash-Pikachium Z,Ash-Pikastales Z,지우피카Z,サトピカＺ
 Pikashunium Zs,Pikachazélites,Ashpikacium Z,Ash-Pikachium Z,Ash-Pikastales Z,지우피카Z,サトピカＺ
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
+Silver Spikes,,???,???,(?),???,？？？
+Petrify Orbs,,???,???,(?),???,？？？
+All Protect Orbs,,???,???,(?),???,？？？
+Joy Ribbons,,???,???,(?),???,？？？
 Forage Bags,Sacs Ingrédients,Portaingredienti,Zutatenbeutel,Zurrones,재료주머니,ざいりょうぶくろ
 Fishing Rods,,Ami,Angeln,Cañas,낚싯대,つりざお
 Professor’s Masks,Masques du Prof,Maschere Prof.,Masken des Profs,Máscaras Profesor,박사의복면,はかせのふくめん
@@ -847,7 +847,7 @@ Festival Tickets,Festickets,Festicket,Festival-Tickets,Festicupones,페스티켓
 Sparkling Stones,Gemmes Lumière,Pietre lucenti,Glitzersteine,Piedras Brillantes,빛나는돌,かがやくいし
 Adrenaline Orbs,Orbes Frousse,Fifasfere,Zitterorbs,Nerviosferas,주눅구슬,ビビリだま
 Zygarde Cubes,Boîtes Zygarde,Teche Zygarde,Zygarde-Würfel,Arcas de Zygarde,지가르데큐브,ジガルデキューブ
-???,,???,???,(?),???,？？？
+Heal Ribbons,,???,???,(?),???,？？？
 Ice Stones,Pierres Glace,Pietregelo,Eissteine,Piedras Hielo,얼음의돌,こおりのいし
 Ride Pagers,Appel-Montures,Chiamapassaggi,PokéMobil-Funk,Buscamonturas,라이드기어,ライドギア
 Beast Balls,Ultra Balls,UC Ball,Ultrabälle,Ente Balls,울트라볼,ウルトラボール
@@ -858,7 +858,7 @@ Pink Nectars,Nectars Roses,Nettare rosa,Rosa Nektare,Néctares Rosas,연분홍�
 Purple Nectars,Nectars Mauves,Nettare viola,Purpurne Nektare,Néctares Violetas,보라꿀,むらさきのミツ
 Sun Flutes,Flûtes du Soleil,Flauti solari,Sonnenflöten,Flautas Solares,태양의피리,たいようのふえ
 Moon Flutes,Flûtes de la Lune,Flauti lunari,Mondflöten,Flautas Lunares,달의피리,つきのふえ
-???,,???,???,(?),???,？？？
+Recovery Scarf,,???,???,(?),???,？？？
 Enigmatic Cards,Messages Mystère,Lettere segrete,Seltsame Karten,Notas Intrigantes,괴상한카드,あやしいカード
 Silver Razz Berries,Baies Framby argentées,Baccalampon argentate,Silberne Himmihbeeren,Bayas Frambu Plateadas,은 라즈열매,ぎんのズリのみ
 Golden Razz Berries,Baies Framby dorées,Baccalampon dorate,Goldene Himmihbeeren,Bayas Frambu Doradas,황금 라즈열매,きんのズリのみ
@@ -866,11 +866,11 @@ Silver Nanab Berries,Baies Nanab argentées,Baccabana argentate,Silberne Nanabbe
 Golden Nanab Berries,Baies Nanab dorées,Baccabana dorate,Goldene Nanabbeeren,Bayas Latano Doradas,황금 나나열매,きんのナナのみ
 Silver Pinap Berries,Baies Nanana argentées,Baccananas argentate,Silberne Sananabeeren,Bayas Pinia Plateadas,은 파인열매,ぎんのパイルのみ
 Golden Pinap Berries,Baies Nanana dorées,Baccananas dorate,Goldene Sananabeeren,Bayas Pinia Doradas,황금 파인열매,きんのパイルのみ
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
+,,???,???,(?),???,？？？
+,,???,???,(?),???,？？？
+,,???,???,(?),???,？？？
+,,???,???,(?),???,？？？
+,,???,???,(?),???,？？？
 Secret Keys,Clés Secrètes,Chiavi segrete,Geheimschlüssel,Llaves Secretas,비밀의열쇠,ひみつのカギ
 S.S. Tickets,Passes Bateau,Biglietti nave,Bootstickets,Tickets del Barco,승선티켓,ふねのチケット
 Silph Scopes,Scopes Sylphe,Spettrosonde,Silph Scopes,Visores Silph,실프스코프,シルフスコープ
@@ -896,9 +896,9 @@ Tropical Shells,Coquilles du Sud,Tropiconchiglie,Tropenmuscheln,Conchas Tropical
 Leaf Letters,Lettres Végétales,Foglialettere,Blattbriefe,Hojas Escritas,나뭇잎편지,このはのおてがみ
 Leaf Letters,Lettres Végétales,Foglialettere,Blattbriefe,Hojas Escritas,나뭇잎편지,このはのおてがみ
 Small Bouquets,Petits Bouquets,Bouquet,Ministräuße,Ramos Pequeños,작은꽃다발,ちいさなはなたば
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
-???,,???,???,(?),???,？？？
+,,???,???,(?),???,？？？
+,,???,???,(?),???,？？？
+Totter Seeds,,???,???,(?),???,？？？
 Lures,Parfums,Profumi invito,Lockparfüme,Colonias,벌레유인코롱,むしよせコロン
 Super Lures,Super Parfums,Superprofumi,Super-Lockparfüme,Supercolonias,실버코롱,シルバーコロン
 Max Lures,Parfums Max,Profumi Max,Top-Lockparfüme,Colonias Máximas,골드코롱,ゴールドコロン
@@ -920,19 +920,19 @@ Ice Memories,ROM Glace,ROM Ghiaccio,Eis-Discs,Discos Hielo,아이스메모리,�
 Dragon Memories,ROM Dragon,ROM Drago,Drachen-Discs,Discos Dragón,드래곤메모리,ドラゴンメモリ
 Dark Memories,ROM Ténèbres,ROM Buio,Unlicht-Discs,Discos Siniestro,다크메모리,ダークメモリ
 Fairy Memories,ROM Fée,ROM Folletto,Feen-Discs,Discos Hada,페어리메모리,フェアリーメモリ
-TMXX,Filet Frit,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Œuf,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Tortilla,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Tofu,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Riz,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Nouilles,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Plume Ball,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,Filet Frit,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Defense Scarves,Œuf,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,Tortilla,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,Tofu,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,Riz,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,Nouilles,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,Plume Ball,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
 TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
 TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
 TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX

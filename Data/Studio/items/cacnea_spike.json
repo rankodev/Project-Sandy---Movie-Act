@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "cacnea_spike",
+  "klass": "TechItem",
+  "id": 924,
+  "dbSymbol": "cacnea_spike",
+  "icon": "cacneaSpikeBig",
+  "price": 500,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 70
+}

@@ -1,0 +1,19 @@
+{
+  "count": 2,
+  "stat": "DFE_STAGE",
+  "loyaltyMalus": 0,
+  "klass": "StatBoostItem",
+  "id": 928,
+  "dbSymbol": "iron_seed",
+  "icon": "IronSeed",
+  "price": 1000,
+  "socket": 4,
+  "position": 0,
+  "isBattleUsable": false,
+  "isMapUsable": false,
+  "isLimited": false,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

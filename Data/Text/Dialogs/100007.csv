@@ -981,5 +981,10 @@ The user discharges static electricity stored within itself. This move inflicts 
 "The user picks up speed and crashes into the target, knocking it down. The target's next move this turn goes last.","The user picks up speed and crashes into the target, knocking it down. The target's next move this turn goes last.","The user picks up speed and crashes into the target, knocking it down. The target's next move this turn goes last.","The user picks up speed and crashes into the target, knocking it down. The target's next move this turn goes last.","The user picks up speed and crashes into the target, knocking it down. The target's next move this turn goes last.","The user picks up speed and crashes into the target, knocking it down. The target's next move this turn goes last.","The user picks up speed and crashes into the target, knocking it down. The target's next move this turn goes last."
 "The user violently unleashes its inner psychic potential, casting random Status, Special, and Physical moves!",Spellflux Frenzy,Spellflux Frenzy,Spellflux Frenzy,Spellflux Frenzy,Spellflux Frenzy,Spellflux Frenzy
 "The user puts heroically puts itself in harms way, redirecting attacks. The user takes reduced damage, but the move fails if used in succession.",NewText,NewText,NewText,NewText,NewText,NewText
-"The user switches places with an ally, keeping up their offensive momentum. Raises both Pokémon's Speed stats.",NewText,NewText,NewText,NewText,NewText,NewText
+"The user switches places with an ally, keeping up their offensive momentum. This also raises both Pokémon's Speed stats.",NewText,NewText,NewText,NewText,NewText,NewText
 "The user swiftly crashes into its target, taking their held Item if the user is not currently holding one. The user retreats if successful.",,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

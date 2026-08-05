@@ -1,0 +1,16 @@
+{
+  "klass": "Item",
+  "id": 132,
+  "dbSymbol": "chestnut",
+  "icon": "Chestnut",
+  "price": 500,
+  "socket": 1,
+  "position": 0,
+  "isBattleUsable": false,
+  "isMapUsable": true,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 120
+}

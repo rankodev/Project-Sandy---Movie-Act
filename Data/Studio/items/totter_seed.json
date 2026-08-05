@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "confuse_ray",
+  "klass": "TechItem",
+  "id": 899,
+  "dbSymbol": "totter_seed",
+  "icon": "TotterSeed",
+  "price": 500,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

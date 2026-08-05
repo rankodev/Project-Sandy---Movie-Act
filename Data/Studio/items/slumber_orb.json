@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "dark_void",
+  "klass": "TechItem",
+  "id": 869,
+  "dbSymbol": "slumber_orb",
+  "icon": "SlumberOrb",
+  "price": 2000,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

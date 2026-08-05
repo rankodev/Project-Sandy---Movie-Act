@@ -1,0 +1,19 @@
+{
+  "count": 2,
+  "stat": "ATK_STAGE",
+  "loyaltyMalus": 0,
+  "klass": "StatBoostItem",
+  "id": 930,
+  "dbSymbol": "sharp_seed",
+  "icon": "SharpSeed",
+  "price": 1000,
+  "socket": 4,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

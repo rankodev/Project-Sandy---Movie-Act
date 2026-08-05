@@ -1,0 +1,17 @@
+{
+  "loyaltyMalus": 0,
+  "klass": "HealingItem",
+  "id": 898,
+  "dbSymbol": "reviver_seed",
+  "icon": "ReviverSeed",
+  "price": 750,
+  "socket": 4,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": true,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

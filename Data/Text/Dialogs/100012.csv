@@ -113,13 +113,13 @@ Oval Stone,Pierre Ovale,Pietraovale,Ovaler Stein,Piedra Oval,동글동글돌,ま
 Odd Keystone,Clé de Voûte,Roccianima,Spiritkern,Piedra Espíritu,쐐기돌,かなめいし
 Griseous Orb,Orbe Platiné,Grigiosfera,Platinum-Orb,Griseosfera,백금옥,はっきんだま
 Tea,Thé,Tè,Tee,Té,차,おちゃ
-???,Salade de Patates,???,???,(?),???,？？？
+Bountiful Box,Salade de Patates,???,???,(?),???,？？？
 Autograph,Dédicace de Bob,Autografo,Autogramm,Autógrafo,마티스의사인,マチスのサイン
 Douse Drive,Module Aqua,Idromodulo,Aquamodul,HidroROM,아쿠아카세트,アクアカセット
 Shock Drive,Module Choc,Voltmodulo,Blitzmodul,FulgoROM,번개카세트,イナズマカセット
 Burn Drive,Module Pyro,Piromodulo,Flammenmodul,PiroROM,블레이즈카세트,ブレイズカセット
 Chill Drive,Module Cryo,Gelomodulo,Gefriermodul,CrioROM,프리즈카세트,フリーズカセット
-???,Fromage,???,???,(?),???,？？？
+Fortify Seed,Fromage,???,???,(?),???,？？？
 Pokémon Box Link,Boîte Pokémon,Box Pokémon,Pokémon-Box,Caja de Pokémon,포켓몬 박스,ポケモンボックス
 Medicine Pocket,Trousse de Soins,Tasca rimedi,Medizintasche,Botiquín,회복포켓,かいふくポケット
 TM Case,Boîte CT,Porta MT,TM-Box,Estuche de MT,기술머신케이스,わざマシンケース
@@ -128,11 +128,11 @@ Power-Up Pocket,Poche à Renforts,Tasca potenziam.,Stärkungstasche,Bolsillo Mej
 Clothing Trunk,Malle à Costumes,Valigia vestiti,Klamottenkoffer,Maleta,옷갈아입기트렁크,おきがえトランク
 Catching Pocket,Poche de Capture,Tasca cattura,Fangtasche,Bolsillo Captura,포획포켓,ほかくポケット
 Battle Pocket,Poche de Combat,Tasca lotta,Kampftasche,Bolsillo Combate,배틀포켓,バトルポケット
-???,Banane,???,???,(?),???,？？？
-???,Fraise,???,???,(?),???,？？？
-???,Pomme,???,???,(?),???,？？？
-???,Kiwi,???,???,(?),???,？？？
-???,Ananas,???,???,(?),???,？？？
+Pecha Scarf,Banane,???,???,(?),???,？？？
+Hunter's Badge,Fraise,???,???,(?),???,？？？
+Fairy Feather,Pomme,???,???,(?),???,？？？
+Chestnut,Kiwi,???,???,(?),???,？？？
+Power Headband,Ananas,???,???,(?),???,？？？
 Sweet Heart,Chococœur,Dolcecuore,Herzkonfekt,Corazón Dulce,하트스위트,ハートスイーツ
 Adamant Orb,Orbe Adamant,Adamasfera,Adamant-Orb,Diamansfera,금강옥,こんごうだま
 Lustrous Orb,Orbe Perlé,Splendisfera,Weiß-Orb,Lustresfera,백옥,しらたま
@@ -425,8 +425,8 @@ HM03,CS03,MN03,VM03,MO03,비전머신03,ひでんマシン０３
 HM04,CS04,MN04,VM04,MO04,비전머신04,ひでんマシン０４
 HM05,CS05,MN05,VM05,MO05,비전머신05,ひでんマシン０５
 HM06,CS06,MN06,VM06,MO06,비전머신06,ひでんマシン０６
-???,CS08,???,???,(?),???,？？？
-???,Piment,???,???,(?),???,？？？
+Special Bow,CS08,???,???,(?),???,？？？
+Zinc Band,Piment,???,???,(?),???,？？？
 Explorer Kit,Explorakit,Esplorokit,Erkundungs-Set,Kit Explorador,탐험세트,たんけんセット
 Loot Sack,Sac Butin,Bottinosacca,Beutesack,Saca Botín,보물주머니,たからぶくろ
 Rule Book,Livre Règles,Libro Regole,Regelbuch,Reglamento,룰북,ルールブック
@@ -621,7 +621,7 @@ TM93,CT93,MT93,TM93,MT93,기술머신93,わざマシン９３
 TM94,CT94,MT94,TM94,MT94,기술머신94,わざマシン９４
 TM95,CT95,MT95,TM95,MT95,기술머신95,わざマシン９５
 Xtransceiver,Vokit,Interpoké,Viso-Caster,Videomisor,라이브캐스터,ライブキャスター
-???,Curry en Poudre,???,???,(?),???,ゴッドストーン
+Gold Bow,Curry en Poudre,???,???,(?),???,ゴッドストーン
 Gram 1,Courrier 1,Missiva 1,Briefpost 1,Envío 1,배달물1,はいたつぶつ１
 Gram 2,Courrier 2,Missiva 2,Briefpost 2,Envío 2,배달물2,はいたつぶつ２
 Gram 3,Courrier 3,Missiva 3,Briefpost 3,Envío 3,배달물3,はいたつぶつ３
@@ -836,10 +836,10 @@ Eevium Z,Évolizélite,Eevium Z,Evolium Z,Eeveestal Z,이브이Z,イーブイＺ
 Mewnium Z,Mewzélite,Mewnium Z,Mewnium Z,Mewstal Z,뮤Z,ミュウＺ
 Pikashunium Z,Pikachazélite,Ashpikacium Z,Ash-Pikachium Z,Ash-Pikastal Z,지우피카Z,サトピカＺ
 Pikashunium Z,Pikachazélite,Ashpikacium Z,Ash-Pikachium Z,Ash-Pikastal Z,지우피카Z,サトピカＺ
-???,Raifort,???,???,(?),???,？？？
-???,Sauce au Wasabi,???,???,(?),???,？？？
-???,Cresson,???,???,(?),???,？？？
-???,Basilic,???,???,(?),???,？？？
+Silver Spike,Raifort,???,???,(?),???,？？？
+Petrify Orb,Sauce au Wasabi,???,???,(?),???,？？？
+All Protect Orb,Cresson,???,???,(?),???,？？？
+Joy Ribbon,Basilic,???,???,(?),???,？？？
 Forage Bag,Sac Ingrédients,Portaingredienti,Zutatenbeutel,Zurrón,재료주머니,ざいりょうぶくろ
 Fishing Rod,Pièce de Mordudor,Amo,Angel,Caña,낚싯대,つりざお
 Professor’s Mask,Masque du Prof,Maschera Prof.,Maske des Profs,Máscara Profesor,박사의복면,はかせのふくめん
@@ -847,7 +847,7 @@ Festival Ticket,Festicket,Festicket,Festival-Ticket,Festicupón,페스티켓,フ
 Sparkling Stone,Gemme Lumière,Pietra lucente,Glitzerstein,Piedra Brillante,빛나는돌,かがやくいし
 Adrenaline Orb,Orbe Frousse,Fifasfera,Zitterorb,Nerviosfera,주눅구슬,ビビリだま
 Zygarde Cube,Boîte Zygarde,Teca Zygarde,Zygarde-Würfel,Arca de Zygarde,지가르데큐브,ジガルデキューブ
-???,Poivron Jaune,???,???,(?),???,？？？
+Heal Ribbon,Poivron Jaune,???,???,(?),???,？？？
 Ice Stone,Pierre Glace,Pietragelo,Eisstein,Piedra Hielo,얼음의돌,こおりのいし
 Ride Pager,Appel-Monture,Chiamapassaggio,PokéMobil-Funk,Buscamontura,라이드기어,ライドギア
 Beast Ball,Ultra Ball,UC Ball,Ultraball,Ente Ball,울트라볼,ウルトラボール
@@ -858,7 +858,7 @@ Pink Nectar,Nectar Rose,Nettare rosa,Rosa Nektar,Néctar Rosa,연분홍꿀,う�
 Purple Nectar,Nectar Mauve,Nettare viola,Purpurner Nektar,Néctar Violeta,보라꿀,むらさきのミツ
 Sun Flute,Flûte du Soleil,Flauto solare,Sonnenflöte,Flauta Solar,태양의피리,たいようのふえ
 Moon Flute,Flûte de la Lune,Flauto lunare,Mondflöte,Flauta Lunar,달의피리,つきのふえ
-???,Avocat,???,???,(?),???,？？？
+Recovery Scarf,Avocat,???,???,(?),???,？？？
 Enigmatic Card,Message Mystère,Lettera segreta,Seltsame Karte,Nota Intrigante,괴상한카드,あやしいカード
 Silver Razz Berry,Baie Framby argentée,Baccalampon argentata,Silberne Himmihbeere,Baya Frambu Plateada,은 라즈열매,ぎんのズリのみ
 Golden Razz Berry,Baie Framby dorée,Baccalampon dorata,Goldene Himmihbeere,Baya Frambu Dorada,황금 라즈열매,きんのズリのみ
@@ -866,11 +866,11 @@ Silver Nanab Berry,Baie Nanab argentée,Baccabana argentata,Silberne Nanabbeere,
 Golden Nanab Berry,Baie Nanab dorée,Baccabana dorata,Goldene Nanabbeere,Baya Latano Dorada,황금 나나열매,きんのナナのみ
 Silver Pinap Berry,Baie Nanana argentée,Baccananas argentata,Silberne Sananabeere,Baya Pinia Plateada,은 파인열매,ぎんのパイルのみ
 Golden Pinap Berry,Baie Nanana dorée,Baccananas dorata,Goldene Sananabeere,Baya Pinia Dorada,황금 파인열매,きんのパイルのみ
-???,Bacon,???,???,(?),???,？？？
-???,Jambon Blanc,???,???,(?),???,？？？
-???,Jambon Cru,???,???,(?),???,？？？
-???,Chorizo Grillé,???,???,(?),???,？？？
-???,Saucisse aux Herbes,???,???,(?),???,？？？
+Twist Band,Bacon,???,???,(?),???,？？？
+Slow Orb,Jambon Blanc,???,???,(?),???,？？？
+Slumber Orb,Jambon Cru,???,???,(?),???,？？？
+Quick Orb,Chorizo Grillé,???,???,(?),???,？？？
+Riot Orb,Saucisse aux Herbes,???,???,(?),???,？？？
 Secret Key,Clé Secrète,Chiave segreta,Geheimschlüssel,Llave Secreta,비밀의열쇠,ひみつのカギ
 S.S. Ticket,Passe Bateau,Biglietto nave,Bootsticket,Ticket del Barco,승선티켓,ふねのチケット
 Silph Scope,Scope Sylphe,Spettrosonda,Silph Scope,Visor Silph,실프스코프,シルフスコープ
@@ -896,9 +896,9 @@ Tropical Shell,Coquille du Sud,Tropiconchiglia,Tropenmuschel,Concha Tropical,트
 Leaf Letter,Lettre Végétale,Foglialettera,Blattbrief,Hoja Escrita,나뭇잎편지,このはのおてがみ
 Leaf Letter,Lettre Végétale,Foglialettera,Blattbrief,Hoja Escrita,나뭇잎편지,このはのおてがみ
 Small Bouquet,Petit Bouquet,Bouquet,Ministrauß,Ramo Pequeño,작은꽃다발,ちいさなはなたば
-???,Steak Haché,???,???,(?),???,？？？
-???,Bâtonnet de Craparoi,???,???,(?),???,？？？
-???,Filet Fumé,???,???,(?),???,？？？
+Tiny Reviver Seed,Steak Haché,???,???,(?),???,？？？
+Reviver Seed,Bâtonnet de Craparoi,???,???,(?),???,？？？
+Totter Seed,Filet Fumé,???,???,(?),???,？？？
 Lure,Parfum,Profumo invito,Lockparfüm,Colonia,벌레유인코롱,むしよせコロン
 Super Lure,Super Parfum,Superprofumo,Super-Lockparfüm,Supercolonia,실버코롱,シルバーコロン
 Max Lure,Parfum Max,Profumo Max,Top-Lockparfüm,Colonia Máxima,골드코롱,ゴールドコロン
@@ -920,19 +920,19 @@ Ice Memory,ROM Glace,ROM Ghiaccio,Eis-Disc,Disco Hielo,아이스메모리,アイ
 Dragon Memory,ROM Dragon,ROM Drago,Drachen-Disc,Disco Dragón,드래곤메모리,ドラゴンメモリ
 Dark Memory,ROM Ténèbres,ROM Buio,Unlicht-Disc,Disco Siniestro,다크메모리,ダークメモリ
 Fairy Memory,ROM Fée,ROM Folletto,Feen-Disc,Disco Hada,페어리메모리,フェアリーメモリ
-TMXX,Filet Frit,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Œuf,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Tortilla,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Tofu,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Riz,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Nouilles,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,Plume Ball,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
-TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Iron Spike,Filet Frit,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Defense Scarf,Œuf,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Persim Band,Tortilla,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Cacnea Spike,Tofu,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Stun Seed,Riz,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Blast Seed,Nouilles,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Noxious Seed,Plume Ball,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Iron Seed,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Amplify Seed,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Sharp Seed,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Quick Seed,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Plain Seed,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
+Sleep Seed,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
 TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
 TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX
 TMXX,CTXX,MTXX,TMXX,MTXX,기술머신XX,わざマシンXX

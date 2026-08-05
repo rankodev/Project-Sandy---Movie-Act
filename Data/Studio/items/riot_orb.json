@@ -1,0 +1,16 @@
+{
+  "klass": "Item",
+  "id": 871,
+  "dbSymbol": "riot_orb",
+  "icon": "OneShotOrb",
+  "price": 1000,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

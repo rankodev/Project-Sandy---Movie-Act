@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "poison_gas",
+  "klass": "TechItem",
+  "id": 927,
+  "dbSymbol": "noxious_seed",
+  "icon": "NoxiousSeed",
+  "price": 0,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": false,
+  "isMapUsable": false,
+  "isLimited": false,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

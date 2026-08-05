@@ -11,9 +11,6 @@
   "isHoldable": true,
   "isAllowingMega": false,
   "flingPower": 10,
-  "klass": "RateHealItem",
-  "loyaltyMalus": 0,
-  "hpRate": 0.25,
   "isBerry": true,
   "berryData": {
     "size": 9.5,
@@ -22,8 +19,8 @@
     "maxYield": 5,
     "growth": 32,
     "drainRate": 15,
-    "naturalGiftType": "psychic",
-    "naturalGiftPower": 80
+    "naturalGiftPower": 80,
+    "naturalGiftType": "psychic"
   },
   "cookingData": {
     "pokeblockColor": "yellow",
@@ -34,5 +31,8 @@
     "sweetFlavor": 10,
     "bitterFlavor": 10,
     "sourFlavor": 0
-  }
+  },
+  "klass": "RateHealItem",
+  "loyaltyMalus": 0,
+  "hpRate": 0.66
 }

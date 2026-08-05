@@ -14,8 +14,8 @@
     "pitch": 100
   },
   "tiledFilename": "CaveOutside",
-  "mtime": 1785768885420,
-  "sha1": "b30c9bfa04762d6d4903af4fae5a040ef5177ab7",
+  "mtime": 1785884342333,
+  "sha1": "5f4a8e93e6ca9ae8c8830903cb3221ef13f00461",
   "tileMetadata": {
     "width": 60,
     "height": 38,
@@ -42,7 +42,7 @@
       },
       {
         "firstGlobalId": 3449,
-        "source": "../../../../../../psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx"
+        "source": "../Tilesets/sandy_indoor.tsx"
       },
       {
         "firstGlobalId": 6913,

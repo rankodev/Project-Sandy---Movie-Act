@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "glare",
+  "klass": "TechItem",
+  "id": 925,
+  "dbSymbol": "stun_seed",
+  "icon": "StunSeed",
+  "price": 500,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

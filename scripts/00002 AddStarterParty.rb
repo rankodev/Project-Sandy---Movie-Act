@@ -3,7 +3,7 @@ class Interpreter
     def add_cyndaquil
         ajouter_pokemon_param(
             id: :cyndaquil, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
-            captured_with: 797, nature: :hardy, moves: [:hyper_voice, :flame_burst, :smokescreen, :prime], stats: [20, 20, 20, 20, 20, 20], 
+            captured_with: 797, nature: :hardy, moves: [:hyper_voice, :incinerate, :smokescreen, :prime], stats: [20, 20, 20, 20, 20, 20], 
             gender: %w[f m i][gv[495]]
         )
     end
@@ -19,7 +19,7 @@ class Interpreter
     def add_scorbunny
         ajouter_pokemon_param(
             id: :scorbunny, given_name: $trainer.name, level: 30, memo_text: [69, 0], no_shiny: true, 
-            captured_with: 797, nature: :hardy, moves: [:hotshot, :flame_charge, :double_kick, :uturn], stats: [20, 20, 20, 20, 20, 20], 
+            captured_with: 797, nature: :hardy, moves: [:hotshot, :flame_charge, :double_kick, :prime], stats: [20, 20, 20, 20, 20, 20], 
             gender: %w[f m i][gv[495]]
         )
     end

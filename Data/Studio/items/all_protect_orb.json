@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "mat_block",
+  "klass": "TechItem",
+  "id": 839,
+  "dbSymbol": "all_protect_orb",
+  "icon": "AllProtectOrb",
+  "price": 2000,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

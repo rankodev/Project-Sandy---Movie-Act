@@ -6,7 +6,7 @@
   "battleEngineMethod": "s_status",
   "type": "dark",
   "power": 0,
-  "accuracy": 50,
+  "accuracy": 100,
   "pp": 10,
   "category": "status",
   "movecriticalRate": 1,

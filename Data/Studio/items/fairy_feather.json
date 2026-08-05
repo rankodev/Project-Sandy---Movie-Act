@@ -1,0 +1,16 @@
+{
+  "klass": "Item",
+  "id": 131,
+  "dbSymbol": "fairy_feather",
+  "icon": "FairyFeather",
+  "price": 1000,
+  "socket": 1,
+  "position": 0,
+  "isBattleUsable": false,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 10
+}

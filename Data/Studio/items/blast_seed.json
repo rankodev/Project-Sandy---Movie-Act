@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "blast_seed",
+  "klass": "TechItem",
+  "id": 926,
+  "dbSymbol": "blast_seed",
+  "icon": "BlastSeed",
+  "price": 500,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": false,
+  "isMapUsable": false,
+  "isLimited": false,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

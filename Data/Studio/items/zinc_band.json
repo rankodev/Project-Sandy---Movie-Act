@@ -1,0 +1,16 @@
+{
+  "klass": "Item",
+  "id": 427,
+  "dbSymbol": "zinc_band",
+  "icon": "ZincBand",
+  "price": 1000,
+  "socket": 1,
+  "position": 0,
+  "isBattleUsable": false,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

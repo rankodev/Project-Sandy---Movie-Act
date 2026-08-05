@@ -7,11 +7,6 @@ module PSMA
     MISSIONS = [
       { rank: 'E', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
       { rank: 'A', icon: nil, location: :zone_18, quest_id: :quest_1, unlock_switch: 190 },
-      { rank: 'B', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
-      { rank: 'C', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
-      { rank: 'D', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
-      { rank: 'E', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
-      { rank: 'S', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
     ]
 
     def initialize

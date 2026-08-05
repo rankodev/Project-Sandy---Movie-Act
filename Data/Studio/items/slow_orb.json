@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "string_shot",
+  "klass": "TechItem",
+  "id": 868,
+  "dbSymbol": "slow_orb",
+  "icon": "SlowOrb",
+  "price": 1000,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": false,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}

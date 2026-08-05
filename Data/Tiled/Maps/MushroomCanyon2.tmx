@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="1">
- <tileset firstgid="1" source="Haunted Woods.tsx"/>
+ <tileset firstgid="1" source="../Tilesets/Haunted Woods.tsx"/>
  <tileset firstgid="569" source="../Tilesets/Dustlands-Grandesert.tsx"/>
  <tileset firstgid="1313" source="../Tilesets/The Desertica.tsx"/>
  <tileset firstgid="2153" source="../Tilesets/passages.tsx"/>

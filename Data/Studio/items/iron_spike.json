@@ -1,0 +1,18 @@
+{
+  "isHm": false,
+  "move": "chip_away",
+  "klass": "TechItem",
+  "id": 921,
+  "dbSymbol": "iron_spike",
+  "icon": "IronSpike",
+  "price": 0,
+  "socket": 3,
+  "position": 0,
+  "isBattleUsable": true,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 85
+}

@@ -32,10 +32,10 @@ module Battle
         end
 
         def hp_healed
-            return (@target.max_hp).clamp(1, Float::INFINITY)
+            return (@target.max_hp * 1 / 2).clamp(1, Float::INFINITY)
         end
 
-        class Revital < ReviverSeed
+        class TinyReviverSeed < ReviverSeed
           # Give the stat it should improve
           # @return [Symbol]
 
@@ -52,12 +52,12 @@ module Battle
           end
 
           def hp_healed
-            return (@target.max_hp * 2 / 4).clamp(1, Float::INFINITY)
+            return (@target.max_hp * 1 / 4).clamp(1, Float::INFINITY)
           end
         end
 
         register(:reviver_seed, ReviverSeed)
-        register(:revital_seed, ReviverSeed::Revital)
+        register(:tiny_reviver_seed, ReviverSeed::TinyReviverSeed)
       end
     end
   end
