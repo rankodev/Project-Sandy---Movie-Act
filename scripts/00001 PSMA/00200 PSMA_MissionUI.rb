@@ -5,8 +5,10 @@ module PSMA
   # Mission UI scene
   class MissionUI < GamePlay::BaseCleanUpdate
     MISSIONS = [
-      { rank: 'E', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_2, unlock_switch: 189 },
-      { rank: 'A', icon: nil, location: :zone_18, quest_id: :quest_1, unlock_switch: 190 },
+      { rank: 'D', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_4, unlock_switch: 118 },
+      { rank: 'E', icon: '000', location: :zone_0, quest_id: :quest_3, unlock_switch: 117  }, # Met Boss
+      { rank: 'E', icon: '372', location: :zone_18, quest_id: :quest_3, unlock_switch: 117  }, # Met Boss
+      { rank: 'E', icon: '372', location: :zone_18, quest_id: :quest_3, unlock_switch: 117  }, # Met Boss
     ]
 
     def initialize
@@ -334,7 +336,7 @@ module PSMA
       end
 
       def create_taken
-        @taken = add_sprite(120, 5, 'mission_ui/taken')
+        @taken = add_sprite(120, -7, 'mission_ui/taken')
         @taken.zoom = 0.5
       end
 

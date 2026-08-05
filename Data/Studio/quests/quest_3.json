@@ -8,11 +8,20 @@
     {
       "objectiveMethodName": "objective_obtain_item",
       "objectiveMethodArgs": [
-        "master_ball",
+        "bountiful_box",
         1
       ],
       "textFormatMethodName": "text_obtain_item",
       "hiddenByDefault": true
+    },
+    {
+      "objectiveMethodName": "objective_speak_to",
+      "objectiveMethodArgs": [
+        0,
+        "Dustbone Bazaar Clerk"
+      ],
+      "textFormatMethodName": "text_speak_to",
+      "hiddenByDefault": false
     }
   ],
   "earnings": []

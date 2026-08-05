@@ -1,0 +1,16 @@
+{
+  "klass": "Item",
+  "id": 935,
+  "dbSymbol": "exotic_seed",
+  "icon": "Exotic Seed",
+  "price": 0,
+  "socket": 1,
+  "position": 0,
+  "isBattleUsable": false,
+  "isMapUsable": false,
+  "isLimited": true,
+  "isHoldable": true,
+  "isAllowingMega": false,
+  "isBerry": false,
+  "flingPower": 30
+}
