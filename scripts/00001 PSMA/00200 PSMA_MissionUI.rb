@@ -79,8 +79,8 @@ module PSMA
       message_window.stay_visible = false
       c = display_message_and_wait("Accept this mission?", 1, 'Yes', 'No')
       return init_message if c == 1
-
       @mission.accept
+      Audio.se_play("audio/se/sramission")
       @mission_composition.data = @mission
     end
 
