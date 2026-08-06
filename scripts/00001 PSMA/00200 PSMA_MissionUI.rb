@@ -5,7 +5,7 @@ module PSMA
   # Mission UI scene
   class MissionUI < GamePlay::BaseCleanUpdate
     MISSIONS = [
-      { rank: 'D', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_4, unlock_switch: 118 },
+      { rank: 'D', icon: 'main_quest_icon', location: :zone_18, quest_id: :quest_4, unlock_switch: 118, switch_to_enable: 255 },
       { rank: 'E', icon: '000', location: :zone_0, quest_id: :quest_3, unlock_switch: 117  }, # Met Boss
       { rank: 'E', icon: '372', location: :zone_18, quest_id: :quest_3, unlock_switch: 117  }, # Met Boss
       { rank: 'E', icon: '372', location: :zone_18, quest_id: :quest_3, unlock_switch: 117  }, # Met Boss
@@ -100,12 +100,14 @@ module PSMA
       # @param location [Symbol] ID of the zone where the player must go to perform the mission
       # @param quest_id [Symbol] ID of the quest connected to the mission
       # @param unlock_switch [Integer | nil] ID of the switch enabling the mission in the board
-      def initialize(rank:, icon:, location:, quest_id:, unlock_switch:)
+      # @param unlock_switch [Integer | nil] ID of the switch that get enabled when accepting the mission
+      def initialize(rank:, icon:, location:, quest_id:, unlock_switch:, switch_to_enable: nil)
         @rank = validate_rank(rank)
         @icon = icon
         @location = validate_location(location)
         @quest = validate_quest(quest_id)
         @unlock_switch = validate_unlock_switch(unlock_switch)
+        @switch_to_enable = switch_to_enable
       end
 
       # Get the location name of the mission
@@ -146,6 +148,7 @@ module PSMA
 
       def accept
         $quests.start(@quest.id)
+        $game_switches[@switch_to_enable] = true if @switch_to_enable
       end
 
       private
@@ -464,7 +467,7 @@ if ENV['PSDK_BINARY_PATH'] == '/Volumes/mvme/projects/PokemonStudio/psdk-binarie
     def update
       @spriteset.update
       if Input.trigger?(:X)
-        $game_switches[189] = true
+        $game_switches[118] = true
         $game_switches[190] = true
         $scene.call_scene(PSMA::MissionUI)
       end
