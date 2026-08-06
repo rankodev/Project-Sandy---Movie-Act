@@ -21,9 +21,20 @@ module PSMA
       super
       create_list_composition
       create_mission_composition
-      # create_speaker
+      create_speaker
       # create_entry_animation
-      # init_message
+    end
+
+    def fade_in(...)
+      super
+      @speaker.visible = true
+      init_message
+    end
+
+    def fade_out(...)
+      @speaker.visible = false
+      @message_window.visible = false
+      super
     end
 
     def update_inputs
@@ -56,12 +67,14 @@ module PSMA
       @mission_composition.visible = false
     end
 
-   # def create_speaker
-      #@speaker = Sprite.new(@viewport)
-      #@speaker.load('portraits/minccino_neutral', :picture)
-      #@speaker.set_position(30, 136)
-      #@speaker.zoom = 0.5
-    #end
+    def create_speaker
+      @speaker = Sprite.new(@viewport)
+      starter = PlayerChoice::STARTERS[$game_variables[111] - 1]
+      @speaker.load("portraits/#{starter}_neutral", :picture)
+      @speaker.set_position(30, 136)
+      @speaker.zoom = 0.5
+      @speaker.visible = false
+    end
 
     def update_graphics
       @list_composition.update
@@ -69,11 +82,11 @@ module PSMA
     end
 
     # Show the initial message
-    #def init_message
-    #  @message_window.stay_visible = true
-    #  @message_window.auto_skip = true
-    #  $game_temp.message_text = '(What kind of missions are available today…?)'
-   # end
+    def init_message
+     @message_window.stay_visible = true
+     @message_window.auto_skip = true
+     $game_temp.message_text = '(What kind of missions are available today…?)'
+   end
 
     def action_a
       message_window.stay_visible = false
@@ -196,14 +209,6 @@ module PSMA
         next Mission.new(**mission)
       end
     end
-
-    # To implement
-    # 1. Mission filtering based on switch (+ validation)
-    # 2. Mission List Item (in composition)
-    # 3. Mission List Scroll Bar (in composition)
-    # 4. Mission Details (+ description scrollbar => composition2 + viewport for scrolling)
-    # 5. Confirmation when accepting mission
-    # (see player choice for locked message)
 
     class ListComposition < UI::SpriteStack
       # @return [Integer]
@@ -468,7 +473,7 @@ if ENV['PSDK_BINARY_PATH'] == '/Volumes/mvme/projects/PokemonStudio/psdk-binarie
       @spriteset.update
       if Input.trigger?(:X)
         $game_switches[118] = true
-        $game_switches[190] = true
+        $game_variables[111] = 2
         $scene.call_scene(PSMA::MissionUI)
       end
     end
