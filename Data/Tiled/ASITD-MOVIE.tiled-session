@@ -11,6 +11,9 @@
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Maps/rm_22_project_sandy.tmx": {
             "scale": 1.729296875,
             "selectedLayer": -1,
@@ -151,8 +154,8 @@
             "scale": 0.75,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 890.6666666666666,
-                "y": 608.6666666666666
+                "x": 865.3333333333334,
+                "y": 451.99999999999994
             }
         },
         "Maps/DryDesert1.tmx": {
@@ -182,6 +185,14 @@
         "Maps/Dustlands-Grandesert.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "Maps/FinalDungeon.tmx": {
+            "scale": 0.5343749999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 799.0643274853803,
+                "y": 799.0643274853803
+            }
         },
         "Maps/Haunted Woods (Normal Pallet).tsx": {
             "scaleInDock": 1
@@ -216,11 +227,11 @@
             }
         },
         "Maps/MushroomCanyon3.tmx": {
-            "scale": 1,
-            "selectedLayer": 0,
+            "scale": 0.75,
+            "selectedLayer": 3,
             "viewCenter": {
-                "x": 1027,
-                "y": 725
+                "x": 676,
+                "y": 841.3333333333333
             }
         },
         "Maps/Pond and Bridge Formatted.tsx": {
@@ -231,16 +242,16 @@
             "scale": 0.5,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": 961,
-                "y": 863
+                "x": 960,
+                "y": 862
             }
         },
         "Maps/SandCave2.tmx": {
             "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 961,
-                "y": 865
+                "x": 960,
+                "y": 864
             }
         },
         "Maps/Sandy Riverbed.tmx": {
@@ -301,12 +312,16 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "Maps/lab.tsx": {
+            "scaleInEditor": 1
+        },
         "Maps/passages.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "Maps/prio_w.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Maps/sandy_square_center.tmx": {
             "scale": 1.5,
@@ -422,18 +437,18 @@
     ],
     "project": "ASITD-MOVIE.tiled-project",
     "recentFiles": [
-        "Maps/SandCave1.tmx",
-        "Maps/SandCave2.tmx",
+        "Maps/prio_w.tsx",
+        "Maps/passages.tsx",
+        "Maps/lab.tsx",
         "Maps/CaveOutside.tmx",
-        "Maps/MushroomCanyon1.tmx",
-        "Maps/MushroomCanyon2.tmx",
+        "Maps/SandCave2.tmx",
+        "Maps/SandCave1.tmx",
         "Maps/MushroomCanyon3.tmx",
+        "Maps/MushroomCanyon2.tmx",
+        "Maps/MushroomCanyon1.tmx",
         "Tilesets/sandy_indoor.tsx",
         "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_indoor.tsx",
-        "Maps/Haunted Woods.tsx",
-        "Tilesets/passages.tsx",
-        "Tilesets/systemtags.tsx",
-        "D:/ProjectFolder/1-Projects/psdk/desert star/Project-Sandy/Data/Tiled/Tilesets/sandy_outside.tsx"
+        "Maps/Haunted Woods.tsx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx"
